@@ -1,0 +1,5 @@
+﻿类别,词条数量,关键词
+核心概念类,5,生成式人工智能、生成式 AI、GENAI、GENERATIVE AI、AIGC
+技术术语类,27,大语言模型、大模型、LLM、人工智能基础模型、Foundation Model、预训练模型、Pretrained Model、深度合成、提示词、Prompt、思维链、CoT、RLHF、多模态生成、多模态大模型、Transformer、生成对抗网络、GAN、扩散模型、Diffusion、变分自编码器、VAE、自回归模型、智能体、AI Agent、RAG、检索增强生成、SFT、指令微调、LoRA、向量数据库、MoE、混合专家模型
+平台基础设施类,8,火山引擎、火山方舟、千帆大模型、百炼大模型、ModelArts、Amazon Bedrock、Vertex AI、NVIDIA AI
+产品与厂商类,63,ChatGPT、GPT、OpenAI、Copilot、Claude、Anthropic、Gemini、PaLM、LLaMA、Mistral、Grok、Hugging Face、Sora、Midjourney、Stable Diffusion、DALL-E、Runway、Pika、DeepSeek、深度求索、Kimi、月之暗面、文心一言、文心大模型、ERNIE、通义千问、通义万相、Qwen、混元大模型、腾讯混元、盘古大模型、华为盘古、星火大模型、讯飞星火、智谱清言、智谱 AI、ChatGLM、百川智能、Baichuan、豆包、Doubao、海螺、MiniMax、ABAB 大模型、幻方量化、零一万物、YI 大模型、阶跃星辰、面壁智能、天工大模型、商量大模型、日日新大模型、蓝心大模型、言犀大模型、可灵、VIDU、生数大模型
