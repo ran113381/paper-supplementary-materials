@@ -1,0 +1,11 @@
+﻿file_name,authority_label,row_count,column_count
+table_01_sample_construction_procedure.csv,Table 1 Sample Construction Procedure,5,4
+table_02_variable_definition_and_calculation.csv,Table 2 Variable Definition and Calculation,15,4
+table_03_genai_dictionary_keyword_classification.csv,Table 3 Classification of GenAI Dictionary Keywords,5,3
+table_04_descriptive_statistics_of_key_variables.csv,Table 4 Descriptive Statistics of Key Variables,14,7
+table_05_baseline_regression_results.csv,Table 5 Baseline Regression Results,16,5
+table_06_summary_of_robustness_tests.csv,Table 6 Summary of Robustness Tests,8,3
+table_07_candidate_channel_inventory_turnover.csv,Table 7 Candidate Channel Test: Inventory Turnover,10,5
+table_08_heterogeneity_analysis.csv,Table 8 Heterogeneity Analysis,11,3
+appendix_a2_correlation_matrix.csv,Appendix A2 Correlation Matrix,15,15
+appendix_full_dictionary.csv,Full Dictionary Appendix,5,3
