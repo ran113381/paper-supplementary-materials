@@ -1,0 +1,100 @@
+{"segment_id":"P2FULL_1001","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"多模态大模型对图音文多种数据理解和生成能力的一般性陈述。"}
+{"segment_id":"P2FULL_1002","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"\"大模型商业化应用加速、边缘AI成为重要发展方向\"的行业趋势性总结。"}
+{"segment_id":"P2FULL_1003","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"大模型在多模态理解生成、人机交互和复杂问题推理方面取得显著提升的行业整体趋势。"}
+{"segment_id":"P2FULL_1004","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"大模型应用部署从云端到边缘和端侧延伸、边缘AI成为重要发展方向的行业趋势。"}
+{"segment_id":"P2FULL_1005","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"多头潜在注意力(MLA)、模型-硬件协同设计、动态缩放等技术使训练和应用成本进一步降低的行业技术趋势。"}
+{"segment_id":"P2FULL_1006","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"更多智能硬件依靠端云协同技术成为全场景大模型人机交互便捷入口的行业趋势。"}
+{"segment_id":"P2FULL_1007","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"列出公司已研发的关键算法包括大规模视频结构化技术、大模型技术、大规模训练和部署技术等核心技术。"}
+{"segment_id":"P2FULL_1008","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"自研91项专利的视觉语义大模型，包含图片、视频和文本数据底座、跨模态对齐技术和检索技术，生产出可用于多个行业的多模态大模型。"}
+{"segment_id":"P2FULL_1009","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"在研项目大模型技术已生产出多个不同参数量基础大模型和行业大模型，IPU X6000加速卡支持CV算法和大模型算法的推理、部署和应用。"}
+{"segment_id":"P2FULL_1010","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"支持DeepSeek等大模型部署，提供边缘云推理服务，满足智算集群和私有部署等的AI推理算力需求。"}
+{"segment_id":"P2FULL_1011","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"采用视觉多模态大模型技术，结合小模型+大模型思路，针对公安视频巡逻场景提供高效巡查工具。"}
+{"segment_id":"P2FULL_1012","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"基于多模态大模型技术开发新一代智能穿戴设备，搭载端云协同的大模型推理；AI交互教育产品利用多模态大模型自然语言和视觉处理能力。"}
+{"segment_id":"P2FULL_1013","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"设计基于大模型的儿童成长陪伴与趣味互动系统，帮助儿童提升情绪管理能力，助力儿童在趣味互动中提升认知能力、语言能力与艺术素养。"}
+{"segment_id":"P2FULL_1014","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"集成云天天书大模型的自然语言与视觉处理能力，精准识别不同场景和物体，提供丰富、优质的早教启蒙内容。"}
+{"segment_id":"P2FULL_1015","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"形成基于此的标准化智能高效应用，结合目前大数据大模型的能力快速落地行业的策略性陈述。"}
+{"segment_id":"P2FULL_1016","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"基于自研\"天书\"系列多模态大模型技术，研发面向消费者的人机智能助手、人机多模态交互能力，结合大规模数据。"}
+{"segment_id":"P2FULL_1017","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"面向企业及政府用户提供AI深层能力研发计算资源，开展智能问答、智能写作、智能大模型平台产品。"}
+{"segment_id":"P2FULL_1018","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"\"天书\"大模型平台产品提供稳定、准确、高效的智能化服务，可广泛应用于个人生活、智能家居等不同领域。"}
+{"segment_id":"P2FULL_1019","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"政务服务、企业数字化转型等需求，提供基于大模型的智能化、端和端侧灵活部署的能力陈述。"}
+{"segment_id":"P2FULL_1020","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"最终将形成公司大模型云一体高效化、便捷化技术架构具备高度扩展性的未来规划性陈述。"}
+{"segment_id":"P2FULL_1021","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"通过开放API接口与开发工具链赋能第三方企业快速集成大模型能力，整体技术成熟度达到行业领先水平。"}
+{"segment_id":"P2FULL_1022","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"基于自研\"天书\"大模型能力，结合自研神经网络处理器Transformer架构高效兼容的特点，探索面向智能家居、智能穿戴场景的消费者产品业务。"}
+{"segment_id":"P2FULL_1023","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"人机交互自进化平台项目可应用于城市治理、政务服务、机器人全流程自动化平台、人居生活等多个领域。"}
+{"segment_id":"P2FULL_1024","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"持续迭代研发平台与大模型和算法仓开放服务，提供城市治理事件多维度多层次多角度的数据分析和决策支持。"}
+{"segment_id":"P2FULL_1025","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"基于已积累的机器视觉技术和大模型技术，针对道路事件检测系统实时监测路上交通事故、违章行为、拥堵情况，并同时提供预警和处理建议。"}
+{"segment_id":"P2FULL_1026","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"以\"天书\"大模型为中枢，通过为学校建设的AI实验室，为学生提供AI原生的人工智能教育空间，包含课程、教材、实验、应用场景等。"}
+{"segment_id":"P2FULL_1027","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"基于\"天书\"大模型对教育行业的深度迭代，Fly-X实验室全部课程功能稳定准确高效地完成AIGC相关的教学与学习任务。"}
+{"segment_id":"P2FULL_1028","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"通过人工智能课程打磨发挥天书大模型优势，为学生提供AI学伴。通过基于知识图谱的引导式学习法实现个人化学习。"}
+{"segment_id":"P2FULL_1029","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"NNP400T作为新一代自研深度学习神经网络处理器，提供多核高算力支持，可应用于大模型的并行计算等场景。"}
+{"segment_id":"P2FULL_1030","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"DeepEdge10作为首颗云天励飞自研SOC芯片，搭载新一代自研NPU(NNP400T)，可广泛应用于AI加速卡、一体机、智算集群等大模型推理场景。"}
+{"segment_id":"P2FULL_1031","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"X6000系列推理卡可应用于语言、视觉、多模态等各类大模型的推理加速，已适配天天书、DeepSeek-V3/R1、通义千问、百川智能、Llama2/3等主流大模型。"}
+{"segment_id":"P2FULL_1032","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"自研多模态大模型的技术研发和商业化落地能力，公司\"云天天书\"系列大模型使用自研训练框架，全栈适配国产算力。"}
+{"segment_id":"P2FULL_1033","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"具备边缘端硬件在线微调学习能力的能力陈述，未指明具体产品或场景。"}
+{"segment_id":"P2FULL_1034","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"\"云天天书\"大模型涵盖语言大模型、多模态大模型等不同系列，C-Eval、CMMLU权威测试多次第一，通过中央网信办备案，符合\"磁石·X\"A级安全性要求。"}
+{"segment_id":"P2FULL_1035","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"研发人才团队建设描述，包括AI算法、大模型、AI芯片、大数据处理等领域535人研发团队的人才优势陈述。"}
+{"segment_id":"P2FULL_1036","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"智算运营服务项目按合约安全期收取服务费用付款的风险讨论。"}
+{"segment_id":"P2FULL_1037","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"作为创始行业股东之一参股深圳国创乘身智能机器人公司，为其提供AI芯片、大模型领域的技术支持。"}
+{"segment_id":"P2FULL_1038","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"电动轻动力车用锂离子电池业务，与AI无关。"}
+{"segment_id":"P2FULL_1039","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"电动轻动力车用锂离子电池业务，与AI无关。"}
+{"segment_id":"P2FULL_1040","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"磁视频反馈ACOT控制技术，是电源控制技术，与GenAI无关。"}
+{"segment_id":"P2FULL_1041","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"AI智能调度技术基于大语言模型研发，实现多终端、多场景的精准语音指令控制，支持音视频通话中的辅助调度。"}
+{"segment_id":"P2FULL_1042","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"全面实施五大数智战略，构建产品研发信息共享和管理平台，基于鸿蒙技术支持需求探索研发大模型系统的探索性陈述。"}
+{"segment_id":"P2FULL_1043","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"建立基于大模型的智能运维客服系统，全面推进产品机器人化和服务数智化，构造具有智能感知判断决策功能的地下工程装备。"}
+{"segment_id":"P2FULL_1044","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"围绕\"AI+管理\"与\"AI+装备\"两大方向，规划34个AI建设场景，制定了AI大模型应用规范，在仓储安全管理、生产精细化管理、虚拟数字人等场景进行了初步探索与实践。"}
+{"segment_id":"P2FULL_1045","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"随着物联网、AI、大模型与具身智能技术的飞跃发展和深度融合，足式机器人的行业总体趋势讨论。"}
+{"segment_id":"P2FULL_1046","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"系统结合时空、空域、频域融合分析AI算法与深度学习大模型，可精准识别托辊故障、皮带撕裂、输送带塌陷、电机和减速箱轴承故障等故障类型。"}
+{"segment_id":"P2FULL_1047","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"资产全生命周期管理技术随着分布式光纤传感技术发展、大数据云计算边缘计算技术应用进步的行业总体趋势。"}
+{"segment_id":"P2FULL_1048","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"云边缘计算大模型技术促进行业发展、电力设施和海底电缆等资产运维数据云计算和边缘计算应用的行业总体趋势。"}
+{"segment_id":"P2FULL_1049","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"基于对抗神经网络GAN的视频差异性检测算法，对采集巡检视频数据的智能处理，能够对巡检过程的视频数据进行处理并识别有效与无标准视频。"}
+{"segment_id":"P2FULL_1050","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"公司Miracle开发平台目前正积极开展DeepSeek、Qwen(千问)等主流大模型本地化部署工作，以提升基于Miracle开发平台的技术开发效能。"}
+{"segment_id":"P2FULL_1051","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"\"破碎粒度可灵活调节\"片段，与AI无关。"}
+{"segment_id":"P2FULL_1052","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"\"破碎粒度可灵活调节\"片段，与AI无关。"}
+{"segment_id":"P2FULL_1053","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"300Ah 12000次循环长寿命\"天合芯\"和Elementa液冷储能系统介绍，与GenAI无关。"}
+{"segment_id":"P2FULL_1054","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"光伏研究论文清单(SCI/EI)与研发投入表，与GenAI无关。"}
+{"segment_id":"P2FULL_1055","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"钙钛矿/硅串联太阳能电池等光伏研究论文清单，与GenAI无关。"}
+{"segment_id":"P2FULL_1056","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"Elementa系列储能搭载TrinaStorage OS智能运维平台支持AI负荷预测和动态优化放电策略，AI偏向传统ML预测，无明确GenAI/LLM线索。"}
+{"segment_id":"P2FULL_1057","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"YKYY025注射液临床安全性描述，与AI无关。"}
+{"segment_id":"P2FULL_1058","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"从头搭建GPT、扩散模型、Star-Transformer和Vision Transformer等前沿AI算法模型，用于药物靶标发现、药物设计、活性和毒性预测、药物筛选等药物研发全流程。"}
+{"segment_id":"P2FULL_1059","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"YKYY025注射液临床安全性描述，与AI无关。"}
+{"segment_id":"P2FULL_1060","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"YKYY025注射液临床安全性描述，与AI无关。"}
+{"segment_id":"P2FULL_1061","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"DeepSeek推出在全球人工智能产业链竞争格局实现重塑、国家和地方政府陆续出台\"人工智能+\"政策的行业趋势。"}
+{"segment_id":"P2FULL_1062","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"公司前瞻布局人工智能，全面切入\"工业AI+数据\"新产品和新技术研发应用，自研中控流程工业时序大模型(TPT, Time-Series Pre-trained Transformer)横空出世。"}
+{"segment_id":"P2FULL_1063","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"重磅推出全球首款UCS通用控制系统和TPT时序工业大模型两款划时代的创新产品，UCS已在卫星制造、装备制造等10位家客户实施应用。"}
+{"segment_id":"P2FULL_1064","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"流程工业AI时序大模型TPT(Time-Series Pre-trained Transformer)由公司自主研发的生成式AI算法框架，TPT大模型已首度实现工业现场在线实时优化与闭环控制。"}
+{"segment_id":"P2FULL_1065","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"S2B线上平台运营公司全面建设\"智慧物料决策中枢\"，深度融合DeepSeek-R1大模型与垂直领域知识库，构建\"数据智能中枢+业务决策引擎\"双轮驱动架构。"}
+{"segment_id":"P2FULL_1066","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"2025年公司将坚定贯彻工业AI发展战略、构建\"装置-工厂-行业\"全流程多智能体系统、形成核心解决方案的未来规划。"}
+{"segment_id":"P2FULL_1067","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"\"2\"包含两个核心大模型，一个是时间序列大模型TPT(Time-series Pre-trained Transformer)，构造工业AI模型基座，深度挖掘工业数据价值实现生产过程自动化。"}
+{"segment_id":"P2FULL_1068","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"另一个是超图大模型HGT(Hyper Graph Transformer)，实现企业运营自动化(Business Automated, BA)，帮助用户实现企业卓越运营。"}
+{"segment_id":"P2FULL_1069","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"主要产品时间序列大模型TPT基于海量工业数据预训练，覆盖多种工业场景应用，将AI应用从内容领域(生成文章、生成图片等)深度扩展到生产实体领域。"}
+{"segment_id":"P2FULL_1070","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"超图大模型HGT是中控在BA领域构造的一款融合开源大语言模型和自研图注意力模型的超图模型，提供对企业经营业务的高阶理解和推理能力。"}
+{"segment_id":"P2FULL_1071","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"思维链强化基于图模型的推理能力提升技术原理性描述，未指明具体产品。"}
+{"segment_id":"P2FULL_1072","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"面向产、产、供、销、服和支持保障领域的全业务链路智能体，基于HGT超图大模型构建。"}
+{"segment_id":"P2FULL_1073","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"自主运行系统整合高级智能过程控制、智能操作驾驶舱、回路控制、回路健康管理与优化、报警治理与操作导航软件，融合AI技术与PID回路自整定、多工况控制等关键技术，集成TPT大模型等。"}
+{"segment_id":"P2FULL_1074","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"智能质量助理深度融合AI大模型，提供语音交互、智能推荐等辅助功能，简化质量人员工作。"}
+{"segment_id":"P2FULL_1075","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"公用工程优化软件集成TPT大模型，实现\"AI+调度\"与\"AI+控制\"多场景应用。"}
+{"segment_id":"P2FULL_1076","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"工业大模型应用推进显著增强了数据处理与分析能力的行业整体趋势。"}
+{"segment_id":"P2FULL_1077","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"行业发展阶段，工业自动化领域人们见证了关键技术从回路控制到模型优化、再到大模型推理优化的不断演进与革新的行业回顾。"}
+{"segment_id":"P2FULL_1078","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"近年来人工智能技术深度融入工业自动化进程加速、AGI和生成式AI技术快速发展、工业AI时代逐步到来的行业趋势。"}
+{"segment_id":"P2FULL_1079","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"借助深度学习、神经网络等前沿技术，工业AI成功构建涵盖广泛工业知识与经验的庞大模型，是行业整体进展描述。"}
+{"segment_id":"P2FULL_1080","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"国务院总理赵勇部署\"AI+\"专项行动政策的政府政策引述。"}
+{"segment_id":"P2FULL_1081","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"全国工业和信息化工作会议强调实施\"人工智能+制造\"行动的政策引述。"}
+{"segment_id":"P2FULL_1082","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"传统软件研发和交付模式正在被颠覆、多模态大模型和软件订阅制模式的行业趋势讨论。"}
+{"segment_id":"P2FULL_1083","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"工业AI大模型和工业Agents结合能为用户带来全新交互体验、构建智能化生态系统的行业讨论。"}
+{"segment_id":"P2FULL_1084","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"工业AI大模型和工业Agents结合将为工业自动化和工业AI市场带来前所未有的发展机遇的未来展望。"}
+{"segment_id":"P2FULL_1085","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"以DeepSeek为代表的拥有自主知识产权的新技术出现是中国在科技创新领域不断突破的重要标志。"}
+{"segment_id":"P2FULL_1086","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"云计算、AI、大模型等技术飞跃发展、软件产品迭代速度大幅提升、传统一次性购买模式难以满足用户需求的行业趋势。"}
+{"segment_id":"P2FULL_1087","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"工业AI技术口碑首先体现在数据底座、AI算法、大模型等核心技术研发能力上的行业讨论。"}
+{"segment_id":"P2FULL_1088","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"工业AI技术口碑要求AI技术本身的高精度、数据底座大模型与工业Agent深度融合的行业讨论。"}
+{"segment_id":"P2FULL_1089","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"自主研发选用GaN宽带功放管搭配自主设计的DPD和CFR有效提升放大效率的电信功放技术，与GenAI无关。"}
+{"segment_id":"P2FULL_1090","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"以大模型为代表的生成式人工智能为代表的通用人工智能技术取得显著进展的行业趋势。"}
+{"segment_id":"P2FULL_1091","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"自主研发选用GaN宽带功放管的电信功放技术，与GenAI无关。"}
+{"segment_id":"P2FULL_1092","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"知识图谱系统具备成熟自主智能采集、大数据存储、大模型推理和训练能力，是公司在研项目。"}
+{"segment_id":"P2FULL_1093","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"自2022年ChatGPT问世以来全球掀起一波前所未有的AI发展浪潮、中国Deepseek横空出世进一步加速大模型应用的行业趋势。"}
+{"segment_id":"P2FULL_1094","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"GaN宽带功放管的电信功放技术，与GenAI无关。"}
+{"segment_id":"P2FULL_1095","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"知识图谱系统具备成熟自主智能采集、大数据存储、大模型推理和训练能力，是公司在研项目。"}
+{"segment_id":"P2FULL_1096","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"无人机系统智能指挥系统通过融合人工智能、大模型、虚拟现实、数据通信等技术，实现无人机集群的高效、自主、智能化指挥控制。"}
+{"segment_id":"P2FULL_1097","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"AI控制系统使用大模型等深度学习算法，实现对复杂系统的高效智能控制，通过多模态数据融合实时感知环境并自主做出最优决策。"}
+{"segment_id":"P2FULL_1098","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"全球疫苗市场销售规模增长趋势，与AI无关。"}
+{"segment_id":"P2FULL_1099","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"Kalorama Information公司2014年报告：2017年国内儿童疫苗市场预测，与AI无关。"}
+{"segment_id":"P2FULL_1100","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"采用Lora扩频技术实现低功耗的自组网及数据远传技术，无线通信技术与GenAI无关。"}

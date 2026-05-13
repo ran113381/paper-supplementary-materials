@@ -1,0 +1,56 @@
+{"segment_id":"P2FULL_1201","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"以药明康德、康龙化成、美迪西、桑迪亚、Aragen Life Sciences、Syngene等为代表的国内外CRO机构清单，与AI无关。"}
+{"segment_id":"P2FULL_1202","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"OLED发光主体/客体材料、空穴传输材料、电子传输材料等核心技术清单，与GenAI无关。"}
+{"segment_id":"P2FULL_1203","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"国内首套智能矿山时间敏感网络TSN控制系统、FHDAN氢氟液态比例换代、Longwall Mind 6.0系统软件等矿山自动化产品，无GenAI信号。"}
+{"segment_id":"P2FULL_1204","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"完成基于Long Wall mind的SCADA系统开发并实现煤矿客户项目的推广，与GenAI无关。"}
+{"segment_id":"P2FULL_1205","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"公司SAM采综集自动化控制系统以工业以太网和现场总线控制网络为平台、LongWallMind监控软件平台为核心，是矿山自动化系统，无GenAI信号。"}
+{"segment_id":"P2FULL_1206","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"根据Kalorama Information报告，2023年全球体外诊断市场规模预计超1060亿美元，与AI无关。"}
+{"segment_id":"P2FULL_1207","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"创始团队和技术团队曾在NEC、华虹NEC、中芯国际、IDT、华润微等知名公司工作多年的人才优势描述，与AI无关。"}
+{"segment_id":"P2FULL_1208","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"300W小型高效逆变器采用动态控制策略、应用氮化镓(GaN)新材料技术，是电力电子技术，与GenAI无关。"}
+{"segment_id":"P2FULL_1209","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"100G QSFP28、400G QSFP56-DD、CFP2-DCO等光通信模块产品规格清单，与GenAI无关。"}
+{"segment_id":"P2FULL_1210","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"尝试生成式AI技术快速生成角色、场景和剧情，缩短开发周期，通过AI工具优化美术管线。"}
+{"segment_id":"P2FULL_1211","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"智慧人居系列产品诺信云上平台(LAZZEN MagicLink Life)是公司自主开发的面向住宅、办公、酒店等多智能化人居应用场景的开放生态平台，基于多模态物联网通讯、云计算和AI算法、大模型等前沿科技。"}
+{"segment_id":"P2FULL_1212","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"探索使用生成式大模型，提高内部知识转化效率，是探索性陈述。"}
+{"segment_id":"P2FULL_1213","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"公司基础证信股份2024年1月12日的J.P.Morgan线上交流接待情况介绍，与AI无关。"}
+{"segment_id":"P2FULL_1214","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"JPMorgan、Greenwoods Asset公司战略发展方向交流，与AI无关。"}
+{"segment_id":"P2FULL_1215","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"积极探索AI大模型与产品研发、生产制造、质量管理、财务管理等的结合，以AI的深度应用全面赋能公司高质量与可持续发展，是未来探索方向。"}
+{"segment_id":"P2FULL_1216","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"公司在体系化开展智能化改造、数字化转型，加强智能化、数据化水平，并积极探索AI大模型与产品研发、生产制造、质量管理、财务管理等深度结合。"}
+{"segment_id":"P2FULL_1217","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"公司将探索AI大模型与产品研发、生产制造、质量管理、财务管理等深度结合，以AI的深度应用全面赋能公司高质量发展，是未来探索方向。"}
+{"segment_id":"P2FULL_1218","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"调研、沟通、采访活动接待对象与机构投资者列表，与AI无关。"}
+{"segment_id":"P2FULL_1219","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"生成式AI如ChatGPT、文心一言、DeepSeek-V3等千亿参数级模型推动算力需求规模激增，基础设施正经历从'电力驱动'向'智能驱动'的质变行业趋势。"}
+{"segment_id":"P2FULL_1220","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"随着AI大模型训练的兴起、科学计算领域国家超算中心持续扩容以及自动驾驶领域车路云一体化算力等需求快速增长的行业趋势。"}
+{"segment_id":"P2FULL_1221","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"基于直流侧核心控制全研发出工厂级储能场景智能BMS控制系统，搭载基于DeepSeek/通义等AI大模型的智能故障诊断预测系统，并成功应用于新能源增储电站、大型独立网侧储能电站等多个项目建设。"}
+{"segment_id":"P2FULL_1222","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"在储能、铅离子电池、UPS电源和数据算力中心等关键领域研发过程中借助利用DeepSeek等AI大模型，加速研发过程，提升研发效率。"}
+{"segment_id":"P2FULL_1223","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"平台方面构建电力行业AI大模型，实现风光荷预测、智能调度、故障预测与寿命管理，保障资产安全和收益最大化。"}
+{"segment_id":"P2FULL_1224","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"随着过去两年AIGC浪潮的兴起，这一趋势得到了进一步加速的行业趋势。"}
+{"segment_id":"P2FULL_1225","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"AIGC不仅为跨境电商平台在业务模式创新上带来了前所未有的机遇，还在经营管理方面实现了显著的降本增效。"}
+{"segment_id":"P2FULL_1226","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"通过与ChatGPT、DeepSeek等先进AI模型的合作，创新性地采用了'无边界+保稳定+微参数'的适配模式，成功构建了一套完整的'分类型分层架构'模型化框架。"}
+{"segment_id":"P2FULL_1227","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"大语言模型新解决海量多模态数据性高发应对快速等优海量数据规模的智能化操作系统，是公司构建的产品方向。"}
+{"segment_id":"P2FULL_1228","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"大语言模型存内制后将根据用搬应用系统冷的清洁、标注、训练心，为公司后续开展强大的自然语言处理能力研发铺设的策略性陈述。"}
+{"segment_id":"P2FULL_1229","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"在领先大模型的迭基础片段，文本不完整。"}
+{"segment_id":"P2FULL_1230","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"卡参数、特立项研发大语言模型数据应用系统的片段。"}
+{"segment_id":"P2FULL_1231","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"通过对临床试验和医院实际场景进行解析，坚持'以患者为中心'，深耕SMO临床试验现场管理组织业务，构建一套临床试验全流程项目管理体系，与GenAI无关。"}
+{"segment_id":"P2FULL_1232","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"前沿AI技术在创新药物研发中的应用场景日趋广泛，Deepseek、阿里通义Qwen、生华等国产大模型技术能力突破显著提升了生物医药和临床研究领域对人工智能技术的应用积极性。"}
+{"segment_id":"P2FULL_1233","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"针对跨境电商行业上述知识产权侵规特点，公司研发的'翼眼跨境电商知识产权侵规检测AI SaaS软件'，利用自然语言处理(NLP)、计算机视觉(CV)、大型语言模型(LLM)、多模态和智能体技术。"}
+{"segment_id":"P2FULL_1234","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"在出口跨境电商零售业务领域获得包括'2024 AIGC赋能行业创新引领者'等奖项，是奖项荣誉清单。"}
+{"segment_id":"P2FULL_1235","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"AIGC赋能业务全链路数智化、精细化运营，实现提质增效，公司自主研发的信息系统和智能化应用实现了包括前端开发、运营管理和供应链管理。"}
+{"segment_id":"P2FULL_1236","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"报告期内公司持续加大算法、大模型等技术与家人才的引进，向科技创新驱动发展，是人才与研发方向规划。"}
+{"segment_id":"P2FULL_1237","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"公司成功推出了首款AI SaaS软件'翼眼'，使用大型语言模型(DeepSeek、Qwen、Doubao等)、多模态模型(SigLip-2等)和智能体(LangGraph等)技术实现跨境合规自动化合规检测。"}
+{"segment_id":"P2FULL_1238","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"翼眼于2025年2月推出'小翼助手'智能体，通过和用户对话的方式，更加方便地解决客户产品合规检测中遇到的问题，不仅支持自然语言输入还支持图片、Amazon等网页链接的多模态、多模型的输入。"}
+{"segment_id":"P2FULL_1239","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"通过产品的图片，使用大模型识、专利多维度的反侵权行为，降低公司侵权检测情况，有效预防潜在侵权产品进行测，提高研发效率，是已实施的研发产品。"}
+{"segment_id":"P2FULL_1240","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"AI大模型的广泛应用正在深刻改变电商行业的生态，通过深度学习、自然语言处理、计算机视觉等技术，AI不仅提升了用户体验的行业整体趋势。"}
+{"segment_id":"P2FULL_1241","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"万华工业大脑研发的氢氟大模型正式发布，作为化工行业首个氢氟大模型，能实现在安全发现潜在危机、安中安全问题处理、重点客户关注等方面为业务赋能。"}
+{"segment_id":"P2FULL_1242","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"公司核心竞争力，自1997年上市以来集中精力做强做优大水泥主业，注重自主创新、科技创新，大力推进节能减排，发展低碳循环经济，与GenAI无关。"}
+{"segment_id":"P2FULL_1243","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"水泥主业方面，国内华盐海螺新建项目、芜湖海螺扩产运营，亚洲、南美海外分子相继设立，与AI无关。"}
+{"segment_id":"P2FULL_1244","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"新质生产力开发崛起，以DeepSeek为代表的AI人工智能浪潮时代飞跃，矿业不能'置身事外'，信息技术与生产运营场景深度融合大势所趋。"}
+{"segment_id":"P2FULL_1245","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"三财一体化生产管控平台、'黑灯工厂'、供应链合作矿预测AI大模型等'数字紫金'实践持续推进。"}
+{"segment_id":"P2FULL_1246","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"微波方向，化合物半导体方面，继续扩展产品线，完成C、X、Ku等频段高性能GaAs、GaN MMIC套片产品自研，无GenAI。"}
+{"segment_id":"P2FULL_1247","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"扩展0.45um和0.25um GaN地面功率器件系列产品，覆盖L、C、S、X多频段，输出功率覆盖5W-1000W，无GenAI。"}
+{"segment_id":"P2FULL_1248","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"微波方向，化合物半导体方面，继续扩展产品线，完成GaAs、GaN MMIC套片产品自研，无GenAI。"}
+{"segment_id":"P2FULL_1249","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"扩展0.45um和0.25um GaN地面功率器件系列产品，覆盖L、C、S、X多频段，无GenAI。"}
+{"segment_id":"P2FULL_1250","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"公司围绕未来技术和产业发展方向，依托'超人型'技术发展战略，研究商用机器人模型构建、具身智能模型仿真训练平台以及多模态大模型端侧高效部署等核心关键技术，是探索性研究。"}
+{"segment_id":"P2FULL_1251","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"前沿人工智能技术集成到商用机器人涉及的感知、决策、控制等环节，将技能转换为智能体，是技术发展方向描述。"}
+{"segment_id":"P2FULL_1252","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"三是注重虚拟现实物理融合，对模拟数据和真实数据进行二次开发，指导大模型训练，是技术研发方向。"}
+{"segment_id":"P2FULL_1253","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"在前瞻融合人工智能工具的多款人工智能大模型开发应用，利用人工智能将改变行业生态，是未来发展方向。"}
+{"segment_id":"P2FULL_1254","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"未来五年半导体高纯度金属产业的核心竞争力将聚焦于两大维度，一是突破2nm节点钨刻蚀靶材、GaN器件用7N级金芯材料的超高纯靶材技术，与GenAI无关。"}
+{"segment_id":"P2FULL_1255","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"智算网络的需求推动高性能交换芯片快速增长基础大模型、大模型应用高速发展，伴随着开源大模型的Deepseek等推出以及国产模型的百花齐放，预计智算建设将持续增长。"}
+{"segment_id":"P2FULL_1256","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"高性能以太网在工业发展的主流生态，国内外也成立了多个联盟来推动行业加速发展，智算网络对以太网交换芯片提出了更高性能、更高端口密度、更低时延的能力要求，是行业趋势。"}
