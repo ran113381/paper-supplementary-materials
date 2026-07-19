@@ -8,3 +8,4 @@ figure_06_event_study.png,Figure 6  Staggered DiD Event-Study Estimates,image6.p
 figure_07_psm_balance.png,Figure 7  Covariate Balance before and after Propensity Score Matching,image7.png
 figure_08_inventory_turnover_path.png,Figure 8 Candidate-Channel Path of Inventory Turnover,image8.png
 figure_09_heterogeneity_forest_plot.png,Figure 9 Heterogeneity Analysis: Forest Plot of Subsample Coefficients,image9.png
+Figure_SHAP_swarm_plot_GenAI_adopter_subsample.png,Figure 13 SHAP Swarm Plot for the GenAI Adopter Subsample (retained in the revised manuscript; archived here for reproduction),image13.png

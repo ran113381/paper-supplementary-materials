@@ -1,5 +1,5 @@
-﻿类别,词条数量,关键词
-核心概念类,5,生成式人工智能、生成式 AI、GENAI、GENERATIVE AI、AIGC
-技术术语类,27,大语言模型、大模型、LLM、Transformer、扩散模型、GAN、RLHF、LoRA、RAG、检索增强生成、SFT、指令微调、多模态生成、多模态大模型、预训练模型、基础模型、Foundation Model、生成对抗网络、变分自编码器、VAE、自回归模型、智能体、AI Agent、Prompt、上下文学习、In-Context Learning、混合专家模型、MoE
-平台基础设施类,8,火山引擎、火山方舟、千帆大模型、百炼大模型、ModelArts、Amazon Bedrock、Vertex AI、NVIDIA AI
-产品与厂商类,63,ChatGPT、GPT、OpenAI、Copilot、Claude、Anthropic、Gemini、PaLM、LLaMA、Mistral、Grok、Hugging Face、Sora、Midjourney、Stable Diffusion、DALL-E、文心一言、通义千问、讯飞星火、智谱 AI、DeepSeek、Kimi、豆包等国内外主流 GenAI 产品与厂商名称（完整列表见附录）
+﻿Category,Number of Entries,Keywords
+Core Concepts,5,"Generative Artificial Intelligence, GenAI / Generative AI (生成式AI), AIGC"
+Technical Terms,33,"Large Language Models, Large Models, LLM, AI Foundation Models, Foundation Models, Pre-trained Models, Pretrained Models, Deep Synthesis, Prompts, Prompt, Chain of Thought, CoT, RLHF, Multimodal Generation, Multimodal Large Models, Transformer, Generative Adversarial Networks, GAN, Diffusion Models, Diffusion, Variational Autoencoders, VAE, Autoregressive Models, AI Agents, RAG, Retrieval-Augmented Generation, SFT, Instruction Fine-Tuning, LoRA, Vector Databases, MoE, Hybrid Expert Models"
+Platform Infrastructure,8,"Volcano Engine, Volcano Ark, Qianfan Large Model, Bailian Large Model, ModelArts, Amazon Bedrock, Vertex AI, NVIDIA AI"
+Products and Vendors,57,"ChatGPT, GPT, OpenAI, Copilot, Claude, Anthropic, Gemini, PaLM, LLaMA, Mistral, Grok, Hugging Face, Sora, Midjourney, Stable Diffusion, DALL-E, Runway, Pika, DeepSeek (深度求索), Kimi, Dark Side of the Moon, Wenxin Yiyan, Wenxin Large Model, ERNIE, Tongyi Qianwen, Tongyi Wanshang, Qwen, Hunyuan Large Model, Tencent Hunyuan, Pangu Large Model, Huawei Pangu, Spark Large Model, iFlytek Spark, Zhipu Qingyan, Zhipu AI, ChatGLM, Baichuan Intelligence, Baichuan, Doubao (豆包), Hailuo, MiniMax, ABAB Large Model, Huanfang Quantification, Zero-One Everything, YI Large Model, Jieyue Xingchen, Mianbi Intelligence, Tiangong Large Model, Shangliang Large Model, Ririxin Large Model, Lanxin Large Model, Yanxi Large Model, Keling, VIDU, Shengshu Large Model"

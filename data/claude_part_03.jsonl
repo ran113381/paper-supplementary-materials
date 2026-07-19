@@ -1,42 +1,100 @@
-# Methods and Reproduction Notes
-
-## Scope
-
-This package reproduces the SOTA / hybrid benchmark reported as Table 3C. The benchmark evaluates passage-level semantic relevance for a disclosure-based GenAI proxy.
-
-The package does not claim to measure latent firm capability, internal deployment depth, or model-output quality. It validates whether MD&A passages flagged or classified by each method correspond to GenAI-related disclosure content.
-
-## Gold Standard
-
-The benchmark is locked to 600 human double-coded and adjudicated MD&A passages:
-
-- 216 GenAI-related passages.
-- 384 non-GenAI passages.
-- No unclear / `U` rows are included in the metric denominator.
-
-## Methods
-
-### Dictionary Rule
-
-The dictionary rule predicts positive when a passage contains a GenAI dictionary hit. It is evaluated on all 600 gold-standard passages.
-
-### GPT-5.5 / Claude Strict Consensus
-
-GPT-5.5 and Claude independently labeled the dictionary-hit passage universe. The strict-consensus row evaluates only rows where the two models provide a covered consensus prediction. Abstentions include non-hit rows and disagreement / uncovered rows.
-
-### FinBERT Fine-Tuned on Strict Consensus
-
-The FinBERT row uses frozen predictions generated from a fine-tuned `yiyanghkust/finbert-tone-chinese` backbone. The exact reproduction package uses the frozen row-level predictions so that reviewers can reproduce Table 3C without internet access or model downloads.
-
-### Hybrid Consensus with Dictionary Fallback
-
-The hybrid rule uses strict LLM consensus when available and falls back to the dictionary rule for non-hit, missing, or disagreement rows.
-
-## Why Frozen Predictions Are the SSCI-Locked Path
-
-The manuscript table must be exactly reproducible by reviewers. Live neural-model retraining can vary by hardware, library versions, model-cache state, and random-number handling. Therefore:
-
-- The deterministic reproduction path recomputes metrics from frozen row-level predictions.
-- The optional live FinBERT script is preserved for provenance, not required for exact table reproduction.
-- `MANIFEST.sha256` records file hashes for auditability.
-
+{"segment_id": "P2FULL_0201", "label": "generic_or_background", "confidence_1_5": 3, "rationale_cn": "片段极短，仅'于大模型的AI智能分析应用经验'，信息不足以判断具体部署，偏能力储备表述。"}
+{"segment_id": "P2FULL_0202", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明完成基于大模型的AI视频分析模块在接触网视频监控数据分析中的适应性开发和训练，属具体研发部署。"}
+{"segment_id": "P2FULL_0203", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明将扩大基于大模型的AI视频分析模块V2.0的专业应用范围，并扩大在供电专业的试用范围，属具体应用计划。"}
+{"segment_id": "P2FULL_0204", "label": "substantive_adoption", "confidence_1_5": 3, "rationale_cn": "明确说明通过行业数据验证DeepSeek等大模型在因果推理、语义检索等核心性能的提升有效性，属企业自身在验证和落地应用大模型。"}
+{"segment_id": "P2FULL_0205", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述汽车材料解决方案，与GenAI无关。"}
+{"segment_id": "P2FULL_0206", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述玻纤材料在美国汽车市场推广，与GenAI无关。"}
+{"segment_id": "P2FULL_0207", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述环保聚酰胺工程塑料技术引进，与GenAI无关。"}
+{"segment_id": "P2FULL_0208", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述汽车材料双品牌解决方案，与GenAI无关。"}
+{"segment_id": "P2FULL_0209", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述高性能长玻纤材料美国市场推广，与GenAI无关。"}
+{"segment_id": "P2FULL_0210", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为股权出售交易数据，与GenAI无关。"}
+{"segment_id": "P2FULL_0211", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述汽车材料销售模式，与GenAI无关。"}
+{"segment_id": "P2FULL_0212", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为股权出售交易数据，与GenAI无关。"}
+{"segment_id": "P2FULL_0213", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述子公司出资设立情况，与GenAI无关。"}
+{"segment_id": "P2FULL_0214", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述注册资本及股权比例，与GenAI无关。"}
+{"segment_id": "P2FULL_0215", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为股权出售交易数据，与GenAI无关。"}
+{"segment_id": "P2FULL_0216", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述双品牌市场发展模式，与GenAI无关。"}
+{"segment_id": "P2FULL_0217", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述子公司股权出售及合并范围变动，与GenAI无关。"}
+{"segment_id": "P2FULL_0218", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为股权出售交易数据，与GenAI无关。"}
+{"segment_id": "P2FULL_0219", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为主要控股参股公司财务数据，与GenAI无关。"}
+{"segment_id": "P2FULL_0220", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述铂碳催化剂技术储备，与GenAI无关。"}
+{"segment_id": "P2FULL_0221", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为营业成本及合并范围数据，与GenAI无关。"}
+{"segment_id": "P2FULL_0222", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为合并范围变动及FPC产品线，与GenAI无关。"}
+{"segment_id": "P2FULL_0223", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为主要控股参股公司财务数据，与GenAI无关。"}
+{"segment_id": "P2FULL_0224", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为合并范围变动数据，与GenAI无关。"}
+{"segment_id": "P2FULL_0225", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资者调研记录，与GenAI无关。"}
+{"segment_id": "P2FULL_0226", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资者调研记录，与GenAI无关。"}
+{"segment_id": "P2FULL_0227", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资者调研记录，与GenAI无关。"}
+{"segment_id": "P2FULL_0228", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资者调研记录，与GenAI无关。"}
+{"segment_id": "P2FULL_0229", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资者调研记录，与GenAI无关。"}
+{"segment_id": "P2FULL_0230", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资者调研记录，与GenAI无关。"}
+{"segment_id": "P2FULL_0231", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资者调研记录，与GenAI无关。"}
+{"segment_id": "P2FULL_0232", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资者调研记录，与GenAI无关。"}
+{"segment_id": "P2FULL_0233", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资者调研记录，与GenAI无关。"}
+{"segment_id": "P2FULL_0234", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资者调研记录，与GenAI无关。"}
+{"segment_id": "P2FULL_0235", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资者调研记录，与GenAI无关。"}
+{"segment_id": "P2FULL_0236", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资者调研记录，与GenAI无关。"}
+{"segment_id": "P2FULL_0237", "label": "generic_or_background", "confidence_1_5": 5, "rationale_cn": "描述语言大模型、多模态大模型推动智能化普及的行业趋势，属行业背景。"}
+{"segment_id": "P2FULL_0238", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明海康威视推动多模态大模型技术落地实践，以大数据与软件能力构建应用闭环，属企业自身具体部署。"}
+{"segment_id": "P2FULL_0239", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明海康威视观澜大模型构建了物联感知大模型、语言大模型和多模态大模型能力，属企业自身产品。"}
+{"segment_id": "P2FULL_0240", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明海康威视将深化大模型与行业知识的融合创新，是企业自身战略。"}
+{"segment_id": "P2FULL_0241", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明2023年海康威视发布观澜大模型，算法能力从视觉拓展到多模态，实现软硬件多维度升级。"}
+{"segment_id": "P2FULL_0242", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明观澜大模型包含视觉、光纤、音频、X光等多个子模型，并有误报降低90%、漏检降低86%等具体数字。"}
+{"segment_id": "P2FULL_0243", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明基于多模态大模型可通过自然语言定义实现万物检测与识别，属具体产品能力。"}
+{"segment_id": "P2FULL_0244", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明利用多模态大模型通过文本描述实现端到端推理，实现复杂事件理解，属具体应用能力。"}
+{"segment_id": "P2FULL_0245", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明以语言大模型为大脑，深度融合行业知识构建专业智能体，赋能产业数字化升级。"}
+{"segment_id": "P2FULL_0246", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明依托视觉大模型的突破性应用，实现高检出、高检准、易部署等能力，属具体产品应用。"}
+{"segment_id": "P2FULL_0247", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明海康威视机械臂防碰撞相机内置人员分类识别大模型算法，通过亿级数据集预训练调优，属具体产品部署。"}
+{"segment_id": "P2FULL_0248", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明结合大模型移动周界算法全方位精准监测人员入侵风险，属具体产品应用。"}
+{"segment_id": "P2FULL_0249", "label": "unclear", "confidence_1_5": 4, "rationale_cn": "描述多光谱植被监测仪功能，提到智能体检但未明确涉及生成式AI/大模型。"}
+{"segment_id": "P2FULL_0250", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明海康威视率先将大模型技术应用于三维体积成像，识别并滤除目标，属具体产品部署。"}
+{"segment_id": "P2FULL_0251", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明视觉大模型通过大模型赋能提升事件检出率、检准率，属具体应用。"}
+{"segment_id": "P2FULL_0252", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明应用大模型技术大幅降低适配与部署难度，提升产品泛化能力，属具体产品能力。"}
+{"segment_id": "P2FULL_0253", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明凭借大模型带来的场景化学习能力优化画质表现，属具体应用。"}
+{"segment_id": "P2FULL_0254", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明依托海康观澜大模型技术体系，创新研发视觉大模型摄像机，属具体产品研发部署。"}
+{"segment_id": "P2FULL_0255", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明视觉大模型摄像机产品具有泛化性强、检出率高等优势，并全面提升检出率和检准率，属具体产品。"}
+{"segment_id": "P2FULL_0256", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明视觉大模型摄像机产品已在智能周界、事件检测、设备巡检等多个场景落地，属具体部署。"}
+{"segment_id": "P2FULL_0257", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "描述视觉大模型摄像机在实际应用中解决误报问题，结合上下文属具体产品描述。"}
+{"segment_id": "P2FULL_0258", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明公司结合行业知识构建预训练大模型，加入真实动态场景数据，属具体产品研发。"}
+{"segment_id": "P2FULL_0259", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明基于大模型的强泛化能力及疑难目标高检出能力，实现智能识别，属具体产品能力。"}
+{"segment_id": "P2FULL_0260", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明大模型周界摄像机相比传统产品误报下降90%以上（有实测数据），属具体产品效果。"}
+{"segment_id": "P2FULL_0261", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明已形成单目、多目、球机等大模型周界全系列摄像机，属具体产品系列。"}
+{"segment_id": "P2FULL_0262", "label": "generic_or_background", "confidence_1_5": 4, "rationale_cn": "描述传统智能产品落地时的痛点，属背景铺垫，本身未说明企业自身大模型部署。"}
+{"segment_id": "P2FULL_0263", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明海康威视前端摄像机在端侧部署开放式目标检测大模型，在多个场景实现零标注开放识别与敏捷部署，属具体产品。"}
+{"segment_id": "P2FULL_0264", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明视觉大模型摄像机硬件+算法深度融合，根据场景化理解提升低照度成像画质，属具体产品能力。"}
+{"segment_id": "P2FULL_0265", "label": "unclear", "confidence_1_5": 4, "rationale_cn": "描述多向多摄领域深耕，除提及大模型能力外主要说多摄，GenAI线索不够具体。"}
+{"segment_id": "P2FULL_0266", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明基于观澜大模型技术体系，在视觉大模型基础上构建智能交通大模型，属具体产品研发。"}
+{"segment_id": "P2FULL_0267", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明在交通违法检测中发布支持大模型算法的环保型抓拍相机，具有具体像素参数，属具体产品发布。"}
+{"segment_id": "P2FULL_0268", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明产品采用视觉大模型技术在驾驶室违法行为分析有质的突破，误检率降低75%，有具体效果数字。"}
+{"segment_id": "P2FULL_0269", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明构建道路事件场景专用数据模型，与智能硬件深度融合，推出事件检测系列新产品，属具体产品。"}
+{"segment_id": "P2FULL_0270", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明在海康观澜大模型基础上利用行业知识预训练和微调，使模型在事件检测领域具备专家级能力，属具体部署。"}
+{"segment_id": "P2FULL_0271", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明基于Transformer架构模型在难例场景下误报率减少60%以上，属具体产品效果数字。"}
+{"segment_id": "P2FULL_0272", "label": "generic_or_background", "confidence_1_5": 3, "rationale_cn": "表述为将持续探索大模型技术，拓展交通场景应用，属规划层面。"}
+{"segment_id": "P2FULL_0273", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明医养对讲、紧急对讲方案基于多模态大模型持续迭代优化，深化细分行业应用。"}
+{"segment_id": "P2FULL_0274", "label": "unclear", "confidence_1_5": 4, "rationale_cn": "描述128天花阵列麦产品功能，提到AI智能降噪但未涉及生成式AI/大模型。"}
+{"segment_id": "P2FULL_0275", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明海康威视域级产品依托观澜大模型技术体系，从CV大模型进阶到多模态大模型，产品持续升级。"}
+{"segment_id": "P2FULL_0276", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明发布多模态大模型文搜存储系列产品，将图文多模态大模型与嵌入式智能硬件深度融合，属具体产品发布。"}
+{"segment_id": "P2FULL_0277", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明文搜存储系列产品实现多模态大模型在轻量化嵌入式硬件平台上落地，实现技术普惠应用，属具体产品。"}
+{"segment_id": "P2FULL_0278", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明NVR使用大模型周界防范算法，大幅提升视频周界准确率，属具体产品应用。"}
+{"segment_id": "P2FULL_0279", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明深入研究视觉和多模态大模型技术提升AI效果，属企业自身技术应用布局。"}
+{"segment_id": "P2FULL_0280", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明基于观澜大模型推出文搜超脑、文搜主机产品，输入自然语言可实现高效检索，属具体产品。"}
+{"segment_id": "P2FULL_0281", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明智能计算系列产品搭载万物检测大模型，检测识别能力大幅升级，属具体产品。"}
+{"segment_id": "P2FULL_0282", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明文搜计算系列产品具备自定义文本预警能力，利用大模型多模态融合能力输入一句话即可实时预警，属具体产品。"}
+{"segment_id": "P2FULL_0283", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明大模型加持的智能计算产品从提供具体功能到提供开放能力，属具体产品能力描述。"}
+{"segment_id": "P2FULL_0284", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明发布融合巡检大模型超脑产品，实现多模态大模型技术在安全生产、合规监管领域的深度应用。"}
+{"segment_id": "P2FULL_0285", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明发布AI开放平台大模型产品，大幅提升碎片化智能应用场景算法准确率，并推出HEOP2.0，属具体产品发布。"}
+{"segment_id": "P2FULL_0286", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明智慧屏与视频会议产品基于AI大模型技术持续优化，属具体产品描述。"}
+{"segment_id": "P2FULL_0287", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明AI大模型助力会议全流程，新增AI会议助手，会前语音发起、会中实时转写翻译、会后自动生成纪要，属具体产品功能。"}
+{"segment_id": "P2FULL_0288", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明利用大模型训练音视频算法，在网络受限情况下提升会议语音质量及图像效果，属具体产品应用。"}
+{"segment_id": "P2FULL_0289", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明班班通新一代产品结合轻量AI大模型能力，实现教学过程无感采集和智能分析，属具体产品。"}
+{"segment_id": "P2FULL_0290", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明易教学软件平台基于专业教学大模型能力，支持AI一键生成课件、智能问答等功能，属具体产品功能。"}
+{"segment_id": "P2FULL_0291", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明海外智慧屏产品白板软件接入通用多语言大模型，实现快速AI搜索、上下文分析、快速问答等AI应用，属具体部署。"}
+{"segment_id": "P2FULL_0292", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明推出文搜CVR存储产品，将自然语言与视频图像多模态大模型引入中心级存储，实现自然语言检索，属具体产品。"}
+{"segment_id": "P2FULL_0293", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明人工智能软件包含大模型一体化平台等产品，为各类场景提供智能算法生成与应用，属具体产品。"}
+{"segment_id": "P2FULL_0294", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明新推出的科学仪器软件基于海康大模型技术，提供数据采集分析报告一体化智能应用，属具体产品。"}
+{"segment_id": "P2FULL_0295", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明深度融合大模型技术赋能生产场景数字化转型，属企业自身具体应用。"}
+{"segment_id": "P2FULL_0296", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明产线相机系列产品结合大模型技术对人员作业动作进行实时监测与智能分析，属具体产品。"}
+{"segment_id": "P2FULL_0297", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明融合多模态大模型算法为多类设备提供状态监测，已在医药、物流、汽车等众多行业广泛应用，有具体行业数量。"}
+{"segment_id": "P2FULL_0298", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明光纤听诊产品与大模型技术融合，可有效预警长距离皮带托辊运行异常，属具体产品应用。"}
+{"segment_id": "P2FULL_0299", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明大模型表计识别系列产品实现对生产设备表计数据的自动读取与上报，属具体产品。"}
+{"segment_id": "P2FULL_0300", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明借助大模型技术对作业范围内人员闯入进行智能识别与预警，并结合智能吊钩跟踪算法，属具体产品应用。"}

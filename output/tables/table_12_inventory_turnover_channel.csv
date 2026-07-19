@@ -1,0 +1,10 @@
+﻿Dependent variable,(1) InvTurn,(2) Focal_ROA,(3) Focal_ROA (Full Sample),(4) Focal_ROA (strict sample)
+Power_Pressure,−4.366*,,,
+,(2.443),,,
+InvTurn,,0.0012***,0.0011***,0.0010***
+,,(0.0003),(0.0003),(0.0003)
+GenAI × Power_Pressure,,,−0.0087***,−0.0087***
+,,,(0.0017),(0.0018)
+Control variables,Yes,Yes,Yes,Yes
+Observed value,"1,003","1,003","1,017",891
+R-squared,0.287,0.452,0.411,0.423

@@ -1,0 +1,10 @@
+﻿Robustness Test,Key Coefficients,Description
+Strict sample: H1 (Focal_GenAI_Index),−0.0123**,N = 897
+Strict sample: H2 (GenAI × R&D),−0.0562***,N = 897
+Strict sample: H3 (GenAI × Power_Pressure),−0.0087***,N = 895
+Alternative metric: Overlap count index,−0.0143***,Significantly negative
+Alternative measure: lexical breadth,−0.0080***,Significantly negative
+Alternative measure: binary dummy variables,−0.0108,"Same direction, n.s."
+H3 + Growth control,−0.0085***,Conclusions remain unchanged
+Pre-2022 exclusion: H1 (Focal_GenAI_Index),−0.0186***,"2022–2024 subsample, N = 405"
+Pre-2022 exclusion: H3 (GenAI × Power_Pressure),−0.0077***,"2022–2024 subsample, N = 402"

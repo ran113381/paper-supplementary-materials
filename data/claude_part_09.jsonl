@@ -1,36 +1,100 @@
-# LLM Validation Adjudicated Metrics Report
-
-## First-Round Metrics
-
-- N = 140
-- Accuracy / agreement = 0.500
-- Precision = 0.512
-- Recall = 0.569
-- F1 = 0.539
-
-## Second-Model Adjudication
-
-- Disagreement cases adjudicated = 70
-- Second model agrees with dictionary binary label = 7
-- Second model agrees with first LLM binary label = 63
-- Second model unclear = 19
-
-## Adjudicated Metrics
-
-- N = 140
-- TP = 44
-- FP = 36
-- TN = 33
-- FN = 27
-- Accuracy / agreement = 0.550
-- Precision = 0.550
-- Recall = 0.620
-- F1 = 0.583
-
-## Adjudicated Cross-tabulation
-
-| Dictionary label | final substantive_adoption | final generic_or_background | final unclear |
-|---|---:|---:|---:|
-| generic | 27 | 26 | 7 |
-| strategic | 8 | 10 | 2 |
-| substantive | 36 | 10 | 14 |
+{"segment_id":"P2FULL_0801","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"\"持续优化数字化城市解决方案，依托多模态大模型与AI智能体技术\"是宏观性表述，未点明具体产品或场景。"}
+{"segment_id":"P2FULL_0802","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"推出\"仓容智能审查大模型\"赋能检察院，结合国产信创，3分钟完成460项罪名审查，效率提升超90%，是具体落地。"}
+{"segment_id":"P2FULL_0803","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"以多模态大模型技术提升风控、客服、业务流程效率，是金融领域定位性表述。"}
+{"segment_id":"P2FULL_0804","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"自研金融大模型通过中国信通院4+评测，覆盖银行、保险、证券，信审效率提升50倍，是已落地产品。"}
+{"segment_id":"P2FULL_0805","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"\"以仓容大模型+训推一体机为基座，深耕智能制造、政务、教育等场景\"是定位性表述。"}
+{"segment_id":"P2FULL_0806","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"公司与华为联合发布\"仓容大模型训推一体机\"，实现训练推理一体化，覆盖金融政务等场景，成本降低50%。"}
+{"segment_id":"P2FULL_0807","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"联合华为发布\"智能制造一体机\"，集成AI智能体与华为算力，实现生产线一站式服务。"}
+{"segment_id":"P2FULL_0808","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"发布\"知识管家AI一体机\"，集成文档管理、智能问答等功能，企业知识库构建效率提升70%。"}
+{"segment_id":"P2FULL_0809","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"算力中心建设规划，未来形成京沪两大智算中心，属基础设施规划。"}
+{"segment_id":"P2FULL_0810","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"仓容大模型获得Open Compass多模态评测冠军，是评测排名而非具体落地。"}
+{"segment_id":"P2FULL_0811","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"获得行业奖项与未来战略展望表态，属荣誉与方向。"}
+{"segment_id":"P2FULL_0812","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"对人工智能跨越式发展和AI大规模应用的趋势观察。"}
+{"segment_id":"P2FULL_0813","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"借助大模型基础能力之上微调可以解决问题的方法论描述。"}
+{"segment_id":"P2FULL_0814","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"基于自研仓容大模型，以校园、医院、机场、社区、街面、商场、景区等多场景治理需求为牵引，构建两大闭环实现业务全面智能化。"}
+{"segment_id":"P2FULL_0815","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"汇聚场景全量数据并结合业务专家经验知识，生成面向治理决策的智慧治理行业大模型，属自有模型生成。"}
+{"segment_id":"P2FULL_0816","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"基于仓容大模型的智能数字人服务、智能化自助服务等校园应用，文本碎片化但能识别具体落地场景。"}
+{"segment_id":"P2FULL_0817","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"基于仓容大模型能力的校园自助知识问答、教学督导、生活住宿等多容应用场景。"}
+{"segment_id":"P2FULL_0818","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"基于仿仓容大模型，面向社区居民、社区管理者、物业人员提供居住安全、品质生活、便捷应用等具体场景。"}
+{"segment_id":"P2FULL_0819","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"基于仓容行业大模型为景区智能客服、商场管理、营销提升等具体场景提供智能化解决方案。"}
+{"segment_id":"P2FULL_0820","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"智慧城市5.0城市大脑数字底座深度融合于仿仓容行业大模型能力，是已构建的核心能力。"}
+{"segment_id":"P2FULL_0821","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"自主研发的人机协同操作系统连接AIoT智能交互终端，通过交通行业大模型构建智慧出行体系。"}
+{"segment_id":"P2FULL_0822","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"机场视觉大模型用于机场视频感知、入侵分析、人员流动等具体应用，已落地。"}
+{"segment_id":"P2FULL_0823","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"乘客客服系统基于问答库与人工坐席，集成大模型、数字人、AR等，构建交通行业乘客服务智能化平台。"}
+{"segment_id":"P2FULL_0824","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"结合大模型和数字人，通过自助综合服务终端为乘客提供更亲和、更人性化的咨询和查询服务。"}
+{"segment_id":"P2FULL_0825","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"采用了视觉大模型、文本大模型、AR和大数据分析技术，是产品技术先进性具体说明。"}
+{"segment_id":"P2FULL_0826","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"推出基于自研仓容大模型和一体化平台的寻知智能审查一体机，是西部首个聚焦检察院办案领域的AI智能体。"}
+{"segment_id":"P2FULL_0827","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"未来战略：充分发挥AI核心技术与行业解决方案优势，孵化各行业AI智能体，属规划性陈述。"}
+{"segment_id":"P2FULL_0828","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"多模态大模型实现跨模态内容生产、通用大模型加速行业深度采纳的趋势论述。"}
+{"segment_id":"P2FULL_0829","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"\"AIGC工具覆盖60%营销内容生产，短视频AI助手用户超5000万\"是行业整体数据，非企业自身。"}
+{"segment_id":"P2FULL_0830","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"OpenAI Sora模型可生成高质量视频的外部公司技术举例。"}
+{"segment_id":"P2FULL_0831","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"GPT-3等大规模模型对深度学习框架推动作用的背景介绍。"}
+{"segment_id":"P2FULL_0832","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"围绕\"AI智能体\"与\"混合大模型\"两大核心方向是高层定位陈述。"}
+{"segment_id":"P2FULL_0833","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"自主研发的\"仓容多模态大模型\"通过跨模态联合优化，在视觉、语音、NLP等领域实现多项技术突破。"}
+{"segment_id":"P2FULL_0834","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"仓容大模型在Open Compass榜单多模态评测平均得分65.5分，是基准排名而非具体落地。"}
+{"segment_id":"P2FULL_0835","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"与谷歌Gemini-1.5-Pro/GPT-4v/GPT-4o/Claude3.5-Sonnet基准对比的描述。"}
+{"segment_id":"P2FULL_0836","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"国内市场仓容大模型与InternVL-Chat、GLM-4V对比并居榜首的排名描述。"}
+{"segment_id":"P2FULL_0837","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"基于成熟的AI智能体应用于司法、电力等领域，有效提升相关行业运作效率和服务质量。"}
+{"segment_id":"P2FULL_0838","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"新技术、新产业行业趋势综述，多模态大模型成为主流。"}
+{"segment_id":"P2FULL_0839","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"GPT-4o与谷歌技术举例，外部行业事件。"}
+{"segment_id":"P2FULL_0840","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"DeepSeek以低算力成本实现顶尖性能的外部企业举例。"}
+{"segment_id":"P2FULL_0841","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"中科院团队大模型研发助力的外部研究举例。"}
+{"segment_id":"P2FULL_0842","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"AI在能源、材料科学领域的潜力描述与MatChat大模型外部举例。"}
+{"segment_id":"P2FULL_0843","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"AI智能体冲击劳动力结构与比尔·盖茨评论的趋势讨论。"}
+{"segment_id":"P2FULL_0844","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"GPT-4根据手绘草图生成网页代码的外部举例。"}
+{"segment_id":"P2FULL_0845","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"工业领域大模型应用挑战的趋势讨论。"}
+{"segment_id":"P2FULL_0846","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"DeepSeek-V3开源模型性能匹敌闭源的外部行业事件。"}
+{"segment_id":"P2FULL_0847","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"阿里云、OpenAI推理成本降价行业事件。"}
+{"segment_id":"P2FULL_0848","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"自主研发的视频自监督预训练大模型核心技术(多模态大模型)，对应自有产品零河人工智能平台等。"}
+{"segment_id":"P2FULL_0849","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"自研预训练模型用于视频检索、3D行为识别、行为关键帧检测等下游任务，提升识别精度。"}
+{"segment_id":"P2FULL_0850","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"列出自研多模态大模型相关专利、软著、应用产品(零河AI平台、大模型云平台、智能货架、训推一体机等)。"}
+{"segment_id":"P2FULL_0851","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"自主研发的视觉-语言基础预训练大模型实现大语言模型对视觉信号的处理。"}
+{"segment_id":"P2FULL_0852","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"通过大规模对比学习将跨模态图像与文本数据映射到共享表征空间的方法原理性描述。"}
+{"segment_id":"P2FULL_0853","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"自研领域精化图像理解的提示词智能注意力技术，对应零河AI平台、大模型云平台、训推一体机等产品。"}
+{"segment_id":"P2FULL_0854","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"开放世界生物体识别和行为理解的传统多模态学习挑战论述。"}
+{"segment_id":"P2FULL_0855","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"基于自研视觉大模型ViT和语言大模型LMM设计具有引导性的多模态算法，挖掘海量数据预训练潜力。"}
+{"segment_id":"P2FULL_0856","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"LLM经海量文本和高质量微调数据训练以保证视觉语义理解的方法论述。"}
+{"segment_id":"P2FULL_0857","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"自有专利与软著支持的视觉-语言映射技术，对应零河AI平台、大模型云平台、云从数字人等产品。"}
+{"segment_id":"P2FULL_0858","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"使用上百亿行人数据训练上百亿参数行人多模态基础大模型，并构建出行人多模态基础模型。"}
+{"segment_id":"P2FULL_0859","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"基于多模态基础模型的in-context learning能力，使模型迁移到任意行人下游任务，对应自有产品。"}
+{"segment_id":"P2FULL_0860","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"自有可控图扩散模型，可模拟无穷无尽的各种场景数据用于多模态模型训练，对应零河AI平台等。"}
+{"segment_id":"P2FULL_0861","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"精确文本描述配合高质量图像可促成扩散模型持续改进的方法描述。"}
+{"segment_id":"P2FULL_0862","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"自研多模态文档大模型通过Transformer融合多模态信息，实现zero-shot信息抽取功能。"}
+{"segment_id":"P2FULL_0863","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"Transformer多头自注意力机制全局视野发现差异特点的原理描述。"}
+{"segment_id":"P2FULL_0864","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"训练模型的示例理解能力使其在未知格式时无需重新训练通过prompt示例实现信息抽取。"}
+{"segment_id":"P2FULL_0865","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"自主研发语言大模型(高质量预训练语料、SFT/RLHF数据、模型预训练与微调、RLHF对齐、长上下文、工具调用)。"}
+{"segment_id":"P2FULL_0866","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"自研VoiceGPT语音多模态大模型，构造next token prediction以一个模型支持语音识别、语音问答、语音翻译等多任务。"}
+{"segment_id":"P2FULL_0867","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"2D-3D混合人脸识别属传统计算机视觉方法，无明确GenAI/LLM线索。"}
+{"segment_id":"P2FULL_0868","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"开放领域票据识别系统基于预训练模型迁移学习，传统ML方法，无明确GenAI/LLM线索。"}
+{"segment_id":"P2FULL_0869","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"原发性免疫球蛋白A肾病Ⅱ期临床试验，与AI无关。"}
+{"segment_id":"P2FULL_0870","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"FDA II期临床试验进展，与AI无关。"}
+{"segment_id":"P2FULL_0871","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"FDA III期临床试验方案获批，与AI无关。"}
+{"segment_id":"P2FULL_0872","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"OpenAI ChatGPT发布及预训练大模型展现颠覆性能力的行业背景。"}
+{"segment_id":"P2FULL_0873","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"基于大模型在文字图像视频处理及AI硬件方面新产品涌现的行业趋势。"}
+{"segment_id":"P2FULL_0874","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"\"云天天书\"基础大模型(语言大模型与多模态大模型)2023年通过中央网信办备案，C-Eval、CMMLU等测试集中获第一。"}
+{"segment_id":"P2FULL_0875","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"天书大模型架构分通用大模型、行业大模型、场景大模型三层级，能够针对不同行业场景快速构建解决方案。"}
+{"segment_id":"P2FULL_0876","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"\"云天天书\"大模型已在政务、交通、警务、企业办公等领域探索落地。"}
+{"segment_id":"P2FULL_0877","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"云天励飞与深圳龙岗政数局合作探索大模型在政务咨询服务系统的应用，2023年入选信通院《通用人工智能创新应用案例集》。"}
+{"segment_id":"P2FULL_0878","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"Edge10系列主要应用于边缘大模型推理领域，能高效支持Transformer模型中的矩阵乘法运算。"}
+{"segment_id":"P2FULL_0879","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"AI硬件方面，与华为系统合作发布\"天衡\"大模型训推一体机。"}
+{"segment_id":"P2FULL_0880","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"\"天衡\"大模型训推一体机内置公司自主研发的\"云天天书\"千亿级大模型。"}
+{"segment_id":"P2FULL_0881","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"通过与华为硬件加速平台联合深度优化和集成开箱即用系列训推工具，满足领域多业务场景大模型高并发高吞吐处理。"}
+{"segment_id":"P2FULL_0882","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"未来公司将继续探索大模型部署于边缘端、终端的标准化硬件产品，是未来规划。"}
+{"segment_id":"P2FULL_0883","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"作为拥有自主可控核心技术能力的城市级人工智能企业，构建\"1+1+N\"自进化城市智能体实践框架的整体定位。"}
+{"segment_id":"P2FULL_0884","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"构建人工智能算法平台，推出\"云天天书\"大模型，构造服务于多场景行业大模型，并联合华为推出\"天衡\"训推一体机。"}
+{"segment_id":"P2FULL_0885","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"算法芯片化基础技术平台为公司基础技术研究平台，包含大模型算法技术、视觉文本语义类算法技术等。"}
+{"segment_id":"P2FULL_0886","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"硬件通用平台沉淀出天衡系列云/边服务器、深算边缘计算芯片、性纫SDC等三大硬件通用平台。"}
+{"segment_id":"P2FULL_0887","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"天衡服务器、深算芯片、训推一体机、深算AI模组等行业标准化产品已形成城市治理、智慧交通等八大解决方案体系。"}
+{"segment_id":"P2FULL_0888","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"2023年开始逐步探索AI运营模式，包括智能计算中心运营和行业数据运营，是未来商业模式的探索。"}
+{"segment_id":"P2FULL_0889","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"2023年公司推出自研亿级基础大模型\"云天天书\"，架构分通用、行业、场景三层级。"}
+{"segment_id":"P2FULL_0890","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"2023年9月C-Eval中文大模型榜单中\"云天天书\"位列第三，是排名而非具体落地。"}
+{"segment_id":"P2FULL_0891","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"基于新一代D2D chiplet架构打造的X5000推理卡已量产并可承载SAMCV、Llama2等百亿级大模型运算。"}
+{"segment_id":"P2FULL_0892","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"为莆田中心智慧商圈打造全国首个\"分钟级\"智慧客流监测体系，基于大模型的AI数据分析平台、AI客服导购等智能化应用。"}
+{"segment_id":"P2FULL_0893","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"ChatGPT/Gemini/Claude3等国外大模型成为全球热点的行业趋势综述。"}
+{"segment_id":"P2FULL_0894","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"大模型落地应用加速、开始在多领域转化为生产力的行业趋势预测。"}
+{"segment_id":"P2FULL_0895","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"大模型通用性、泛化能力增强趋势与行业结合的并行发展趋势。"}
+{"segment_id":"P2FULL_0896","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"模型参数量和规模快速增加、大模型出现\"智能涌现\"的行业趋势。"}
+{"segment_id":"P2FULL_0897","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"谷歌PaLM-E与ChatGPT4参数量举例的外部模型规模数据。"}
+{"segment_id":"P2FULL_0898","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"大模型与行业Know-how相结合呈现小型化趋势，形成轻量化行业大模型与领域大模型的趋势讨论。"}
+{"segment_id":"P2FULL_0899","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"微软Phi-2、Meta lightLLM、谷歌Gemma等小模型在特定领域优异表现的外部举例。"}
+{"segment_id":"P2FULL_0900","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"大模型能力从NLP快速向语音、图像、视频等领域横向扩展的行业趋势。"}

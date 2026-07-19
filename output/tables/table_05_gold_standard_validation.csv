@@ -1,0 +1,18 @@
+﻿Validation metric,Result,Definition/Explanation
+Total validation paragraphs,600,Fully manually annotated validation sample
+Dictionary-matched paragraphs,300,Used to evaluate false positives in matched text
+Random unmatched paragraphs,150,Used to evaluate false negatives in ordinary unmatched text
+Near-miss unmatched paragraphs,150,"Unmatched text containing broader terminology related to AI, digitalisation, automation, intelligent systems or smart platforms"
+Initial annotator agreement,478/600 (79.7%),Agreement before author adjudication
+Three-class Cohen’s kappa,0.590,"Labels include GenAI-related, non-GenAI-related and unclear"
+Binary Cohen’s kappa,0.665,Calculated after excluding unclear cases
+Adjudicated GenAI-related labels,216,Gold standard = GenAI-related disclosure
+Adjudicated non-GenAI labels,384,Gold standard = non-GenAI disclosure
+Unclear final labels,0,All final labels are binary after adjudication
+True positives,216,Dictionary match and GenAI-related
+False positives,84,Dictionary match but not GenAI-related
+False negatives,0,No dictionary match but GenAI-related
+True negatives,300,No dictionary match and not GenAI-related
+Precision,0.720,True positives / (true positives + false positives)
+Recall,1.000,True positives / (true positives + false negatives)
+F1 score,0.837,2 × precision × recall / (precision + recall)

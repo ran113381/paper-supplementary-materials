@@ -1,0 +1,5 @@
+﻿Correction,H1 (Focal_GenAI_Index),H2 (GenAI × R&D),H3 (GenAI × Power_Pressure)
+Focal-firm clustering (381 clusters),−0.0146** (p = 0.032),p = 0.244 (n.s.),−0.0088*** (p = 0.0002)
+Two-way (firm × year) wild-cluster bootstrap (10 year clusters),p ≈ 0.11,p = 0.047**,p = 0.41
+Firm-year collapse (852 firm-years),−0.0127*** (p = 0.009),−0.0624*** (p < 0.001),—
+"Inverse-dyad-count weighting (1,017 dyad-years)",−0.0127*** (p = 0.007),−0.0624*** (p < 0.001),−0.0098*** (p < 0.001)

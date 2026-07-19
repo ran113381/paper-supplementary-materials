@@ -1,100 +1,100 @@
-{"segment_id": "P2FULL_0101", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明公司产品结合AI大模型等技术对传统信贷业务进行流程再造，属企业自身具体业务场景。"}
-{"segment_id": "P2FULL_0102", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明自主研发神农AI大模型并积累百余项目用例训练，属企业自身具体产品部署。"}
-{"segment_id": "P2FULL_0103", "label": "generic_or_background", "confidence_1_5": 3, "rationale_cn": "仅说与互联网头部企业共同探索大模型在智慧城市的落地实践，仍属探索阶段。"}
-{"segment_id": "P2FULL_0104", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明与清华智谱合作，运用智谱大模型在产品中开发AI智能化应用，属企业层面具体应用。"}
-{"segment_id": "P2FULL_0105", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明在AIGC赋能教育领域联合腾讯打造教育行业智能化解决方案，属具体合作部署。"}
-{"segment_id": "P2FULL_0106", "label": "generic_or_background", "confidence_1_5": 5, "rationale_cn": "仅描述ChatGPT上线引发全球轰动的行业背景。"}
-{"segment_id": "P2FULL_0107", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明东华医为首款基于LLM驱动的AI产品已进入内测阶段，属具体产品部署。"}
-{"segment_id": "P2FULL_0108", "label": "generic_or_background", "confidence_1_5": 3, "rationale_cn": "仅说经验和技术积累为研发健康医疗领域大模型提供保证，属能力储备说明。"}
-{"segment_id": "P2FULL_0109", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明报告期内东华医为正在使用LLM进行一系列创新工作，是企业自身在使用LLM。"}
-{"segment_id": "P2FULL_0110", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明所研发基于大模型驱动的AI产品iMedical AIGC已完成具体临床指南、疾病知识、药品知识等学习数量。"}
-{"segment_id": "P2FULL_0111", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明2024年将利用iMedical AIGC产品在影像科研、辅助诊断等四个领域提供新应用，属具体应用计划。"}
-{"segment_id": "P2FULL_0112", "label": "substantive_adoption", "confidence_1_5": 3, "rationale_cn": "明确说明东华医为在AIGC领域具有的优势和数据积累，伴随1000多个解决方案实例，结合上下文属企业自身AIGC产品。"}
-{"segment_id": "P2FULL_0113", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明数据积累为iMedical AIGC提供训练材料，属企业自身AIGC产品的训练。"}
-{"segment_id": "P2FULL_0114", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明2024年将继续提升iMedical AIGC的能力，服务更多医疗机构，属具体计划。"}
-{"segment_id": "P2FULL_0115", "label": "generic_or_background", "confidence_1_5": 3, "rationale_cn": "描述完成了LLMOps调研工作和langchain、Lora微调等基础技术学习应用，属技术储备阶段。"}
-{"segment_id": "P2FULL_0116", "label": "generic_or_background", "confidence_1_5": 3, "rationale_cn": "完成通用开源大模型本地化适配和调试，是为后续打造金融行业大模型奠定基础，属准备阶段。"}
-{"segment_id": "P2FULL_0117", "label": "generic_or_background", "confidence_1_5": 3, "rationale_cn": "仅说将围绕水利核心需求深度融合人工智能、ChatGPT等技术，属规划层面。"}
-{"segment_id": "P2FULL_0118", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明基于AI大模型和NLP技术构建的智能电子病历系统，通过智能体辅助决策实现医疗流程优化，属具体产品部署。"}
-{"segment_id": "P2FULL_0119", "label": "generic_or_background", "confidence_1_5": 3, "rationale_cn": "仅说完成LLMOps调研及langchain、Lora微调等基础技术学习应用，属技术储备。"}
-{"segment_id": "P2FULL_0120", "label": "generic_or_background", "confidence_1_5": 3, "rationale_cn": "仅说完成通用开源大模型本地化适配，为后续打造金融行业大模型奠定基础，属准备阶段。"}
-{"segment_id": "P2FULL_0121", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明融合AI大模型等前沿技术深入挖掘信贷业务场景，提升客户经理业务效率，属具体业务应用。"}
-{"segment_id": "P2FULL_0122", "label": "substantive_adoption", "confidence_1_5": 3, "rationale_cn": "明确说明积极引入AI大模型技术为信托行业提供智能化、数字化解决方案，属企业自身行动。"}
-{"segment_id": "P2FULL_0123", "label": "substantive_adoption", "confidence_1_5": 3, "rationale_cn": "明确说明与通用大模型方、专业大模型方等在多个智算中心项目中展开智算能力构建，属具体项目部署。"}
-{"segment_id": "P2FULL_0124", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明发思特自主研发的AI神农新论大模型，落地农业政策、生产管理等多个场景，并获得科技创新产品称号。"}
-{"segment_id": "P2FULL_0125", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明东华厚盾与头部大模型厂家合作探索大模型在产品中的创新应用，已实现商业落地。"}
-{"segment_id": "P2FULL_0126", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明发思特将AI大模型与农业信息化融合，研发出神农新论AI大模型，属企业自身具体产品。"}
-{"segment_id": "P2FULL_0127", "label": "substantive_adoption", "confidence_1_5": 3, "rationale_cn": "明确说明将依托腾讯混元大模型等开展紧密合作，属企业自身合作部署计划。"}
-{"segment_id": "P2FULL_0128", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明完成基于RAG系统的智能客服并对外开放，属具体已部署产品。"}
-{"segment_id": "P2FULL_0129", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明完成基于LLM的智能网关，能够智能筛选相关应用，属具体已部署产品。"}
-{"segment_id": "P2FULL_0130", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明完成基于LLM和RAG的智能导诊流程并落地到院内科室，属具体已部署产品。"}
-{"segment_id": "P2FULL_0131", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明完成基于LLM的服务推荐并引导患者进入实际业务，属具体已部署产品。"}
-{"segment_id": "P2FULL_0132", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明完成基于LLM和表单的预问诊系统，属具体已部署产品。"}
-{"segment_id": "P2FULL_0133", "label": "substantive_adoption", "confidence_1_5": 3, "rationale_cn": "明确说明完成针对RAG和LLM的新技术、新业务培训，属企业内部具体实施。"}
-{"segment_id": "P2FULL_0134", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明平台基于现有开源LLM调优以提供导诊服务，属具体应用部署。"}
-{"segment_id": "P2FULL_0135", "label": "substantive_adoption", "confidence_1_5": 3, "rationale_cn": "提供自定义用户prompt功能，结合上下文是LLM平台的具体功能。"}
-{"segment_id": "P2FULL_0136", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明依托大模型等先进技术实现可视化任务调度的反洗钱系统，属企业具体业务系统应用。"}
-{"segment_id": "P2FULL_0137", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明标品智能运营平台借大模型智能助手提供智能支持，属具体平台部署。"}
-{"segment_id": "P2FULL_0138", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明智能应用构建平台结合大模型能力，使非专业开发者创建AI智能体，属具体平台产品。"}
-{"segment_id": "P2FULL_0139", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明基于平台构建知识库智能体、报告撰写智能体等多个具体智能体应用。"}
-{"segment_id": "P2FULL_0140", "label": "substantive_adoption", "confidence_1_5": 3, "rationale_cn": "描述智能应用构建平台将构建智能体应用市场，属企业自身具体平台规划。"}
-{"segment_id": "P2FULL_0141", "label": "substantive_adoption", "confidence_1_5": 3, "rationale_cn": "明确说明助该平台构建的智能体可实现各部门流程的智能化协同，属具体应用。"}
-{"segment_id": "P2FULL_0142", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "内容关于AlN缓冲层GaN外延生长技术，与GenAI无关。"}
-{"segment_id": "P2FULL_0143", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为合并范围、客户和供应商财务数据，与GenAI无关。"}
-{"segment_id": "P2FULL_0144", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为客户、供应商、研发投入等数据，与GenAI无关。"}
-{"segment_id": "P2FULL_0145", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述铝合金压铸件研发项目，与GenAI无关。"}
-{"segment_id": "P2FULL_0146", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资者调研记录，与GenAI无关。"}
-{"segment_id": "P2FULL_0147", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资者调研记录，谈论风电行业，与GenAI无关。"}
-{"segment_id": "P2FULL_0148", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资者调研记录，谈论风电行业，与GenAI无关。"}
-{"segment_id": "P2FULL_0149", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明应用气象大模型实现风电功率预测技术突破，空间分辨率从3公里提升至100米级别，预测准确率提升3%-5%，有具体效果数字。"}
-{"segment_id": "P2FULL_0150", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明将与AI大模型厂商基于盘古等技术共同研发有色金属材料行业AI垂直大模型，赋能研发生产等领域，属具体计划。"}
-{"segment_id": "P2FULL_0151", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述云服务改造、移动应用、B/S改造，与GenAI无关。"}
-{"segment_id": "P2FULL_0152", "label": "generic_or_background", "confidence_1_5": 3, "rationale_cn": "表述为'积极开展5G、大模型、AIGC等技术应用与试验'，属探索阶段。"}
-{"segment_id": "P2FULL_0153", "label": "generic_or_background", "confidence_1_5": 3, "rationale_cn": "仅说积极研究探索Deepseek等新一代信息技术私有化部署和应用创新，属探索层面。"}
-{"segment_id": "P2FULL_0154", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为投资及股权交易数据，与GenAI无关。"}
-{"segment_id": "P2FULL_0155", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为股权交易及财务数据，与GenAI无关。"}
-{"segment_id": "P2FULL_0156", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述飞机制造商资质，与GenAI无关。"}
-{"segment_id": "P2FULL_0157", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为子公司投资及财务数据，与GenAI无关。"}
-{"segment_id": "P2FULL_0158", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅为子公司收购处置情况，与GenAI无关。"}
-{"segment_id": "P2FULL_0159", "label": "generic_or_background", "confidence_1_5": 3, "rationale_cn": "仅说较早开展AI大模型面向行业侧研发与应用的探索，属探索层面。"}
-{"segment_id": "P2FULL_0160", "label": "generic_or_background", "confidence_1_5": 5, "rationale_cn": "仅描述ChatGPT、盘古大模型引发AI商业化浪潮，属行业背景。"}
-{"segment_id": "P2FULL_0161", "label": "generic_or_background", "confidence_1_5": 3, "rationale_cn": "表述为'围绕AI大模型在行业侧的研发与运用开展探索'，属探索规划。"}
-{"segment_id": "P2FULL_0162", "label": "generic_or_background", "confidence_1_5": 5, "rationale_cn": "仅描述ChatGPT、盘古等大模型引领AI算力发展趋势，属行业背景。"}
-{"segment_id": "P2FULL_0163", "label": "generic_or_background", "confidence_1_5": 4, "rationale_cn": "描述昇腾支持2000亿参数大模型训练并适配30个主流大模型，但昇腾是华为产品，非本公司自身大模型部署。"}
-{"segment_id": "P2FULL_0164", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明公司已成为华为云+昇腾AI+行业大模型+开源鸿蒙领域全方位战略合作伙伴，属企业层面具体合作。"}
-{"segment_id": "P2FULL_0165", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明公司与华为在人工智能领域形成硬件+软件+行业大模型全产业链合作，属企业层面具体合作。"}
-{"segment_id": "P2FULL_0166", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明公司成为华为首批盘古大模型合作伙伴，联合发布城市大模型联合解决方案、政务大模型联合创新行动，属具体产品发布。"}
-{"segment_id": "P2FULL_0167", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明在交通领域发布拓维交通CV大模型，已在9个省份30多个路段完成复制推广，有具体场景与数量。"}
-{"segment_id": "P2FULL_0168", "label": "generic_or_background", "confidence_1_5": 3, "rationale_cn": "仅描述与华为云合作的演进背景，未明确具体产品部署。"}
-{"segment_id": "P2FULL_0169", "label": "substantive_adoption", "confidence_1_5": 3, "rationale_cn": "明确说明与华为在鲲鹏、昇腾AI、盘古大模型等领域已成为全方位战略合作伙伴，属企业自身合作。"}
-{"segment_id": "P2FULL_0170", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明公司基于盘古大模型率先发布交通行业CV大模型，并联合华为发布城市大模型联合解决方案。"}
-{"segment_id": "P2FULL_0171", "label": "generic_or_background", "confidence_1_5": 5, "rationale_cn": "描述ChatGPT、AIGC技术突破和国内多家科技企业推出大模型的行业趋势。"}
-{"segment_id": "P2FULL_0172", "label": "generic_or_background", "confidence_1_5": 5, "rationale_cn": "引用亿欧智库的市场预测数据，属行业前景。"}
-{"segment_id": "P2FULL_0173", "label": "generic_or_background", "confidence_1_5": 5, "rationale_cn": "描述OpenAI推出Sora、AIGC快速发展等行业趋势。"}
-{"segment_id": "P2FULL_0174", "label": "generic_or_background", "confidence_1_5": 5, "rationale_cn": "描述AIGC在企业数字化转型中的角色，属行业判断。"}
-{"segment_id": "P2FULL_0175", "label": "generic_or_background", "confidence_1_5": 5, "rationale_cn": "描述国产AI大模型在B端C端落地应用的行业趋势。"}
-{"segment_id": "P2FULL_0176", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明公司是华为人工智能领域硬件+行业大模型+软件应用三位一体全产业链合作伙伴，属企业自身合作部署。"}
-{"segment_id": "P2FULL_0177", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明2024年公司将以昇腾AI、盘古大模型为底座研发行业大模型、训练/推理加速平台等软件产品，属具体研发计划。"}
-{"segment_id": "P2FULL_0178", "label": "substantive_adoption", "confidence_1_5": 3, "rationale_cn": "明确说明公司在人工智能领域与华为形成全国唯一AI硬件+行业大模型+行业应用全产业链合作，属企业层面合作。"}
-{"segment_id": "P2FULL_0179", "label": "substantive_adoption", "confidence_1_5": 3, "rationale_cn": "明确说明公司已成为华为在鲲鹏/昇腾AI/海思+云/大模型+开源鸿蒙领域全方位战略合作的企业。"}
-{"segment_id": "P2FULL_0180", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明公司支撑水利部开展国内首个水利行业专用大模型研发建设，属具体重大项目。"}
-{"segment_id": "P2FULL_0181", "label": "substantive_adoption", "confidence_1_5": 3, "rationale_cn": "明确说明公司聚焦鸿蒙+AI战略方向，已成为华为生态全方位战略合作伙伴。"}
-{"segment_id": "P2FULL_0182", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明公司是华为昇腾整机首批合作伙伴、盘古大模型首批生态合作伙伴，并参与多个智算中心建设。"}
-{"segment_id": "P2FULL_0183", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明公司自主研发行业大模型、训练/推理加速平台，属企业自身具体产品研发。"}
-{"segment_id": "P2FULL_0184", "label": "generic_or_background", "confidence_1_5": 5, "rationale_cn": "描述全球科技巨头加速布局AI推理赛道、OpenAI推出o1的行业趋势。"}
-{"segment_id": "P2FULL_0185", "label": "generic_or_background", "confidence_1_5": 5, "rationale_cn": "描述DeepSeek大模型推出加速AI产业进程的行业背景。"}
-{"segment_id": "P2FULL_0186", "label": "generic_or_background", "confidence_1_5": 5, "rationale_cn": "描述AI Agent、具身智能正成为推动行业变革新动力的趋势。"}
-{"segment_id": "P2FULL_0187", "label": "generic_or_background", "confidence_1_5": 5, "rationale_cn": "描述开源鸿蒙打破传统操作系统垄断的行业趋势，未涉及GenAI采用。"}
-{"segment_id": "P2FULL_0188", "label": "generic_or_background", "confidence_1_5": 5, "rationale_cn": "描述DeepSeek为代表的国产AI技术快速突破完善信创产业生态，属行业背景。"}
-{"segment_id": "P2FULL_0189", "label": "substantive_adoption", "confidence_1_5": 3, "rationale_cn": "明确说明公司将依托鲲鹏/昇腾AI/海思+云/大模型+开源鸿蒙关键技术底座，聚焦AI+鸿蒙主航道，属战略与产品方向。"}
-{"segment_id": "P2FULL_0190", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明公司以AI+鸿蒙重构升级软件业务，并面向行业孵化AI Agent，属具体产品方向。"}
-{"segment_id": "P2FULL_0191", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明AI Agent方面将聚焦考试教育交通领域，重点布局RPA稽核工单机器人等产品，属具体产品规划。"}
-{"segment_id": "P2FULL_0192", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明针对重点行业定制研发智能边缘设备等硬件产品，结合行业大模型、训练与推理加速平台等软件产品。"}
-{"segment_id": "P2FULL_0193", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述公司全球研发生产销售布局，与GenAI无关。"}
-{"segment_id": "P2FULL_0194", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述实验室和路试基地的试验设备，与GenAI无关。"}
-{"segment_id": "P2FULL_0195", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述实验室和路试基地的试验设备，与GenAI无关。"}
-{"segment_id": "P2FULL_0196", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述实验室和路试基地的试验设备，与GenAI无关。"}
-{"segment_id": "P2FULL_0197", "label": "unclear", "confidence_1_5": 5, "rationale_cn": "仅描述实验室和路试基地的试验设备，与GenAI无关。"}
-{"segment_id": "P2FULL_0198", "label": "generic_or_background", "confidence_1_5": 3, "rationale_cn": "仅说积累基于大模型的AI智能分析应用经验，表述简短偏储备。"}
-{"segment_id": "P2FULL_0199", "label": "substantive_adoption", "confidence_1_5": 5, "rationale_cn": "明确说明完成基于大模型的AI视频分析模块V2.0研发并应用于线路安全环境管理系统中，有具体产品和应用。"}
-{"segment_id": "P2FULL_0200", "label": "substantive_adoption", "confidence_1_5": 4, "rationale_cn": "明确说明线路安全环境管控平台智能视频分析系统中完成基于大模型的AI视频分析模块，应用于铁路运营。"}
+{"segment_id":"P2FULL_0501","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本提到支持大模型智算产品的一体化交付，并助力企业快速落地应用，属于围绕大模型产品的具体应用交付。"}
+{"segment_id":"P2FULL_0502","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本说明在算子库中融合大模型等AI能力，用于动力学特征计算，具备具体技术载体和应用功能。"}
+{"segment_id":"P2FULL_0503","label":"unclear","confidence_1_5":3,"rationale_cn":"文本描述AI中台、模型开发训练和预训练模型库，但未明确生成式AI、大模型或AIGC的企业应用。"}
+{"segment_id":"P2FULL_0504","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本描述低空自主智能体产品，具备算力、通信和多模态智能能力，属于具体智能体产品应用。"}
+{"segment_id":"P2FULL_0505","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本说明低空自主智能体用于热力、燃气管线巡检，实现监控和分析，属于具体业务场景应用。"}
+{"segment_id":"P2FULL_0506","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确称神思数智人融合图像生成、自然语言处理和大模型技术，打造虚拟形象交互平台。"}
+{"segment_id":"P2FULL_0507","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确说明智能客服深度融合能源大模型和知识图谱，构建智能服务中枢。"}
+{"segment_id":"P2FULL_0508","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明系统由大模型驱动，支持AI生成工单、派单和满意度回访，属于客服流程的具体应用。"}
+{"segment_id":"P2FULL_0509","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明公司基于能源大模型打造智慧能源客服等系列解决方案并成功落地。"}
+{"segment_id":"P2FULL_0510","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确公司自主研发基于AI大模型技术的智能导诊、健康助手等服务系统。"}
+{"segment_id":"P2FULL_0511","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本说明公司打造低空智能体并应用于应急巡检体系，具备具体产品和业务场景。"}
+{"segment_id":"P2FULL_0512","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本明确项目目标是打造轻量化、大算力、低功耗的低空自主智能体，属于具体产品计划。"}
+{"segment_id":"P2FULL_0513","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本明确打造低空智能体以助力无人机自动智驾，属于具体智能体应用场景。"}
+{"segment_id":"P2FULL_0514","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明大模型驱动会话引擎用于智能客服，并支持AI生成工单和自动回访。"}
+{"segment_id":"P2FULL_0515","label":"unclear","confidence_1_5":5,"rationale_cn":"文本仅涉及股票发行、募集资金和投资者引进，与生成式AI采用无关。"}
+{"segment_id":"P2FULL_0516","label":"unclear","confidence_1_5":5,"rationale_cn":"文本只描述物联网组网技术开发，未出现生成式AI、大模型或AIGC应用线索。"}
+{"segment_id":"P2FULL_0517","label":"unclear","confidence_1_5":5,"rationale_cn":"文本介绍工程技术中心、联盟会员和物联网奖项，与生成式AI采用无关。"}
+{"segment_id":"P2FULL_0518","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本只是说明ChatGPT可能带来AI服务器和相关产品需求爆发，属于行业趋势预测。"}
+{"segment_id":"P2FULL_0519","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确团队运用大语言模型赋能职能部门业务流程和公司管理体系，属于企业内部流程应用。"}
+{"segment_id":"P2FULL_0520","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确公司结合生成式人工智能辅助药物发现和优化能力，为客户提供化学研发解决方案。"}
+{"segment_id":"P2FULL_0521","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确开发生成式AI创新药物分子发现平台PoLiGo，并列出结构生成等功能模块。"}
+{"segment_id":"P2FULL_0522","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本说明公司探索开源大模型在垂类场景中的落地应用并取得进展，具有企业应用指向。"}
+{"segment_id":"P2FULL_0523","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本是政策和产业方向表述，要求支持大模型广泛应用，不能证明企业自身部署。"}
+{"segment_id":"P2FULL_0524","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为医疗设备注册和监护参数说明，未涉及生成式AI采用。"}
+{"segment_id":"P2FULL_0525","label":"unclear","confidence_1_5":5,"rationale_cn":"文本只说明监护模块配合使用方式，与生成式AI采用无关。"}
+{"segment_id":"P2FULL_0526","label":"unclear","confidence_1_5":5,"rationale_cn":"文本描述实验室环境试验条件和工装设备，未涉及生成式AI或大模型。"}
+{"segment_id":"P2FULL_0527","label":"unclear","confidence_1_5":5,"rationale_cn":"文本是投资者调研活动记录，讨论5G小基站等内容，未涉及生成式AI采用。"}
+{"segment_id":"P2FULL_0528","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本只是说明AIGC技术进入大众视野并带来内容行业变革，属于行业背景。"}
+{"segment_id":"P2FULL_0529","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本介绍生成式人工智能服务管理办法及监管重点，属于政策背景。"}
+{"segment_id":"P2FULL_0530","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本只是说明业内预期AIGC将影响出版业，不能证明企业自身采用。"}
+{"segment_id":"P2FULL_0531","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确公司上线AIGC数智出版平台辅助图书出版，并用于提升效率和精准营销。"}
+{"segment_id":"P2FULL_0532","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本以研究、探索试验和生态合作为主，未说明已形成企业自身具体部署或稳定应用。"}
+{"segment_id":"P2FULL_0533","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明与百度联合发布中信书院AI阅读助手插件，属于具体AIGC应用产品。"}
+{"segment_id":"P2FULL_0534","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本说明推广和深化AIGC技术在出版流程中的应用，属于具体流程应用。"}
+{"segment_id":"P2FULL_0535","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本明确应用AIGC技术提升营销效率和优化精准投放，属于具体营销场景应用。"}
+{"segment_id":"P2FULL_0536","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本主要说努力探索AIGC数智阅读新业态，缺少明确已部署的企业应用。"}
+{"segment_id":"P2FULL_0537","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为营业成本、客户和供应商信息，与生成式AI采用无关。"}
+{"segment_id":"P2FULL_0538","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为客户销售额和关联关系说明，与生成式AI采用无关。"}
+{"segment_id":"P2FULL_0539","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为营业成本构成、客户和供应商情况，与生成式AI采用无关。"}
+{"segment_id":"P2FULL_0540","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为主要客户销售额和关联关系说明，与生成式AI采用无关。"}
+{"segment_id":"P2FULL_0541","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为主要客户销售情况，未涉及生成式AI或大模型应用。"}
+{"segment_id":"P2FULL_0542","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确公司研发人员已应用基于AIGC的多种AI软件辅助项目研发，并列出图形图像处理场景和效果。"}
+{"segment_id":"P2FULL_0543","label":"unclear","confidence_1_5":5,"rationale_cn":"文本只涉及半导体材料、DSP和控制算法提升逆变器效率，未涉及生成式AI。"}
+{"segment_id":"P2FULL_0544","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为专利清单和轨道设备相关技术，未涉及生成式AI采用。"}
+{"segment_id":"P2FULL_0545","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本描述通用大模型和人形机器人推动行业技术进步，属于行业趋势。"}
+{"segment_id":"P2FULL_0546","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本说明公司拟开展智能算力业务，提供大模型开发、部署和定制化应用方案，属于具体业务计划。"}
+{"segment_id":"P2FULL_0547","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明项目已结项并实现电力语言大模型、轨道交通大模型及相关工具开发。"}
+{"segment_id":"P2FULL_0548","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本主要是前沿探索布局和市场潜力描述，未说明企业已有具体应用部署。"}
+{"segment_id":"P2FULL_0549","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本只说通过自研、合作、投资在大模型与机器人结合方面前沿布局，缺少具体产品或部署。"}
+{"segment_id":"P2FULL_0550","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本描述行业技术迭代和多模态大模型等技术涌现，属于行业背景。"}
+{"segment_id":"P2FULL_0551","label":"unclear","confidence_1_5":5,"rationale_cn":"文本列举药物研发检测仪器，与生成式AI采用无关。"}
+{"segment_id":"P2FULL_0552","label":"unclear","confidence_1_5":5,"rationale_cn":"文本描述污水处理集成工艺，未涉及生成式AI或大模型。"}
+{"segment_id":"P2FULL_0553","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本只是说明AI大模型时代带来3C数码行业复苏迹象，属于行业背景。"}
+{"segment_id":"P2FULL_0554","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本说明借助AI大模型实现智慧辅助设计和智慧交通组织，属于具体业务场景应用。"}
+{"segment_id":"P2FULL_0555","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本引用IDC人工智能和生成式人工智能支出数据，属于市场背景。"}
+{"segment_id":"P2FULL_0556","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本描述生成式AI发展、端侧AI部署和AI服务器出货高峰，属于行业趋势。"}
+{"segment_id":"P2FULL_0557","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本描述大模型、AIGC等智能业务带来的算网设备需求，不能证明企业自身部署。"}
+{"segment_id":"P2FULL_0558","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本只是说明某数据中心交换机适用于AIGC集群场景，类似算力设备适配背景，未证明企业自身采用生成式AI。"}
+{"segment_id":"P2FULL_0559","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本展望大模型和生成式人工智能推动算力需求增长，属于行业趋势。"}
+{"segment_id":"P2FULL_0560","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本介绍国家数字经济战略和大模型等新基建，属于政策背景。"}
+{"segment_id":"P2FULL_0561","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本讨论AI技术发展风险和ChatGPT、Sora、DeepSeek等产业形态，属于行业背景。"}
+{"segment_id":"P2FULL_0562","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本只是说明DeepSeek模型可能提升推理算力需求，属于市场需求判断。"}
+{"segment_id":"P2FULL_0563","label":"unclear","confidence_1_5":5,"rationale_cn":"文本仅描述驾驶智能体验场景设置，未出现生成式AI或大模型线索。"}
+{"segment_id":"P2FULL_0564","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确公司将完善PR-GPT平台，利用大语言模型开发药物分子生成和ADMET预测等AI模型。"}
+{"segment_id":"P2FULL_0565","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明PR-GPT项目功能已上线测试并计划商业运营，包括知识问答、药物分子生成等功能。"}
+{"segment_id":"P2FULL_0566","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确公司的DiOrion-GPT可进行专利文献查阅和分子设计，属于大模型药物研发应用。"}
+{"segment_id":"P2FULL_0567","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明已完成大语言模型本地部署并集成到DiOrion中，属于明确部署。"}
+{"segment_id":"P2FULL_0568","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确DiOrion-GPT是基于生成式AI的生物医药大模型，用于医药信息理解、解析和生成。"}
+{"segment_id":"P2FULL_0569","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明公司发布AI端云一体化产品并融入AIGC生态，升级软通智核平台、虚拟数字人和智能客服等产品。"}
+{"segment_id":"P2FULL_0570","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本仅说明成为百度文心一言生态合作伙伴，未具体说明企业自身产品、流程或场景部署。"}
+{"segment_id":"P2FULL_0571","label":"unclear","confidence_1_5":4,"rationale_cn":"文本描述工业元宇宙平台、云渲染和模型库功能，但未明确生成式AI、大模型或AIGC应用。"}
+{"segment_id":"P2FULL_0572","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为EMC装置工艺研发项目，未涉及生成式AI采用。"}
+{"segment_id":"P2FULL_0573","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确打造生成式人工智能虚拟工程师和生成式可解释AI工程化平台，用于抗生素中间体生产。"}
+{"segment_id":"P2FULL_0574","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确打造生成式人工智能虚拟工程师和生成式可解释AI工程化平台，用于抗生素中间体生产。"}
+{"segment_id":"P2FULL_0575","label":"unclear","confidence_1_5":5,"rationale_cn":"文本描述防窥效果和Micro-LED芯片转移技术研发，未涉及生成式AI。"}
+{"segment_id":"P2FULL_0576","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本说明推动AI大模型技术与电解铜箔制造相结合，属于具体制造场景的计划应用。"}
+{"segment_id":"P2FULL_0577","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确积极运用AI大模型赋能生产管理、营销、财务、产品开发和仓储物流等经营环节。"}
+{"segment_id":"P2FULL_0578","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本说明2025年计划通过AI大模型赋能经营管理和客户服务，属于具体应用计划。"}
+{"segment_id":"P2FULL_0579","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本只是说明大模型等人工智能产业发展带来智能算力需求，属于行业背景。"}
+{"segment_id":"P2FULL_0580","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确持续推进莲花智能体一体机迭代及市场应用推广，属于具体智能体产品应用。"}
+{"segment_id":"P2FULL_0581","label":"unclear","confidence_1_5":5,"rationale_cn":"文本仅为公司聘任海外首席执行官信息，与生成式AI采用无关。"}
+{"segment_id":"P2FULL_0582","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为医药研究论文发表情况，未涉及生成式AI、大模型或AIGC应用。"}
+{"segment_id":"P2FULL_0583","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为创新药临床研发管线，未涉及生成式AI采用。"}
+{"segment_id":"P2FULL_0584","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为医药研究论文和期刊影响因子信息，未涉及生成式AI采用。"}
+{"segment_id":"P2FULL_0585","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为慢病产品在学术会议录用情况，未涉及生成式AI采用。"}
+{"segment_id":"P2FULL_0586","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为药品研发管线进展，未涉及生成式AI、大模型或AIGC应用。"}
+{"segment_id":"P2FULL_0587","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为在研创新药临床管线和靶点信息，未涉及生成式AI采用。"}
+{"segment_id":"P2FULL_0588","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为创新药临床研发管线和预计上市项目，未涉及生成式AI采用。"}
+{"segment_id":"P2FULL_0589","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为疾病领域和药物管线布局，未涉及生成式AI采用。"}
+{"segment_id":"P2FULL_0590","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为药物管线和治疗领域布局，未涉及生成式AI或大模型应用。"}
+{"segment_id":"P2FULL_0591","label":"unclear","confidence_1_5":5,"rationale_cn":"文本描述钢铁材料研发和产业化情况，未涉及生成式AI采用。"}
+{"segment_id":"P2FULL_0592","label":"unclear","confidence_1_5":5,"rationale_cn":"文本描述SiC和GaN功率封装投资及量产计划，未涉及生成式AI。"}
+{"segment_id":"P2FULL_0593","label":"unclear","confidence_1_5":5,"rationale_cn":"文本只描述以销定产的业务模式，与生成式AI采用无关。"}
+{"segment_id":"P2FULL_0594","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确公司建设47个数字化及AI项目，并与云厂商在数字大模型等方面开展医药领域应用合作。"}
+{"segment_id":"P2FULL_0595","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确公司内部办公系统和数字助理智九哥已接入DeepSeek，用于提升办公效率。"}
+{"segment_id":"P2FULL_0596","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明AI辅助诊断平台接入腾讯医疗AI推理，实现诊疗系统的大模型应用，并列出疾病和药品知识覆盖数量。"}
+{"segment_id":"P2FULL_0597","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确公司通过自主研发和外部合作开发不同应用场景的AI智能体。"}
+{"segment_id":"P2FULL_0598","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明公司在AI及大模型领域与云厂商合作，并在知识管理、编程、诊疗辅助诊断和健康教育处方等场景开展应用。"}
+{"segment_id":"P2FULL_0599","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确公司以AI和大模型为基础开发多场景AI智能体，并举出骨科服务平台提升器械流程效率的应用。"}
+{"segment_id":"P2FULL_0600","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确AI辅助诊断平台将AI、大模型用于导诊、辅助诊断、智能审方和慢病管理等全流程运营。"}

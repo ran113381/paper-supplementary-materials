@@ -1,0 +1,12 @@
+# Table 3C. SOTA / Hybrid Validation on MD&A Passages
+
+Gold benchmark: 600 human double-coded MD&A passages from `GenAI_gold_standard_adjudication_draft人工双核验.xlsx`. All 600 passages have adjudicated binary final labels and are included in metric denominators.
+
+| Method                                    |   N_total |   Coverage |   N_eval |   TP |   FP |   TN |   FN |   Accuracy |   Precision |   Recall |    F1 | Note                                                                                                                     |
+|:------------------------------------------|----------:|-----------:|---------:|-----:|-----:|-----:|-----:|-----------:|------------:|---------:|------:|:-------------------------------------------------------------------------------------------------------------------------|
+| Dictionary rule                           |       600 |      1     |      600 |  216 |   84 |  300 |    0 |      0.86  |       0.72  |    1     | 0.837 | Positive if the passage is a dictionary hit.                                                                             |
+| GPT-5.5 / Claude strict consensus         |       600 |      0.452 |      271 |  121 |    0 |   82 |   68 |      0.749 |       1     |    0.64  | 0.781 | Evaluated only where GPT-5.5 and Claude agree; non-hit and disagreement rows are abstentions.                            |
+| FinBERT fine-tuned on strict consensus    |       600 |      1     |      600 |  151 |   83 |  301 |   65 |      0.753 |       0.645 |    0.699 | 0.671 | Backbone: yiyanghkust/finbert-tone-chinese; train rows exclude dictionary-hit gold passages.                             |
+| Hybrid consensus with dictionary fallback |       600 |      1     |      600 |  148 |    2 |  382 |   68 |      0.883 |       0.987 |    0.685 | 0.809 | Uses strict LLM consensus on covered hit rows; falls back to dictionary rule for non-hit, missing, or disagreement rows. |
+
+Notes: FinBERT is fine-tuned on the full-sample strict GPT-5.5/Claude consensus labels after excluding the dictionary-hit gold passages. The strict LLM consensus row reports coverage because non-hit gold passages were not part of the hit-only LLM audit, and GPT/Claude disagreement rows are treated as abstentions. The hybrid row uses strict LLM consensus where available and the dictionary rule as fallback for non-hit, missing, or disagreement rows.

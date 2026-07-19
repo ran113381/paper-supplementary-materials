@@ -1,55 +1,100 @@
-# LLM Validation Prompt
-
-下面这段可以直接给豆包、ChatGPT 或其他 LLM，用于标注 `LLM_validation_sample.csv` 里的 `segment_text`。
-
-```text
-你是一个严谨的学术文本标注助手。任务是判断上市公司年报 MD&A 片段是否真正包含企业层面的生成式人工智能采用、部署或应用。
-
-请只根据给定片段判断，不要使用外部知识，不要脑补公司情况。
-
-标签只能从以下三类中选择：
-
-1. substantive_adoption
-含义：文本明确说明企业已经、正在或具体计划将生成式 AI / 大模型 / AIGC / LLM / ChatGPT / GPT / 智能体等用于某个业务、产品、系统、平台或流程。
-
-2. generic_or_background
-含义：文本只是行业趋势、政策背景、技术概念、市场机会、泛泛规划或关注，不能证明该企业自身已经采用或部署生成式 AI。
-
-3. unclear
-含义：片段信息不足，无法判断。
-
-请同时给出：
-
-- label
-- confidence_1_5
-- rationale_cn，一句中文理由
-
-判断规则：
-
-- 有具体系统、平台、产品、项目、应用场景、客户、专利、数量、效果数字，通常判为 substantive_adoption。
-- 只有“关注、探索、布局、趋势、政策、行业发展”等表述，通常判为 generic_or_background。
-- 如果只是传统人工智能，不含生成式 AI、大模型、AIGC、LLM、ChatGPT、GPT、智能体等明确线索，要谨慎。
-
-输出格式必须是 JSONL，每行一个对象：
-{"segment_id":"P2VAL_001","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本提到企业已将大模型用于具体业务场景。"}
-```
-
-## 批量标注时的输入格式
-
-建议每批 20 条，格式如下：
-
-```text
-segment_id: P2VAL_001
-segment_text: 这里粘贴文本
-
-segment_id: P2VAL_002
-segment_text: 这里粘贴文本
-```
-
-## 注意
-
-不要让 LLM 改写原文。
-
-不要让 LLM 判断论文结论。
-
-只做片段标签。
+{"segment_id":"P2FULL_0001","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本只是说明AI服务器产品可用于AIGC等场景，未证明企业自身采用或部署生成式AI。"}
+{"segment_id":"P2FULL_0002","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本描述ChatGPT带来的算力需求和行业关注，属于背景趋势，未涉及企业自身应用。"}
+{"segment_id":"P2FULL_0003","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确说明AI服务平台以大模型为技术底座，并打造AI训练平台和AI应用平台。"}
+{"segment_id":"P2FULL_0004","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确说明联合建设人工智能大模型训练中心并完成验证，且成为盘古矿山大模型商业应用企业。"}
+{"segment_id":"P2FULL_0005","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明联合盘古大模型建设完成大模型训练中心，并挖掘应用场景、训练模型、形成运行体系。"}
+{"segment_id":"P2FULL_0006","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确说明AI服务平台以盘古大模型为底座，为能源行业智能化应用提供全流程服务。"}
+{"segment_id":"P2FULL_0007","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明公司基于盘古矿山大模型能力已开发9大专业63个应用场景。"}
+{"segment_id":"P2FULL_0008","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明公司基于盘古矿山大模型已开发63个应用场景，并拥有相关专利和软著。"}
+{"segment_id":"P2FULL_0009","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本说明公司联合建成基于盘古大模型的人工智能训练中心，属于具体平台建设。"}
+{"segment_id":"P2FULL_0010","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明基于训练中心累计开发63个应用场景，在28对矿井推广并落地5个外部AI项目。"}
+{"segment_id":"P2FULL_0011","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本仅称研究图网络大模型技术在选煤行业的应用，未说明已部署或具体应用结果。"}
+{"segment_id":"P2FULL_0012","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明研发图网络大模型算法在选煤厂生产领域应用，并构建预测模型实现参数预测。"}
+{"segment_id":"P2FULL_0013","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本只说明具备图网络大模型算法的典型应用能力，缺少具体部署、系统或业务场景结果。"}
+{"segment_id":"P2FULL_0014","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本提出基于盘古矿山大模型扩展自然语言处理和多模态能力，并构建巡检、检测、安全管控等场景。"}
+{"segment_id":"P2FULL_0015","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本使用谋划、构建等表述，属于前沿技术布局，未说明企业已部署具体大模型应用。"}
+{"segment_id":"P2FULL_0016","label":"unclear","confidence_1_5":5,"rationale_cn":"文本只是机构实地调研记录，与生成式AI或大模型采用无关。"}
+{"segment_id":"P2FULL_0017","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本说明将共同打造智能体生态平台，并通过多模型混合应用形成业务链路，属于具体计划。"}
+{"segment_id":"P2FULL_0018","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本表述为推进和积极探索港口运营大模型研发与应用，尚未证明已采用或部署。"}
+{"segment_id":"P2FULL_0019","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为研发投入和现金流数据，未出现生成式AI、大模型或相关采用信息。"}
+{"segment_id":"P2FULL_0020","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为证券投资和衍生品投资明细，与生成式AI或大模型采用无关。"}
+{"segment_id":"P2FULL_0021","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本只是说明ChatGPT引爆AI概念、AI制药受期待，属于行业背景。"}
+{"segment_id":"P2FULL_0022","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本介绍生成式人工智能服务管理政策，未说明企业自身采用。"}
+{"segment_id":"P2FULL_0023","label":"unclear","confidence_1_5":5,"rationale_cn":"文本描述钢材应用于盾构机，与生成式AI或大模型采用无关。"}
+{"segment_id":"P2FULL_0024","label":"unclear","confidence_1_5":5,"rationale_cn":"文本描述钢材成功应用于盾构机，与生成式AI或大模型采用无关。"}
+{"segment_id":"P2FULL_0025","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确说明已接入数据大模型，搭建“特钢信使”应用，并在业务场景试点上线。"}
+{"segment_id":"P2FULL_0026","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确说明已接入数据大模型，搭建“特钢信使”应用，并在业务场景试点上线。"}
+{"segment_id":"P2FULL_0027","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本主要表述为探索特钢行业垂类大模型和融合创新，未说明已部署具体应用。"}
+{"segment_id":"P2FULL_0028","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本只是紧盯AIGC技术应用趋势，未证明企业自身采用或部署。"}
+{"segment_id":"P2FULL_0029","label":"unclear","confidence_1_5":4,"rationale_cn":"文本仅记录投资者询问是否有类似GPT业务拓展，未给出企业是否采用的实质信息。"}
+{"segment_id":"P2FULL_0030","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本描述AIGC进入大众视野并带来行业技术变革，属于背景。"}
+{"segment_id":"P2FULL_0031","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本介绍生成式人工智能服务管理办法和监管重点，属于政策背景。"}
+{"segment_id":"P2FULL_0032","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本只是说明业内预期AIGC影响出版业，未涉及企业自身应用。"}
+{"segment_id":"P2FULL_0033","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本说明为符合大模型训练格式做内容资源准备，属于数据准备和能力储备，未说明采用。"}
+{"segment_id":"P2FULL_0034","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"文本描述河南省智慧教育平台建设目标和技术方向，但未能证明该企业自身已采用。"}
+{"segment_id":"P2FULL_0035","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本明确计划在内容创作、媒体传播、营销等场景推动AIGC运用，并培育AIGC项目。"}
+{"segment_id":"P2FULL_0036","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本是省级政策要求和行业应用方向，未说明企业自身部署或计划。"}
+{"segment_id":"P2FULL_0037","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明基于豫教大模型的智能助手已在若干区域开展规模化试点应用。"}
+{"segment_id":"P2FULL_0038","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本说明利用文化和教育大模型支持市场和读者需求分析，并服务组稿、审稿流程。"}
+{"segment_id":"P2FULL_0039","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本提出实施专项行动并研发教育出版专有大模型，属于具体大模型建设计划。"}
+{"segment_id":"P2FULL_0040","label":"substantive_adoption","confidence_1_5":3,"rationale_cn":"文本说明公司将在2025年探索以大模型赋能全民阅读，属于具体计划但表述仍偏探索。"}
+{"segment_id":"P2FULL_0041","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本主要是私有云、自有大模型算力和数据中台等基础设施建设，未体现具体GenAI应用。"}
+{"segment_id":"P2FULL_0042","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为客户、供应商、费用和研发投入概述，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0043","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为客户、供应商、费用和研发投入概述，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0044","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为客户、供应商、费用和研发投入概述，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0045","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为供应商和客户销售采购数据，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0046","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为供应商和客户销售采购数据，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0047","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为供应商和客户销售采购数据，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0048","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为供应商和客户销售采购数据，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0049","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为供应商和客户销售采购数据，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0050","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为供应商和客户销售采购数据，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0051","label":"unclear","confidence_1_5":4,"rationale_cn":"文本仅提到智能驾舱，未出现生成式AI、大模型、AIGC等明确线索。"}
+{"segment_id":"P2FULL_0052","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明在大模型方面打造“新能源政策洞察机器人”，用于自动爬取、处理和推送政策数据。"}
+{"segment_id":"P2FULL_0053","label":"unclear","confidence_1_5":4,"rationale_cn":"文本描述高配车机平台产品策划，未出现生成式AI或大模型线索。"}
+{"segment_id":"P2FULL_0054","label":"unclear","confidence_1_5":4,"rationale_cn":"文本描述车机端用户运营触点，未出现生成式AI或大模型线索。"}
+{"segment_id":"P2FULL_0055","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确为AI大模型语音助手开发项目，说明产品场景、主动式交互服务和意图理解率目标。"}
+{"segment_id":"P2FULL_0056","label":"unclear","confidence_1_5":4,"rationale_cn":"文本只是布局产品价值特性和核心技术，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0057","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为投资者调研活动记录，未提供生成式AI或大模型采用信息。"}
+{"segment_id":"P2FULL_0058","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为投资者调研活动记录，未提供生成式AI或大模型采用信息。"}
+{"segment_id":"P2FULL_0059","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为客户和供应商销售采购数据，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0060","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为调研活动和生产经营状况话题，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0061","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为分析师会议和生产经营状况话题，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0062","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为分析师会议和生产经营状况话题，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0063","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为接待调研活动记录，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0064","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为接待调研活动记录，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0065","label":"unclear","confidence_1_5":5,"rationale_cn":"文本仅为机构或人员名称，无法判断生成式AI采用。"}
+{"segment_id":"P2FULL_0066","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"文本说明加大AI投入并确立AIDD方向，但缺少具体大模型系统、产品或部署场景。"}
+{"segment_id":"P2FULL_0067","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本明确说明团队已成功部署多个生物大分子预测大模型和AI驱动的分子生成软件。"}
+{"segment_id":"P2FULL_0068","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本将应用场景划分为大语言模型应用、AI药物设计、智能办公等五大类并覆盖50多个具体应用。"}
+{"segment_id":"P2FULL_0069","label":"unclear","confidence_1_5":5,"rationale_cn":"文本描述存储性能评测结果，与生成式AI或大模型采用无关。"}
+{"segment_id":"P2FULL_0070","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本描述大模型和生成式AI带动算力市场发展，属于行业背景。"}
+{"segment_id":"P2FULL_0071","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"文本只称公司发展大算力和大模型为核心的智算技术体系，缺少具体应用或部署。"}
+{"segment_id":"P2FULL_0072","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本描述算法模型技术演进和精度提升，未说明具体GenAI应用场景。"}
+{"segment_id":"P2FULL_0073","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本说明公司发布“源2.0”大模型，并描述其架构和自然语言理解能力。"}
+{"segment_id":"P2FULL_0074","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本说明“源2.0”大模型采用具体分布式训练方法，属于企业大模型开发部署信息。"}
+{"segment_id":"P2FULL_0075","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本描述ChatGPT引发AIGC热潮以及企业普遍关注探索，未说明公司自身采用。"}
+{"segment_id":"P2FULL_0076","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"文本主要说明打造大模型算力系统和基础设施以加速产业落地，具体GenAI应用不足。"}
+{"segment_id":"P2FULL_0077","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本表述为AIGC领域技术创新和业务布局，未说明具体部署或业务场景。"}
+{"segment_id":"P2FULL_0078","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本介绍面向生成式AI的AI训练服务器产品，属于算力硬件能力，未证明企业采用GenAI。"}
+{"segment_id":"P2FULL_0079","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明源大模型在文生图、多模态以及智能客服、智慧政务、智能文创领域推动落地应用。"}
+{"segment_id":"P2FULL_0080","label":"substantive_adoption","confidence_1_5":4,"rationale_cn":"文本说明发布“源2.0”基础大模型，并列出参数规模和开源情况。"}
+{"segment_id":"P2FULL_0081","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本主要描述“源2.0”开源生态的潜在价值和影响，未给出具体企业应用场景。"}
+{"segment_id":"P2FULL_0082","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明公司开发大模型智算软件栈OGAI，为大模型业务提供部署、调度、管理和应用创新能力。"}
+{"segment_id":"P2FULL_0083","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明基于“源”大模型开发客服机器人并接入客服平台，且给出解决率和时长改善数据。"}
+{"segment_id":"P2FULL_0084","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本描述生成式AI发展趋势和算力需求，未说明企业自身采用。"}
+{"segment_id":"P2FULL_0085","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为营业成本、客户、供应商和费用数据，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0086","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本描述AI大模型带动消费电子行业趋势，未涉及企业自身应用。"}
+{"segment_id":"P2FULL_0087","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本描述AI PC作为硬件落地场景和下游应用趋势，未说明企业自身采用。"}
+{"segment_id":"P2FULL_0088","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本描述苹果XR生态和AIGC支持的行业机会，未说明企业自身采用。"}
+{"segment_id":"P2FULL_0089","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本描述ChatGPT等大模型对AIoT终端的行业影响，未说明企业自身采用。"}
+{"segment_id":"P2FULL_0090","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本描述大模型和GPT-4催生AIoT应用需求，属于市场机会判断。"}
+{"segment_id":"P2FULL_0091","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本描述AI大模型商业化带来的产业机会，未说明企业自身采用。"}
+{"segment_id":"P2FULL_0092","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本只是公司未来展望中的行业格局和趋势判断，未说明企业自身采用。"}
+{"segment_id":"P2FULL_0093","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为投资者调研活动记录，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0094","label":"unclear","confidence_1_5":5,"rationale_cn":"文本为供应商采购数据和关联方说明，未涉及生成式AI或大模型采用。"}
+{"segment_id":"P2FULL_0095","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"文本以研究积累和技术储备为主，虽提到ChatGPT在医院场景落地，但未说明具体系统或部署。"}
+{"segment_id":"P2FULL_0096","label":"generic_or_background","confidence_1_5":4,"rationale_cn":"文本描述HIT行业趋势和ChatGPT等概念，未说明具体生成式AI应用部署。"}
+{"segment_id":"P2FULL_0097","label":"unclear","confidence_1_5":4,"rationale_cn":"文本描述智慧病区、物联网和智能硬件系统，但未出现生成式AI或大模型线索。"}
+{"segment_id":"P2FULL_0098","label":"generic_or_background","confidence_1_5":5,"rationale_cn":"文本只是说明ChatGPT等技术在医疗信息化领域的可预见应用场景，属于背景。"}
+{"segment_id":"P2FULL_0099","label":"generic_or_background","confidence_1_5":3,"rationale_cn":"文本表示后续研究积累和技术储备以助推ChatGPT落地，缺少具体产品、系统或部署信息。"}
+{"segment_id":"P2FULL_0100","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本说明结合ChatGPT技术与征信机构合作推出交互式信用咨询服务，并用于反洗钱培训和数据分析。"}

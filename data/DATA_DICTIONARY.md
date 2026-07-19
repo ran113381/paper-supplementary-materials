@@ -1,30 +1,75 @@
-# Web GPT-5.5 / Claude Full-Sample Results Check
+# Data Dictionary
 
-- Expected input rows: 1256
-- GPT result rows: 1256
-- Claude result rows: 1256
-- GPT missing: 0
-- Claude missing: 0
-- GPT parse/label errors: 0
-- Claude parse/label errors: 0
+## Core Files
 
-## Label Distribution
+### `data/table3c_frozen_predictions/Table_3C_validation_predictions.csv`
 
-| Label | GPT-5.5 | Claude | Consensus |
-|---|---:|---:|---:|
-| substantive_adoption | 542 | 569 | 483 |
-| generic_or_background | 349 | 491 | 279 |
-| unclear | 365 | 196 | 372 |
-| disagreement | 0 | 0 | 122 |
+This is the primary file for exact reproduction of Table 3C.
 
-## Model Agreement
+- `sample_id`: unique validation-passage identifier.
+- `sample_group`: sampling source group, such as dictionary-hit random passages or non-hit near-miss passages.
+- `original_passage_id`: original benchmark passage identifier.
+- `full_segment_id`: mapped full-sample segment identifier for dictionary-hit passages.
+- `Firm_ID`: listed-firm identifier.
+- `Year`: annual-report year.
+- `dictionary_hit`: 1 if the passage was selected by the dictionary rule, 0 otherwise.
+- `original_dictionary_label`: original dictionary-side label.
+- `matched_terms`: dictionary terms matched in the passage.
+- `final_label`: final human-adjudicated binary gold label.
+- `consensus_label`: GPT-5.5 / Claude consensus label for hit passages when available.
+- `gold_binary`: binary gold label used for metric computation.
+- `dictionary_pred`: dictionary-rule prediction.
+- `llm_consensus_pred`: strict GPT-5.5 / Claude prediction; blank means abstention.
+- `finbert_pred`: frozen FinBERT prediction used in Table 3C.
+- `hybrid_pred`: strict LLM consensus where available, dictionary fallback otherwise.
+- `segment_text`: MD&A passage text.
 
-- GPT-5.5 / Claude exact agreement: 951/1256 = 75.7%
+### `data/table3c_published_outputs/Table_3C_SOTA_validation_metrics.csv`
 
-## Consensus vs Dictionary Label
+Published Table 3C metric rows. The validation script compares this file against recomputed metrics.
 
-| Dictionary label | Consensus substantive | Consensus generic/background | Consensus unclear | GPT-Claude disagreement |
-|---|---:|---:|---:|---:|
-| generic | 158 | 154 | 170 | 55 |
-| strategic | 61 | 66 | 28 | 37 |
-| substantive | 264 | 59 | 174 | 30 |
+### `data/gold_standard/GenAI_gold_standard_adjudication_draft人工双核验.xlsx`
+
+Human double-coded and adjudicated gold-standard workbook. The locked Table 3C metrics use 600 binary final labels.
+
+### `data/llm_consensus_source/full_sample_gpt55_claude_consensus_labels.csv`
+
+Full-sample GPT-5.5 / Claude consensus labels for 1,256 dictionary-hit MD&A passages.
+
+## Evidence Files
+
+### `evidence/prompts/`
+
+Prompt files used to obtain GPT-5.5 and Claude passage labels.
+
+### `evidence/llm_raw_returns/`
+
+Raw JSONL returns from GPT-5.5 and Claude, retained for auditability of the consensus-label source.
+
+### `evidence/early_llm_validation/`
+
+First-stage validation and adjudication evidence, including the validation sample, coding rules, model returns, disagreements for adjudication, adjudicated labels, and metric reports.
+
+## Added Figure and Table Files
+
+### `figures_and_tables/figure_files/`
+
+Later-added SOTA / LLM figure files:
+
+- `Figure_SOTA_LLM_validation_workflow.svg`
+- `Figure_LLM_adjudicated_label_distribution.svg`
+- `Figure_GPT55_Claude_label_distribution.svg`
+- `Figure_Dictionary_vs_LLM_consensus.svg`
+
+### `figures_and_tables/table_and_figure_packages/`
+
+Working packages that document the later-added tables and figures:
+
+- `08_SOTA_LLM_支持图表模板.md`
+- `15_SOTA_LLM_最终图表包.md`
+- `18_GPT55全样本_SOTA最终图表包.md`
+- `22_SOTA_LLM_双模型最终图表包.md`
+
+### `figures_and_tables/manuscript_snapshots/`
+
+Manuscript snapshot with the later-added Table 3C material embedded.

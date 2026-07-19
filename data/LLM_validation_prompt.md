@@ -1,5 +1,55 @@
-﻿Method,N_total,Coverage,N_eval,TP,FP,TN,FN,Accuracy,Precision,Recall,F1,Note
-Dictionary rule,600,1.0,600,216,84,300,0,0.86,0.72,1.0,0.8372093023255813,Positive if the passage is a dictionary hit.
-GPT-5.5 / Claude strict consensus,600,0.45166666666666666,271,121,0,82,68,0.7490774907749077,1.0,0.6402116402116402,0.7806451612903226,Evaluated only where GPT-5.5 and Claude agree; non-hit and disagreement rows are abstentions.
-FinBERT fine-tuned on strict consensus,600,1.0,600,151,83,301,65,0.7533333333333333,0.6452991452991453,0.6990740740740741,0.6711111111111111,Backbone: yiyanghkust/finbert-tone-chinese; train rows exclude dictionary-hit gold passages.
-Hybrid consensus with dictionary fallback,600,1.0,600,148,2,382,68,0.8833333333333333,0.9866666666666667,0.6851851851851852,0.8087431693989071,"Uses strict LLM consensus on covered hit rows; falls back to dictionary rule for non-hit, missing, or disagreement rows."
+# LLM Validation Prompt
+
+下面这段可以直接给豆包、ChatGPT 或其他 LLM，用于标注 `LLM_validation_sample.csv` 里的 `segment_text`。
+
+```text
+你是一个严谨的学术文本标注助手。任务是判断上市公司年报 MD&A 片段是否真正包含企业层面的生成式人工智能采用、部署或应用。
+
+请只根据给定片段判断，不要使用外部知识，不要脑补公司情况。
+
+标签只能从以下三类中选择：
+
+1. substantive_adoption
+含义：文本明确说明企业已经、正在或具体计划将生成式 AI / 大模型 / AIGC / LLM / ChatGPT / GPT / 智能体等用于某个业务、产品、系统、平台或流程。
+
+2. generic_or_background
+含义：文本只是行业趋势、政策背景、技术概念、市场机会、泛泛规划或关注，不能证明该企业自身已经采用或部署生成式 AI。
+
+3. unclear
+含义：片段信息不足，无法判断。
+
+请同时给出：
+
+- label
+- confidence_1_5
+- rationale_cn，一句中文理由
+
+判断规则：
+
+- 有具体系统、平台、产品、项目、应用场景、客户、专利、数量、效果数字，通常判为 substantive_adoption。
+- 只有“关注、探索、布局、趋势、政策、行业发展”等表述，通常判为 generic_or_background。
+- 如果只是传统人工智能，不含生成式 AI、大模型、AIGC、LLM、ChatGPT、GPT、智能体等明确线索，要谨慎。
+
+输出格式必须是 JSONL，每行一个对象：
+{"segment_id":"P2VAL_001","label":"substantive_adoption","confidence_1_5":5,"rationale_cn":"文本提到企业已将大模型用于具体业务场景。"}
+```
+
+## 批量标注时的输入格式
+
+建议每批 20 条，格式如下：
+
+```text
+segment_id: P2VAL_001
+segment_text: 这里粘贴文本
+
+segment_id: P2VAL_002
+segment_text: 这里粘贴文本
+```
+
+## 注意
+
+不要让 LLM 改写原文。
+
+不要让 LLM 判断论文结论。
+
+只做片段标签。

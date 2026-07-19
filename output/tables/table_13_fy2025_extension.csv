@@ -1,0 +1,5 @@
+﻿Specification,Key coefficient,N
+H1 (Focal_GenAI_Index),−0.0094** (0.0040),"1,115"
+"H2 (GenAI × R&D, contemporaneous)",−0.0510*** (0.0187),"1,115"
+"H2 (GenAI × lagged R&D, predetermined)",−0.0945*** (0.0335),637
+H3 (GenAI × Power_Pressure),−0.0057*** (0.0022),"1,098"

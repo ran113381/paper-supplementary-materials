@@ -1,0 +1,5 @@
+﻿Method,N_eval,Coverage,TP,FP,TN,FN,Precision,Recall,F1
+Dictionary rules,600,1.000,216,84,300,0,0.720,1.000,0.837
+GPT-5.5/Claude strict consensus,271,0.452,121,0,82,68,1.000,0.640,0.781
+FinBERT fine-tuned on strict consensus,600,1.000,151,83,301,65,0.645,0.699,0.671
+Hybrid consensus with dictionary fallback,600,1.000,148,2,382,68,0.987,0.685,0.809
