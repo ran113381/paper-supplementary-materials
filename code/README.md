@@ -49,3 +49,23 @@ This folder contains two layers:
   re-running this script with the same seed reproduces them elementwise. The
   licensed CSMAR/CNRDS-derived panels it reads are not redistributed (see
   DATA_AVAILABILITY.md).
+
+## Configuring data locations
+
+The scripts previously carried absolute paths from the authors' machine. They
+now read four environment variables and fall back to repo-relative defaults, so
+the package runs unmodified after cloning:
+
+| Variable | Meaning | Default |
+|---|---|---|
+| `PAPER2_PROC_DIR` | processed data packages (`08A_main_regression_package.xlsx` etc.) | `<repo>/data` |
+| `PAPER2_RAW_DIR` | raw source data | `<repo>/data/raw` |
+| `PAPER2_LEGACY_CODE` | the original numbered pipeline, where a script reuses one of its functions | `<repo>/code` |
+| `PAPER2_OUT_DIR` | where analysis outputs are written | `<script dir>/_out` |
+
+Set them only if your data lives elsewhere, e.g.
+
+```bash
+export PAPER2_PROC_DIR=/path/to/processed_data
+python code/analysis/run_full_battery.py
+```

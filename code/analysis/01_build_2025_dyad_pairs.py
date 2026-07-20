@@ -3,19 +3,22 @@ v2025/01_build_2025_dyad_pairs.py
 ==================================
 Build FY2025 focal-partner supplier dyad pairs from the fresh CSMAR download,
 using the EXACT SAME matching logic as the original
-E:\\Supply_Chain_Project\\code\\01_build_supplier_pairs_and_financial_panel.py
+<PROJECT_ROOT>\\code\\01_build_supplier_pairs_and_financial_panel.py
 (classify_csmar_match / is_a_share / clean_code / normalize_name), just pointed
 at the new FY2025 raw files.
 
 This produces ONLY the new 2025 dyad-year rows (Year == 2025). The 2015-2024
 rows are left completely untouched and are taken verbatim from the existing
-E:\\Supply_Chain_Project\\data\\processed_data\\01_supplier_dyad_pairs.xlsx in a
+<PROJECT_ROOT>\\data\\processed_data\\01_supplier_dyad_pairs.xlsx in a
 later concatenation step (v2025/06_concat_and_rebuild.py).
 
-Output: E:\\Supply_Chain_Project\\data\\processed_data\\v2025\\01_dyad_pairs_2025_only.xlsx
+Output: <PROJECT_ROOT>\\data\\processed_data\\v2025\\01_dyad_pairs_2025_only.xlsx
 """
-
 from __future__ import annotations
+
+import os
+from pathlib import Path as _P
+_REPO = _P(__file__).resolve().parents[2]
 
 import importlib.util
 import sys
@@ -27,10 +30,10 @@ import pandas as pd
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-OLD_CODE_DIR = Path(r"E:\Supply_Chain_Project\code")
-OLD_PROC_DIR = Path(r"E:\Supply_Chain_Project\data\processed_data")
+OLD_CODE_DIR = Path(os.environ.get("PAPER2_LEGACY_CODE", _REPO / "code"))
+OLD_PROC_DIR = Path(os.environ.get("PAPER2_PROC_DIR", _REPO / "data"))
 NEW_RAW_ROOT = Path(r"E:\Supply - SHAP\data\raw_data\base1\downloads")
-OUT_DIR = Path(r"E:\Supply_Chain_Project\data\processed_data\v2025")
+OUT_DIR = Path(os.environ.get("PAPER2_PROC_DIR", _REPO / "data")) / "v2025"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 TOPFIVE_PURCHASE_2025 = NEW_RAW_ROOT / r"前五大供应商采购信息表090553750(仅供vip使用)\SC_TopFivePurchaseInfo.xlsx"

@@ -11,8 +11,11 @@ If ANY number fails to match exactly, this script prints a detailed
 diagnostic (row-count deltas, per-column value diffs against the original
 08A/08B raw+winsorized sheets) instead of silently reporting success.
 """
-
 from __future__ import annotations
+
+import os
+from pathlib import Path as _P
+_REPO = _P(__file__).resolve().parents[2]
 
 from pathlib import Path
 
@@ -20,8 +23,8 @@ import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
 
-OLD_PROC_DIR = Path(r"E:\Supply_Chain_Project\data\processed_data")
-OUT_DIR = Path(r"E:\Supply_Chain_Project\data\processed_data\v2025")
+OLD_PROC_DIR = Path(os.environ.get("PAPER2_PROC_DIR", _REPO / "data"))
+OUT_DIR = Path(os.environ.get("PAPER2_PROC_DIR", _REPO / "data")) / "v2025"
 
 NEW_MAIN_PACK = OUT_DIR / "08A_main_regression_package_2025.xlsx"
 NEW_STRICT_PACK = OUT_DIR / "08B_strict_regression_package_2025.xlsx"

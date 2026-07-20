@@ -4,12 +4,15 @@ as a cross-check against the statspai hdfe_ols multiway_cluster result.
 
 V_2way = V_cluster(Focal_ID) + V_cluster(Year) - V_cluster(Focal_ID x Year)
 """
+import os
+from pathlib import Path as _P
+_REPO = _P(__file__).resolve().parents[2]
 from pathlib import Path
 import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
 
-PROC_DIR = Path(r"E:\Supply_Chain_Project\data\processed_data")
+PROC_DIR = Path(os.environ.get("PAPER2_PROC_DIR", _REPO / "data"))
 MAIN_PACK = PROC_DIR / "08A_main_regression_package.xlsx"
 CONTROLS = ['Focal_Size', 'Focal_Lev', 'Focal_Age', 'Focal_CashFlow', 'Focal_SoE', 'Focal_HHI',
             'Partner_Size', 'Partner_Lev', 'Partner_ROA']

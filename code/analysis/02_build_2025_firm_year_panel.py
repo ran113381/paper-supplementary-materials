@@ -47,8 +47,11 @@ Field-code verification performed this session (see chat for detail):
   same "中国上市公司协会" scheme) and EstabDate from TRD_Co's Estbdt. No fallback
   source for Longitude/Latitude was found for brand-new firms; left NaN and flagged.
 """
-
 from __future__ import annotations
+
+import os
+from pathlib import Path as _P
+_REPO = _P(__file__).resolve().parents[2]
 
 import importlib.util
 import sys
@@ -60,10 +63,10 @@ import pandas as pd
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-OLD_CODE_DIR = Path(r"E:\Supply_Chain_Project\code")
-OLD_PROC_DIR = Path(r"E:\Supply_Chain_Project\data\processed_data")
+OLD_CODE_DIR = Path(os.environ.get("PAPER2_LEGACY_CODE", _REPO / "code"))
+OLD_PROC_DIR = Path(os.environ.get("PAPER2_PROC_DIR", _REPO / "data"))
 NEW_RAW_ROOT = Path(r"E:\Supply - SHAP\data\raw_data\base1\downloads")
-OUT_DIR = Path(r"E:\Supply_Chain_Project\data\processed_data\v2025")
+OUT_DIR = Path(os.environ.get("PAPER2_PROC_DIR", _REPO / "data")) / "v2025"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 PAIRS_2025 = OUT_DIR / "01_dyad_pairs_2025_only.xlsx"

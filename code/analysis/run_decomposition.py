@@ -1,5 +1,7 @@
+from pathlib import Path
+import os
 import sys
-sys.path.insert(0, r"C:\Users\asus\AppData\Local\Temp\claude\E--Supply---SHAP\ff49c3f8-4243-4540-abcd-8d73380c708c\scratchpad")
+sys.path.insert(0, str(os.environ.get("PAPER2_OUT_DIR", Path(__file__).resolve().parent / "_out")))
 import warnings
 warnings.filterwarnings("ignore")
 import numpy as np
@@ -10,7 +12,7 @@ from battery_ext import extend_pack
 pd.set_option("display.width", 220)
 pd.set_option("display.max_columns", None)
 
-OUTDIR = r"C:\Users\asus\AppData\Local\Temp\claude\E--Supply---SHAP\ff49c3f8-4243-4540-abcd-8d73380c708c\scratchpad"
+OUTDIR = str(os.environ.get("PAPER2_OUT_DIR", Path(__file__).resolve().parent / "_out"))
 
 df_main = extend_pack(load_pack("main"))
 df_strict = extend_pack(load_pack("strict"))

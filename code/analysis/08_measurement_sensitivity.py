@@ -5,7 +5,7 @@ Read-only w.r.t. manuscript/data. Writes only to this scratchpad folder.
 Decision rule: exact-recipe-only, one run per target, no tuning toward any expectation.
 
 STEP 0 -- how the ORIGINAL Focal_GenAI_Index is built (read from
-E:\\Supply_Chain_Project\\code\\05_build_genai_measurement.py, not modified):
+<PROJECT_ROOT>\\code\\05_build_genai_measurement.py, not modified):
   - compute_genai_metrics(): clean_count = number of regex KEYWORD matches (longest-match,
     non-overlapping) found by scanning the FULL upper-cased MDA_Text for the ~103-term
     dictionary. This is a KEYWORD-FREQUENCY count over the whole document, NOT a passage count.
@@ -64,6 +64,7 @@ established, already-published construction and swapping ONLY the "Focal_GenAI_I
 conservative, exact-recipe-preserving reading of "Partner index stays original."
 """
 from __future__ import annotations
+import os
 
 import json
 from pathlib import Path
@@ -73,12 +74,12 @@ import pandas as pd
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 
-SCRATCH = Path(r"C:\Users\asus\AppData\Local\Temp\claude\E--Supply---SHAP\ef81dfb7-f4a0-4107-8788-0e8b8bad1a44\scratchpad\round3")
+SCRATCH = Path(str(os.environ.get("PAPER2_OUT_DIR", Path(__file__).resolve().parent / "_out")))
 SCRATCH.mkdir(parents=True, exist_ok=True)
 LOG_PATH = SCRATCH / "job1_measurement_sensitivity_log.txt"
 RESULTS_PATH = SCRATCH / "job1_measurement_sensitivity_results.json"
 
-MAIN_PACK = Path(r"E:\Supply_Chain_Project\data\processed_data\08A_main_regression_package.xlsx")
+MAIN_PACK = Path(r"<PROJECT_ROOT>\data\processed_data\08A_main_regression_package.xlsx")
 CONSENSUS_CSV = Path(
     r"E:\paper2  daxiu\73ae4696cf54747044a03a936c4bb958_744934475e1139b8c27898b82ae5bbf0_8"
     r"\paper2_github_replication\data\full_sample_gpt55_claude_consensus_labels.csv"

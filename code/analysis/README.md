@@ -12,7 +12,7 @@ battery). They are provided for methodological transparency.
 Every script reads firm-level panels derived from licensed CSMAR and CNRDS
 databases (see `DATA_AVAILABILITY.md` at the repository root). Those panels are
 not redistributed here. All input/output paths are hard-coded absolute paths
-from the authors' machine (e.g. `E:\Supply_Chain_Project\data\processed_data\...`)
+from the authors' machine (e.g. `<PROJECT_ROOT>\data\processed_data\...`)
 and **must be adjusted locally** by any user who holds licensed access to the
 underlying data and has rebuilt the panels. The scripts are published exactly
 as run (verified 2026-07-15); no path sanitization was applied so that the code

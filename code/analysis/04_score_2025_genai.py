@@ -3,7 +3,7 @@ v2025/04_score_2025_genai.py
 ==============================
 Score FY2025 GenAI disclosure intensity using paper2's OWN dictionary and
 scoring method, reused directly (via module import) from
-E:\\Supply_Chain_Project\\code\\05_build_genai_measurement.py:
+<PROJECT_ROOT>\\code\\05_build_genai_measurement.py:
 FORMULA_TEXT, extract_terms(), classify_term(), build_pattern(),
 compute_genai_metrics() (longest-match, non-overlapping counting) -- NOT
 reimplemented, and NOT reusing any other project's precomputed GenAI index.
@@ -33,8 +33,11 @@ whose text length is exactly 32767 is flagged Focal/Partner_MDA_Truncated=1
 in the output; GenAI counts for those rows are still computed (on the
 truncated text) but should be read as a lower bound, not a complete count.
 """
-
 from __future__ import annotations
+
+import os
+from pathlib import Path as _P
+_REPO = _P(__file__).resolve().parents[2]
 
 import importlib.util
 import sys
@@ -46,9 +49,9 @@ import pandas as pd
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-OLD_CODE_DIR = Path(r"E:\Supply_Chain_Project\code")
+OLD_CODE_DIR = Path(os.environ.get("PAPER2_LEGACY_CODE", _REPO / "code"))
 NEW_RAW_ROOT = Path(r"E:\Supply - SHAP\data\raw_data\base1\downloads")
-OUT_DIR = Path(r"E:\Supply_Chain_Project\data\processed_data\v2025")
+OUT_DIR = Path(os.environ.get("PAPER2_PROC_DIR", _REPO / "data")) / "v2025"
 
 PAIRS_2025 = OUT_DIR / "01_dyad_pairs_2025_only.xlsx"
 MDA_2025_FILE = NEW_RAW_ROOT / r"管理层信息披露情感分析085620263\BDT_MDAEmotAnal.xlsx"

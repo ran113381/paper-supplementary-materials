@@ -1,9 +1,12 @@
 """
 Shared helpers for the FY2025-extended-panel diagnostic battery.
-Mirrors the EXACT construction used in E:\\Supply_Chain_Project\\code\\v2025\\06_verify_2024_reproduction.py
+Mirrors the EXACT construction used in <PROJECT_ROOT>\\code\\v2025\\06_verify_2024_reproduction.py
 and the task brief's "Required construction" block.
 """
 from __future__ import annotations
+import os
+from pathlib import Path as _P
+_REPO = _P(__file__).resolve().parents[2]
 
 from pathlib import Path
 
@@ -11,7 +14,7 @@ import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
 
-DATA_DIR = Path(r"E:\Supply_Chain_Project\data\processed_data\v2025")
+DATA_DIR = Path(os.environ.get("PAPER2_PROC_DIR", _REPO / "data")) / "v2025"
 MAIN_PACK = DATA_DIR / "08A_main_regression_package_2025.xlsx"
 STRICT_PACK = DATA_DIR / "08B_strict_regression_package_2025.xlsx"
 

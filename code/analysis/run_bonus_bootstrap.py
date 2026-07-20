@@ -1,5 +1,7 @@
+from pathlib import Path
+import os
 import sys
-sys.path.insert(0, r"C:\Users\asus\AppData\Local\Temp\claude\E--Supply---SHAP\ff49c3f8-4243-4540-abcd-8d73380c708c\scratchpad")
+sys.path.insert(0, str(os.environ.get("PAPER2_OUT_DIR", Path(__file__).resolve().parent / "_out")))
 import warnings
 warnings.filterwarnings("ignore")
 import pandas as pd
@@ -61,6 +63,6 @@ for label, (fml, param) in specs.items():
     print()
 
 pd.DataFrame(results).to_csv(
-    r"C:\Users\asus\AppData\Local\Temp\claude\E--Supply---SHAP\ff49c3f8-4243-4540-abcd-8d73380c708c\scratchpad\out_bonus_bootstrap.csv",
+    str(os.environ.get("PAPER2_OUT_DIR", Path(__file__).resolve().parent / "_out")),
     index=False)
 print("DONE BONUS")

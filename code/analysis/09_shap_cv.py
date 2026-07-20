@@ -18,12 +18,13 @@ Recipe source (read, not modified):
 
 The original script loads a pre-built 'data_ready.pkl' that no longer exists next to it.
 Per task instruction, the design matrix is rebuilt from the 08A pack instead:
-  E:\\Supply_Chain_Project\\data\\processed_data\\08A_main_regression_package.xlsx  sheet main_winsorized
+  <PROJECT_ROOT>\\data\\processed_data\\08A_main_regression_package.xlsx  sheet main_winsorized
 'Power_Pressure' is not a stored column in 08A -- it is constructed with the canonical formula
 (same as prep_pack() in the round-2 backtest / 13_prepare_publication_exhibits.py):
   Power_Pressure = clip(-Power_Diff, 0) * clip(Partner_GenAI_Index - Focal_GenAI_Index, 0)
 """
 from __future__ import annotations
+import os
 
 import json
 from pathlib import Path
@@ -34,12 +35,12 @@ from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.model_selection import KFold, cross_val_score
 from sklearn.metrics import r2_score
 
-SCRATCH = Path(r"C:\Users\asus\AppData\Local\Temp\claude\E--Supply---SHAP\ef81dfb7-f4a0-4107-8788-0e8b8bad1a44\scratchpad\round3")
+SCRATCH = Path(str(os.environ.get("PAPER2_OUT_DIR", Path(__file__).resolve().parent / "_out")))
 SCRATCH.mkdir(parents=True, exist_ok=True)
 LOG_PATH = SCRATCH / "job2_shap_cv_log.txt"
 RESULTS_PATH = SCRATCH / "job2_shap_cv_results.json"
 
-MAIN_PACK = Path(r"E:\Supply_Chain_Project\data\processed_data\08A_main_regression_package.xlsx")
+MAIN_PACK = Path(r"<PROJECT_ROOT>\data\processed_data\08A_main_regression_package.xlsx")
 
 LOG: list[str] = []
 

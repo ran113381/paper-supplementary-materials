@@ -7,6 +7,9 @@ All numbers are written to a JSON file for precise, non-transcribed reporting,
 and also printed to stdout in readable form.
 """
 from __future__ import annotations
+import os
+from pathlib import Path as _P
+_REPO = _P(__file__).resolve().parents[2]
 
 import json
 from pathlib import Path
@@ -15,10 +18,10 @@ import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
 
-PROC_DIR = Path(r"E:\Supply_Chain_Project\data\processed_data")
+PROC_DIR = Path(os.environ.get("PAPER2_PROC_DIR", _REPO / "data"))
 MAIN_PACK = PROC_DIR / "08A_main_regression_package.xlsx"
 STRICT_PACK = PROC_DIR / "08B_strict_regression_package.xlsx"
-SCRATCH = Path(r"C:\Users\asus\AppData\Local\Temp\claude\E--Supply---SHAP\ff49c3f8-4243-4540-abcd-8d73380c708c\scratchpad")
+SCRATCH = Path(str(os.environ.get("PAPER2_OUT_DIR", Path(__file__).resolve().parent / "_out")))
 
 CONTROLS = ['Focal_Size', 'Focal_Lev', 'Focal_Age', 'Focal_CashFlow', 'Focal_SoE', 'Focal_HHI',
             'Partner_Size', 'Partner_Lev', 'Partner_ROA']

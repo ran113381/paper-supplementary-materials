@@ -33,8 +33,11 @@ bounds via .clip() to the pooled 2015-2025 raw data. This has two properties:
 This is a deliberate, documented design choice -- not a bug. It is flagged
 again in the final report.
 """
-
 from __future__ import annotations
+
+import os
+from pathlib import Path as _P
+_REPO = _P(__file__).resolve().parents[2]
 
 import importlib.util
 import sys
@@ -46,10 +49,10 @@ import pandas as pd
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-OLD_CODE_DIR = Path(r"E:\Supply_Chain_Project\code")
-OLD_PROC_DIR = Path(r"E:\Supply_Chain_Project\data\processed_data")
-OLD_RAW_DIR = Path(r"E:\Supply_Chain_Project\data\raw_data")
-OUT_DIR = Path(r"E:\Supply_Chain_Project\data\processed_data\v2025")
+OLD_CODE_DIR = Path(os.environ.get("PAPER2_LEGACY_CODE", _REPO / "code"))
+OLD_PROC_DIR = Path(os.environ.get("PAPER2_PROC_DIR", _REPO / "data"))
+OLD_RAW_DIR = Path(os.environ.get("PAPER2_RAW_DIR", _REPO / "data" / "raw"))
+OUT_DIR = Path(os.environ.get("PAPER2_PROC_DIR", _REPO / "data")) / "v2025"
 
 PAIRS_2025 = OUT_DIR / "01_dyad_pairs_2025_only.xlsx"
 VAR_BASE_2025 = OUT_DIR / "03_variable_base_2025.xlsx"
@@ -217,7 +220,7 @@ def build_2025_turnover_vars(strict_mod, main_df: pd.DataFrame, strict_df: pd.Da
 
     # NOTE: paper2's own OLD "Balance Sheet" raw file no longer exists on disk
     # (likely cleaned up after the original 2015-2024 pipeline finished running --
-    # confirmed absent from E:\Supply_Chain_Project\data\raw_data\ this session).
+    # confirmed absent from <PROJECT_ROOT>\data\raw_data\ this session).
     # The fresh FY2025 balance sheet download (FS_Combas.xlsx) also carries full
     # historical rows back to 2013 (confirmed this session), so we pull BOTH the
     # 2025 and 2024 (lag input for the turnover average) AR/Inventory values from
