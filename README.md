@@ -53,6 +53,9 @@ path adjustment.
   - `extract_docx_exhibits.py`: packaging utility for frozen exhibits
   - `analysis/`: estimation, FY2025 panel-extension, and diagnostic scripts
     (see `code/analysis/README.md`; licensed inputs not included)
+  - `05_build_genai_measurement.py`: the measurement build script, as run
+  - `09_run_did_and_placebo.py`: the event-study and 500-draw placebo
+    permutation script behind Figures 8-9 (Section 4.3), as run
 - `data/`
   - Table 3C SOTA-validation evidence: gold-standard workbook, sampling
     frame, frozen predictions, published Table 3C outputs, GPT-5.5 / Claude
