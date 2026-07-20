@@ -1,4 +1,4 @@
-﻿Dependent variable: Focal_ROA,(1) Main effects,(2) Moderating effect of H2,(3) H3 Moderation Effect,(4) H3 + Growth Control
+﻿Dependent variable: Focal_ROA,(1) Baseline,(2) H2 moderation,(3) H3 moderation,(4) H3 + Growth Control
 Focal_GenAI_Index,−0.0146***,−0.0021,−0.0117**,−0.0103**
 ,(0.0048),(0.0049),(0.0047),(0.0048)
 Focal_RnD_Ratio,,−0.1294***,,
@@ -12,5 +12,5 @@ GenAI × Power_Pressure,,,−0.0088***,−0.0085***
 Control variables,Yes,Yes,Yes,Yes
 Industry fixed effects,Yes,Yes,Yes,Yes
 Year fixed effects,Yes,Yes,Yes,Yes
-Observed values,"1,017","1,017","1,017","1,017"
+Observed values,"1,017","1,017","1,007","1,007"
 R-squared,0.384,0.425,0.393,0.411
