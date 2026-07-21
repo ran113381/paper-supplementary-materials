@@ -1,8 +1,8 @@
 ﻿Validation metric,Result,Definition/Explanation
-Total validation paragraphs,600,Fully manually annotated validation sample
+Total validation paragraphs,600,Human double-coded validation sample (disagreements author-adjudicated)
 Dictionary-matched paragraphs,300,Used to evaluate false positives in matched text
 Random unmatched paragraphs,150,Used to evaluate false negatives in ordinary unmatched text
-Near-miss unmatched paragraphs,150,"Unmatched text containing broader terminology related to AI, digitalisation, automation, intelligent systems or smart platforms"
+Near-miss unmatched paragraphs,150,"Unmatched text containing broader terminology related to AI, digitalization, automation, intelligent systems or smart platforms"
 Initial annotator agreement,478/600 (79.7%),Agreement before author adjudication
 Three-class Cohen’s kappa,0.590,"Labels include GenAI-related, non-GenAI-related and unclear"
 Binary Cohen’s kappa,0.665,Calculated after excluding unclear cases

@@ -1,8 +1,8 @@
 ﻿Variable Category,Variable Name,Definition and Calculation
 Dependent Variable,Focal_ROA,Focal firm’s net profit / total assets
 Key explanatory variable,Focal_GenAI_Index,ln(1 + the non-overlapping frequency of GenAI keywords in the MD&A)
-Control variable,Focal_RnD_Ratio,Focal firm’s R&D expenditure / revenue
-Adjustment variable,Power_Pressure,Partner_Dominance × Partner_Ahead
+Moderating variable,Focal_RnD_Ratio,Focal firm’s R&D expenditure / revenue
+Moderating variable,Power_Pressure,Partner_Dominance × Partner_Ahead
 Control variables,Focal_Size,"ln(total assets of focal firms, in millions of yuan)"
 Control variables,Focal_Lev,Total liabilities / Total assets of the focal firm
 Control variable,Focal_Age,Observation year − Year of establishment + 1

@@ -8,3 +8,4 @@ Alternative measure: binary dummy variables,−0.0108,"Same direction, n.s."
 H3 + Growth control,−0.0085***,Conclusions remain unchanged
 Pre-2022 exclusion: H1 (Focal_GenAI_Index),−0.0186***,"2022–2024 subsample, N = 405"
 Pre-2022 exclusion: H3 (GenAI × Power_Pressure),−0.0077***,"2022–2024 subsample, N = 402"
+Pre-2022 exclusion: H2 (GenAI × R&D),−0.0320*,"2022–2024 subsample, N = 405"

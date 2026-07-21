@@ -1,8 +1,8 @@
 ﻿Subgroup,Coefficient,Standard Error
 Ownership: State-owned enterprises,−0.0072***,0.0026
 Ownership: Non-state-owned enterprises,−0.0177***,0.0067
-Number of partners leading: Yes,−0.0452***,0.0142
-Partner’s lead: No,−0.0117***,0.0044
+Partner digital leadership: Yes,−0.0452***,0.0142
+Partner digital leadership: No,−0.0117***,0.0044
 Partner structural dominance: high,−0.0124,0.0079
 Partner structural dominance: low,−0.0201**,0.0080
 Relational dependence: high,−0.0061,0.0081
