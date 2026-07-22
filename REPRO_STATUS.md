@@ -9,8 +9,9 @@ Date: `2026-07-17` (supersedes the 2026-07-15 and 2026-04-20 statements)
   manuscript's full set of 14 tables** (`output/tables/`, see
   `docs/EXHIBIT_MAP.md`)
 - frozen figure layer: included — **all 14 figures as embedded in the revised
-  manuscript** (`output/figures/manuscript_render/`), plus legacy exports and
-  the SHAP swarm-plot archive
+  manuscript** (`output/figures/manuscript_render/`, each verified
+  byte-identical to the corresponding image part of the submitted `.docx`);
+  the superseded pre-revision exports were removed on 2026-07-22
 - public dictionary layer: included
 - measurement-validation evidence layer (Table 3C gold standard, frozen
   predictions, LLM label archives, SHA-256 manifest): included, file names

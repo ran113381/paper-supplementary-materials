@@ -50,9 +50,13 @@ numbered exactly as in the manuscript:
 | figure_13 | SHAP Swarm Plot (GenAI adopter subsample) |
 | figure_14 | Heterogeneity Forest Plot |
 
-Legacy exports under `output/figures/figure_01_*.png` … `figure_09_*.png`
-predate the revision renumbering and are retained for provenance only; the
-`manuscript_render/` set above is authoritative.
+`output/figures/manuscript_render/` is the only figure set in this package.
+Pre-revision exports were removed on 2026-07-22: besides using the superseded
+numbering, several were drawn from an obsolete specification and were replaced
+in the revision (see the defect list in `REPRO_STATUS.md`), so retaining them
+alongside the corrected figures would have been misleading.
+`manuscript_render/FIGURE_INDEX.csv` maps each file to its manuscript caption
+and to the image part it was extracted from.
 
 ## Code Assets (added 2026-07-15; FY2025 clean-text script added 2026-07-16)
 

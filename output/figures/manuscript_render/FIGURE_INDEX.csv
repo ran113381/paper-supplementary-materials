@@ -1,0 +1,15 @@
+﻿file_name,authority_caption,source_media_name
+figure_01.png,Figure 1. Time evolution of GenAI disclosure rates in Chinese listed companies,image1.png
+figure_02.png,Figure 2. Theoretical Framework and Research Propositions,image2.png
+figure_03.png,Figure 3. Full-Sample LLM-Assisted Semantic Audit,image3.png
+figure_04.png,Figure 4. Dictionary Labels versus Strict LLM Consensus,image4.png
+figure_05.png,Figure 5. Differences in ROA Distribution Among Focal Enterprises by GenAI Disclosure Status,image5.png
+figure_06.png,Figure 6. R&D-Intensity Moderation Pattern,image6.png
+figure_07.png,Figure 7. Power Pressure Moderation Pattern,image7.png
+figure_08.png,Figure 8. Placebo Test: Distribution of Random-Permutation Coefficients,image8.png
+figure_09.png,Figure 9. Staggered DiD Event-Study Estimates,image9.png
+figure_10.png,Figure 10. Covariate Balance before and after Propensity Score Matching,image10.png
+figure_11.png,Figure 11. Candidate-Channel Path of Inventory Turnover,image11.png
+figure_12.png,Figure 12. SHAP-based Feature Importance: Full Sample versus GenAI Adopters,image12.png
+figure_13.png,Figure 13. SHAP Swarm Plot for the GenAI Adopter Subsample,image13.png
+figure_14.png,Figure 14. Heterogeneity Analysis: Forest Plot of Subsample Coefficients,image14.png

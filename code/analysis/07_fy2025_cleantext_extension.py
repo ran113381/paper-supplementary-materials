@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-FY2025 clean-text extension (manuscript §4.5, Table 12) — end-to-end, verified runnable.
+FY2025 clean-text extension (manuscript Section 4.7, Table 13) — end-to-end, verified runnable.
 
 Clean-text filter: drop rows with Year==2025 AND Focal_MDA_CharCount==32767 (the Excel
 cell cap; 42 of the 143 fiscal-2025 main-sample rows hit it, mechanically censoring the
-disclosure measure for the longest documents). All four §4.5 estimates use the identical
+disclosure measure for the longest documents). All four Section 4.7 estimates use the identical
 baseline specification: Focal_ROA ~ terms + controls + C(Focal_Industry) + C(Year),
 SEs clustered by Focal_Industry. The predetermined-R&D lag is built on the FULL
 2015–2025 panel BEFORE the clean-text filter (R&D is a financial variable, unaffected
@@ -15,7 +15,7 @@ see DATA_AVAILABILITY.md):
     <private>/data/processed_data/v2025/08A_main_regression_package_2025.xlsx
         sheet: main_winsorized
 
-Verified output (2026-07-16 backtest; = manuscript Table 12):
+Verified output (2026-07-16 backtest; = manuscript Table 13):
     H1  Focal_GenAI_Index                  -0.0094 (SE 0.0040, p=.019)  N=1,115
     H2  GenAI x R&D (contemporaneous)      -0.0510 (SE 0.0187, p=.006)  N=1,115
     H2  GenAI x lagged R&D (predetermined) -0.0945 (SE 0.0335, p=.005)  N=637

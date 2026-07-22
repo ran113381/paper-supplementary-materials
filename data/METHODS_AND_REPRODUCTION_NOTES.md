@@ -2,7 +2,7 @@
 
 ## Scope
 
-This package reproduces the SOTA / hybrid benchmark reported as Table 3C. The benchmark evaluates passage-level semantic relevance for a disclosure-based GenAI proxy.
+This package reproduces the SOTA / hybrid benchmark reported as Table 3C in the original submission, which is **Table 6** in the revised manuscript. The benchmark evaluates passage-level semantic relevance for a disclosure-based GenAI proxy.
 
 The package does not claim to measure latent firm capability, internal deployment depth, or model-output quality. It validates whether MD&A passages flagged or classified by each method correspond to GenAI-related disclosure content.
 

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import re
 from pathlib import Path
 from zipfile import ZipFile
 
@@ -11,37 +12,53 @@ from docx.text.paragraph import Paragraph
 from lxml import etree
 
 
+# Exhibit numbering follows the 2026-07 major revision (14 tables, 14 figures).
 TABLE_SPECS = [
     ("table_01_sample_construction_procedure.csv", "Table 1 Sample Construction Procedure"),
     ("table_02_variable_definition_and_calculation.csv", "Table 2 Variable Definition and Calculation"),
-    ("table_03_genai_dictionary_keyword_classification.csv", "Table 3 Classification of GenAI Dictionary Keywords"),
-    ("table_04_descriptive_statistics_of_key_variables.csv", "Table 4 Descriptive Statistics of Key Variables"),
-    ("table_05_baseline_regression_results.csv", "Table 5 Baseline Regression Results"),
-    ("table_06_summary_of_robustness_tests.csv", "Table 6 Summary of Robustness Tests"),
-    ("table_07_candidate_channel_inventory_turnover.csv", "Table 7 Candidate Channel Test: Inventory Turnover"),
-    ("table_08_heterogeneity_analysis.csv", "Table 8 Heterogeneity Analysis"),
-    ("appendix_a2_correlation_matrix.csv", "Appendix A2 Correlation Matrix"),
-    ("appendix_full_dictionary.csv", "Full Dictionary Appendix"),
+    ("table_03_genai_dictionary_keyword_classification.csv", "Table 3 Classification of GenAI Dictionary Keywords Used for Text Mining"),
+    ("table_04_full_sample_llm_semantic_audit.csv", "Table 4 Full-Sample LLM-Assisted Semantic Audit"),
+    ("table_05_gold_standard_validation.csv", "Table 5 Human-Annotated Gold-Standard Validation of the Dictionary-Based Measure"),
+    ("table_06_sota_hybrid_benchmark.csv", "Table 6 SOTA and Hybrid Benchmark Validation of GenAI Disclosure Measures"),
+    ("table_07_descriptive_statistics.csv", "Table 7 Descriptive Statistics of Key Variables"),
+    ("table_08_correlation_matrix.csv", "Table 8 The Correlation Matrix"),
+    ("table_09_baseline_regression_results.csv", "Table 9 Baseline Regression Results"),
+    ("table_10_robustness_summary.csv", "Table 10 Summary of Robustness Tests"),
+    ("table_11_dyadic_dependence_corrections.csv", "Table 11 Robustness of Baseline Estimates to Dyadic-Dependence Corrections"),
+    ("table_12_inventory_turnover_channel.csv", "Table 12 Candidate Operational Channel Test: Inventory Turnover"),
+    ("table_13_fy2025_extension.csv", "Table 13 Extension of Baseline Estimates to Fiscal Year 2025"),
+    ("table_14_heterogeneity_analysis.csv", "Table 14 Heterogeneity Analysis"),
 ]
 
+# Captions are matched by prefix, because some manuscript captions carry a
+# trailing explanatory sentence (e.g. Figure 11's scaling note).
 FIGURE_SPECS = [
-    ("figure_01_genai_adoption_rate", "Figure 1 Time evolution of GenAI adoption rate in Chinese listed companies (2015-2024)"),
-    ("figure_02_theoretical_framework", "Figure 2 Theoretical Framework and Research Propositions"),
-    ("figure_03_rd_moderation", "Figure 3 Moderating Effect of R&D Intensity on the Negative Performance Effect of GenAI"),
-    ("figure_04_power_pressure_moderation", "Figure 4 Moderating Effect of AI-Induced Supply Chain Power Pressure"),
-    ("figure_05_placebo_distribution", "Figure 5 Placebo Test: Distribution of Random-Permutation Coefficients"),
-    ("figure_06_event_study", "Figure 6  Staggered DiD Event-Study Estimates"),
-    ("figure_07_psm_balance", "Figure 7  Covariate Balance before and after Propensity Score Matching"),
-    ("figure_08_inventory_turnover_path", "Figure 8 Candidate-Channel Path of Inventory Turnover"),
-    ("figure_09_heterogeneity_forest_plot", "Figure 9 Heterogeneity Analysis: Forest Plot of Subsample Coefficients"),
+    ("figure_01", "Figure 1. Time evolution of GenAI disclosure rates in Chinese listed companies"),
+    ("figure_02", "Figure 2. Theoretical Framework and Research Propositions"),
+    ("figure_03", "Figure 3. Full-Sample LLM-Assisted Semantic Audit"),
+    ("figure_04", "Figure 4. Dictionary Labels versus Strict LLM Consensus"),
+    ("figure_05", "Figure 5. Differences in ROA Distribution Among Focal Enterprises by GenAI Disclosure Status"),
+    ("figure_06", "Figure 6. R&D-Intensity Moderation Pattern"),
+    ("figure_07", "Figure 7. Power Pressure Moderation Pattern"),
+    ("figure_08", "Figure 8. Placebo Test: Distribution of Random-Permutation Coefficients"),
+    ("figure_09", "Figure 9. Staggered DiD Event-Study Estimates"),
+    ("figure_10", "Figure 10. Covariate Balance before and after Propensity Score Matching"),
+    ("figure_11", "Figure 11. Candidate-Channel Path of Inventory Turnover"),
+    ("figure_12", "Figure 12. SHAP-based Feature Importance: Full Sample versus GenAI Adopters"),
+    ("figure_13", "Figure 13. SHAP Swarm Plot for the GenAI Adopter Subsample"),
+    ("figure_14", "Figure 14. Heterogeneity Analysis: Forest Plot of Subsample Coefficients"),
 ]
+
+# A caption paragraph is "Figure <n>. ..."; a body cross-reference is
+# "Figure <n> presents ...". Only the former is an exhibit caption.
+CAPTION_RE = re.compile(r"^Figure \d+\.")
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Extract frozen tables and figures from the authority manuscript docx.")
     parser.add_argument("--docx", required=True, help="Path to the authority manuscript .docx")
     parser.add_argument("--table-dir", default="output/tables", help="Directory for exported table CSV files")
-    parser.add_argument("--figure-dir", default="output/figures", help="Directory for exported figure image files")
+    parser.add_argument("--figure-dir", default="output/figures/manuscript_render", help="Directory for exported figure image files")
     return parser.parse_args()
 
 
@@ -98,7 +115,7 @@ def figure_captions(doc: Document) -> list[str]:
         if isinstance(child, CT_P):
             paragraph = Paragraph(child, doc)
             text = paragraph.text.strip()
-            if text.startswith("Figure "):
+            if CAPTION_RE.match(text):
                 captions.append(text)
     return captions
 
@@ -106,7 +123,9 @@ def figure_captions(doc: Document) -> list[str]:
 def export_figures(doc: Document, docx_path: Path, out_dir: Path) -> None:
     captions = figure_captions(doc)
     expected_captions = [caption for _, caption in FIGURE_SPECS]
-    if captions != expected_captions:
+    if len(captions) != len(expected_captions) or not all(
+        found.startswith(expected) for found, expected in zip(captions, expected_captions)
+    ):
         raise RuntimeError("Figure caption order does not match the expected manuscript structure")
 
     rel_ids, rel_map = read_body_image_rel_ids(docx_path)

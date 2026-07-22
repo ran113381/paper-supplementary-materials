@@ -1,11 +1,15 @@
-relative_path,category,public_status,note
+﻿relative_path,category,public_status,note
+.gitignore,repo,public,Repository hygiene
 CHANGES_PROPOSED.md,doc,public,"2026-07-15 cleanup: rename mapping, additions, edits (uncommitted)"
 DATA_AVAILABILITY.md,doc,public,Public versus restricted data boundary
 GITHUB_UPLOAD_STEPS.md,doc,public,Step-by-step GitHub upload instructions
+PACKAGE_MANIFEST.csv,doc,public,This manifest
 README.md,doc,public,Top-level package overview
 REPRO_STATUS.md,doc,public,Current reproduction status statement
-requirements.txt,code,public,Dependency list for the docx exhibit-extraction utility
 RUN_INSTRUCTIONS.md,doc,public,How to use the package and re-extract frozen exhibits
+code/05_build_genai_measurement.py,code,public,2026-07-19: measurement build script published as run; preserves the authors' original Excel-style counting formula verbatim (FORMULA_TEXT) and builds 04_genai_dictionary.xlsx + the firm-year GenAI panel from licensed raw text (paths hard-coded per repo policy)
+code/09_run_did_and_placebo.py,code,public,"2026-07-20: event-study/TWFE-DID and 500-draw placebo permutation script published as run; generates the Figure 8 placebo distribution and the Figure 9 event study (Section 4.3). Placebo runs on the focal firm-year panel (852 firm-years collapsed from the 1,017 dyad-years), industry+year FE, industry-clustered SEs, seed 42"
+code/README.md,doc,public,Code folder note
 code/analysis/01_build_2025_dyad_pairs.py,code,public,Analysis script (see code/analysis/README.md)
 code/analysis/01_main_grid.py,code,public,Analysis script (see code/analysis/README.md)
 code/analysis/02_build_2025_firm_year_panel.py,code,public,Analysis script (see code/analysis/README.md)
@@ -16,14 +20,48 @@ code/analysis/05_cellB_final.py,code,public,Analysis script (see code/analysis/R
 code/analysis/05_concat_and_rebuild.py,code,public,Analysis script (see code/analysis/README.md)
 code/analysis/06_cellC_fix.py,code,public,Analysis script (see code/analysis/README.md)
 code/analysis/06_verify_2024_reproduction.py,code,public,Analysis script (see code/analysis/README.md)
+code/analysis/07_fy2025_cleantext_extension.py,code,public,Analysis script (see code/analysis/README.md)
+code/analysis/08_measurement_sensitivity.py,code,public,Analysis script (see code/analysis/README.md)
+code/analysis/09_shap_cv.py,code,public,Analysis script (see code/analysis/README.md)
+code/analysis/10_channel_battery.py,code,public,2026-07-19: four-channel mediation battery; inventory row self-checks against the persisted Figure 11 numbers
+code/analysis/11_boundary_matched_index.py,code,public,2026-07-19: word-boundary-hardened dictionary robustness (private raw-MDA parquet + 08A package required)
+code/analysis/README.md,doc,public,"Analysis code guide: scripts, licensed-data caveat, environment"
 code/analysis/battery_ext.py,code,public,Analysis script (see code/analysis/README.md)
 code/analysis/common.py,code,public,Analysis script (see code/analysis/README.md)
-code/analysis/README.md,doc,public,"Analysis code guide: scripts, licensed-data caveat, environment"
 code/analysis/run_bonus_bootstrap.py,code,public,Analysis script (see code/analysis/README.md)
 code/analysis/run_decomposition.py,code,public,Analysis script (see code/analysis/README.md)
 code/analysis/run_full_battery.py,code,public,Analysis script (see code/analysis/README.md)
 code/extract_docx_exhibits.py,code,public,Portable utility for extracting frozen exhibits from a docx
-code/README.md,doc,public,Code folder note
+data/DATA_DICTIONARY.md,doc,public,Evidence-package data dictionary
+data/FULLSAMPLE_PROMPT_STATUS.md,data,public,Validation-evidence asset (see data/DATA_DICTIONARY.md)
+data/LLM_validation_adjudicated_labels.csv,data,public,Pilot final adjudicated labels (140)
+data/LLM_validation_adjudicated_metrics_report.md,doc,public,Pilot post-adjudication metrics report
+data/LLM_validation_adjudication_returned.jsonl,data,public,Pilot second-model adjudication returns (70)
+data/LLM_validation_coding_rules.md,doc,public,Pilot validation coding rules
+data/LLM_validation_disagreements_for_adjudication.csv,data,public,Pilot disagreement cases sent to second model (70)
+data/LLM_validation_metrics_report.md,doc,public,Pilot first-round metrics report
+data/LLM_validation_prompt.md,doc,public,Pilot validation prompt
+data/LLM_validation_results_returned.jsonl,data,public,Pilot first-round LLM returns (140)
+data/LLM_validation_sample.csv,data,public,Pilot validation sample (140 passages)
+data/MANIFEST.sha256,data,public,SHA-256 manifest of the original Table 3C evidence package
+data/MDNA_passage_gold_standard_README.md,doc,public,Sampling-frame construction note
+data/METHODS_AND_REPRODUCTION_NOTES.md,doc,public,Evidence-package methods and reproduction notes
+data/README.md,doc,public,Data folder note
+data/README_label_archives.md,doc,public,"Label-archive series, coverage, verification, and missing items"
+data/SSCI_QC_REPORT.md,doc,public,Evidence-package QC report (all checks PASS)
+data/SSCI_REPRODUCTION_CHECKLIST.md,doc,public,Evidence-package reproduction checklist
+data/Table_3C_SOTA_validation_metrics.csv,data,public,"Published Table 3C metrics, CSV (byte-identical to recomputed)"
+data/Table_3C_SOTA_validation_metrics.md,data,public,"Published Table 3C metrics, markdown"
+data/Table_3C_SOTA_validation_metrics.xlsx,data,public,Published Table 3C metrics workbook (incl. FinBERT training-label sheet)
+data/Table_3C_validation_predictions.csv,data,public,Frozen row-level predictions for exact Table 3C reproduction
+data/Table_FP_rates_by_category_year.csv,data,public,Validation-evidence asset (see data/DATA_DICTIONARY.md)
+data/Table_FP_rates_by_category_year.md,data,public,Validation-evidence asset (see data/DATA_DICTIONARY.md)
+data/Table_FP_rates_by_term.csv,result,public,2026-07-19: term-level FP rates from dual-LLM consensus (59 firing terms)
+data/Table_FP_rates_by_term.md,result,public,2026-07-19: top-25 preview of the term-level FP table
+data/Table_boundary_robustness.csv,result,public,2026-07-19: boundary-hardened H1/H2/H3 re-estimates
+data/Table_channel_battery.csv,result,public,2026-07-19: four-channel battery output; 0 of 4 channels meet the joint criterion
+data/build_fp_rate_tables.py,data,public,Validation-evidence asset (see data/DATA_DICTIONARY.md)
+data/build_fp_rate_tables_by_term.py,code,public,2026-07-19: term-level FP table builder (companion to build_fp_rate_tables.py); anchors self-checked
 data/build_table3c_finbert_hybrid.py,code,public,Optional live FinBERT rerun script (provenance only)
 data/claude_part_01.jsonl,data,public,"Claude raw label returns, part 01 (full-sample audit)"
 data/claude_part_02.jsonl,data,public,"Claude raw label returns, part 02 (full-sample audit)"
@@ -38,7 +76,6 @@ data/claude_part_10.jsonl,data,public,"Claude raw label returns, part 10 (full-s
 data/claude_part_11.jsonl,data,public,"Claude raw label returns, part 11 (full-sample audit)"
 data/claude_part_12.jsonl,data,public,"Claude raw label returns, part 12 (full-sample audit)"
 data/claude_part_13.jsonl,data,public,"Claude raw label returns, part 13 (full-sample audit)"
-data/DATA_DICTIONARY.md,doc,public,Evidence-package data dictionary
 data/full_sample_gpt55_claude_consensus_labels.csv,data,public,Complete merged GPT-5.5/Claude/consensus labels (1256 rows)
 data/full_sample_gpt55_claude_report.md,doc,public,Full-sample GPT-5.5/Claude results check note
 data/full_sample_segments_1256.csv,data,public,All 1256 dictionary-hit MD&A segments with text
@@ -51,47 +88,32 @@ data/genai_adoption_labels_part_06.jsonl,data,public,"GPT-5.5 raw label returns,
 data/genai_adoption_labels_part_07.jsonl,data,public,"GPT-5.5 raw label returns, part 07 (full-sample audit)"
 data/genai_adoption_labels_part_08.jsonl,data,public,"GPT-5.5 raw label returns, part 08 (full-sample audit)"
 data/genai_gold_standard_adjudication_workbook.xlsx,data,public,Human double-coded adjudicated gold standard (600 passages)
-data/LLM_validation_adjudicated_labels.csv,data,public,Pilot final adjudicated labels (140)
-data/LLM_validation_adjudicated_metrics_report.md,doc,public,Pilot post-adjudication metrics report
-data/LLM_validation_adjudication_returned.jsonl,data,public,Pilot second-model adjudication returns (70)
-data/LLM_validation_coding_rules.md,doc,public,Pilot validation coding rules
-data/LLM_validation_disagreements_for_adjudication.csv,data,public,Pilot disagreement cases sent to second model (70)
-data/LLM_validation_metrics_report.md,doc,public,Pilot first-round metrics report
-data/LLM_validation_prompt.md,doc,public,Pilot validation prompt
-data/LLM_validation_results_returned.jsonl,data,public,Pilot first-round LLM returns (140)
-data/LLM_validation_sample.csv,data,public,Pilot validation sample (140 passages)
-data/MANIFEST.sha256,data,public,SHA-256 manifest of the original Table 3C evidence package
-data/MDNA_passage_gold_standard_README.md,doc,public,Sampling-frame construction note
 data/mdna_passage_level_gold_standard_seed.csv,data,public,"Gold-standard sampling frame (1706 passages), CSV"
 data/mdna_passage_level_gold_standard_seed.xlsx,data,public,"Gold-standard sampling frame (1706 passages), workbook"
-data/METHODS_AND_REPRODUCTION_NOTES.md,doc,public,Evidence-package methods and reproduction notes
+data/placebo_500_permutations_verified.json,data,public,2026-07-20: the 500 stored permutation draws behind Figure 8; regenerating them with 09_run_did_and_placebo.py (seed 42) reproduces this file elementwise
 data/public/04_genai_dictionary.xlsx,data,public,Public GenAI dictionary workbook
-data/README.md,doc,public,Data folder note
-data/README_label_archives.md,doc,public,"Label-archive series, coverage, verification, and missing items"
 data/recompute_table3c_from_frozen_predictions.py,code,public,Deterministic Table 3C recomputation script (evidence package)
 data/restricted_placeholder/README.md,doc,public,Placeholder explaining omitted restricted layers
-data/SSCI_QC_REPORT.md,doc,public,Evidence-package QC report (all checks PASS)
-data/SSCI_REPRODUCTION_CHECKLIST.md,doc,public,Evidence-package reproduction checklist
 data/ssci_sota_package_overview.md,doc,public,Original evidence-package overview (its root README)
-data/Table_3C_SOTA_validation_metrics.csv,data,public,"Published Table 3C metrics, CSV (byte-identical to recomputed)"
-data/Table_3C_SOTA_validation_metrics.md,data,public,"Published Table 3C metrics, markdown"
-data/Table_3C_SOTA_validation_metrics.xlsx,data,public,Published Table 3C metrics workbook (incl. FinBERT training-label sheet)
-data/Table_3C_validation_predictions.csv,data,public,Frozen row-level predictions for exact Table 3C reproduction
 data/validate_ssci_sota_package.py,code,public,Evidence-package QC/validation script
 docs/EXHIBIT_MAP.md,doc,public,"Map from manuscript exhibits to included files, plus code assets"
 docs/LOCAL_ONLY_ITEMS.md,doc,public,Items intentionally kept out of the public package
 docs/README.md,doc,public,Documentation folder note
-output/figures/figure_01_genai_adoption_rate.png,output,public,Frozen Figure 1
-output/figures/figure_02_theoretical_framework.png,output,public,Frozen Figure 2
-output/figures/figure_03_rd_moderation.png,output,public,Frozen Figure 3
-output/figures/figure_04_power_pressure_moderation.png,output,public,Frozen Figure 4
-output/figures/figure_05_placebo_distribution.png,output,public,Frozen Figure 5
-output/figures/figure_06_event_study.png,output,public,Frozen Figure 6
-output/figures/figure_07_psm_balance.png,output,public,Frozen Figure 7
-output/figures/figure_08_inventory_turnover_path.png,output,public,Frozen Figure 8
-output/figures/figure_09_heterogeneity_forest_plot.png,output,public,Frozen Figure 9
-output/figures/FIGURE_INDEX.csv,output,public,Index of exported frozen figures
 output/README.md,doc,public,Output folder note
+output/figures/manuscript_render/figure_01.png,output,public,"Frozen Figure 1, byte-identical to the manuscript image part"
+output/figures/manuscript_render/figure_02.png,output,public,"Frozen Figure 2, byte-identical to the manuscript image part"
+output/figures/manuscript_render/figure_03.png,output,public,"Frozen Figure 3, byte-identical to the manuscript image part"
+output/figures/manuscript_render/figure_04.png,output,public,"Frozen Figure 4, byte-identical to the manuscript image part"
+output/figures/manuscript_render/figure_05.png,output,public,"Frozen Figure 5, byte-identical to the manuscript image part"
+output/figures/manuscript_render/figure_06.png,output,public,"Frozen Figure 6, byte-identical to the manuscript image part"
+output/figures/manuscript_render/figure_07.png,output,public,"Frozen Figure 7, byte-identical to the manuscript image part"
+output/figures/manuscript_render/figure_08.png,output,public,"Frozen Figure 8, byte-identical to the manuscript image part"
+output/figures/manuscript_render/figure_09.png,output,public,"Frozen Figure 9, byte-identical to the manuscript image part"
+output/figures/manuscript_render/figure_10.png,output,public,"Frozen Figure 10, byte-identical to the manuscript image part"
+output/figures/manuscript_render/figure_11.png,output,public,"Frozen Figure 11, byte-identical to the manuscript image part"
+output/figures/manuscript_render/figure_12.png,output,public,"Frozen Figure 12, byte-identical to the manuscript image part"
+output/figures/manuscript_render/figure_13.png,output,public,"Frozen Figure 13, byte-identical to the manuscript image part"
+output/figures/manuscript_render/figure_14.png,output,public,"Frozen Figure 14, byte-identical to the manuscript image part"
 output/shap_files/figure10_feature_importance_ipm.png,output,public,Frozen SHAP figure
 output/shap_files/figure11_beeswarm_ipm.png,output,public,Frozen SHAP figure
 output/shap_files/figure12_genai_dependence_ipm.png,output,public,Frozen SHAP figure
@@ -99,27 +121,23 @@ output/shap_files/figure13_genai_rd_interaction_ipm.png,output,public,Frozen SHA
 output/shap_files/figure14_genai_power_interaction_ipm.png,output,public,Frozen SHAP figure
 output/shap_files/figure15_force_plot_ipm.png,output,public,Frozen SHAP figure
 output/shap_files/gen_shap_ipm.py,code,public,SHAP figure generation script
-output/tables/appendix_a2_correlation_matrix.csv,output,public,Frozen appendix correlation matrix
+output/tables/TABLE_INDEX.csv,output,public,Index of exported frozen tables
 output/tables/appendix_full_dictionary.csv,output,public,Frozen full dictionary appendix
 output/tables/table_01_sample_construction_procedure.csv,output,public,Frozen Table 1
 output/tables/table_02_variable_definition_and_calculation.csv,output,public,Frozen Table 2
 output/tables/table_03_genai_dictionary_keyword_classification.csv,output,public,Frozen Table 3
-output/tables/table_04_descriptive_statistics_of_key_variables.csv,output,public,Frozen Table 4
-output/tables/table_05_baseline_regression_results.csv,output,public,Frozen Table 5
-output/tables/table_06_summary_of_robustness_tests.csv,output,public,Frozen Table 6
-output/tables/table_07_candidate_channel_inventory_turnover.csv,output,public,Frozen Table 7
-output/tables/table_08_heterogeneity_analysis.csv,output,public,Frozen Table 8
-output/tables/TABLE_INDEX.csv,output,public,Index of exported frozen tables
+output/tables/table_04_full_sample_llm_semantic_audit.csv,output,public,Frozen Table 4
+output/tables/table_05_gold_standard_validation.csv,output,public,Frozen Table 5
+output/tables/table_06_sota_hybrid_benchmark.csv,output,public,Frozen Table 6
+output/tables/table_07_descriptive_statistics.csv,output,public,Frozen Table 7
+output/tables/table_08_correlation_matrix.csv,output,public,Frozen Table 8
+output/tables/table_09_baseline_regression_results.csv,output,public,Frozen Table 9
+output/tables/table_10_robustness_summary.csv,output,public,Frozen Table 10
+output/tables/table_11_dyadic_dependence_corrections.csv,output,public,Frozen Table 11
+output/tables/table_12_inventory_turnover_channel.csv,output,public,Frozen Table 12
+output/tables/table_13_fy2025_extension.csv,output,public,Frozen Table 13
+output/tables/table_14_heterogeneity_analysis.csv,output,public,Frozen Table 14
+paper/README.md,doc,public,Paper folder note
 paper/attachments/appendix_full_genai_dictionary.docx,paper,public,Public full dictionary attachment
 paper/attachments/table_x_genai_dictionary_keywords.docx,paper,public,Public dictionary classification attachment
-paper/README.md,doc,public,Paper folder note
-code/analysis/10_channel_battery.py,code,public,"2026-07-19: four-channel mediation battery; inventory row self-checks against the persisted Figure 11 numbers"
-code/analysis/11_boundary_matched_index.py,code,public,"2026-07-19: word-boundary-hardened dictionary robustness (private raw-MDA parquet + 08A package required)"
-data/build_fp_rate_tables_by_term.py,code,public,"2026-07-19: term-level FP table builder (companion to build_fp_rate_tables.py); anchors self-checked"
-data/Table_channel_battery.csv,result,public,"2026-07-19: four-channel battery output; 0 of 4 channels meet the joint criterion"
-data/Table_FP_rates_by_term.csv,result,public,"2026-07-19: term-level FP rates from dual-LLM consensus (59 firing terms)"
-data/Table_FP_rates_by_term.md,result,public,"2026-07-19: top-25 preview of the term-level FP table"
-data/Table_boundary_robustness.csv,result,public,"2026-07-19: boundary-hardened H1/H2/H3 re-estimates"
-code/05_build_genai_measurement.py,code,public,"2026-07-19: measurement build script published as run; preserves the authors' original Excel-style counting formula verbatim (FORMULA_TEXT) and builds 04_genai_dictionary.xlsx + the firm-year GenAI panel from licensed raw text (paths hard-coded per repo policy)"
-code/09_run_did_and_placebo.py,code,public,"2026-07-20: event-study/TWFE-DID and 500-draw placebo permutation script published as run; generates the Figure 8 placebo distribution and the Figure 9 event study (Section 4.3). Placebo runs on the focal firm-year panel (852 firm-years collapsed from the 1,017 dyad-years), industry+year FE, industry-clustered SEs, seed 42"
-data/placebo_500_permutations_verified.json,data,public,"2026-07-20: the 500 stored permutation draws behind Figure 8; regenerating them with 09_run_did_and_placebo.py (seed 42) reproduces this file elementwise"
+requirements.txt,code,public,Dependency list for the docx exhibit-extraction utility

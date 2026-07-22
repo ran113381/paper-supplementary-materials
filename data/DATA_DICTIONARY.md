@@ -1,5 +1,11 @@
 # Data Dictionary
 
+> **Exhibit naming.** "Table 3C" throughout this folder is the original-submission
+> label for the SOTA / hybrid benchmark. In the revised manuscript that exhibit is
+> **Table 6 (SOTA and Hybrid Benchmark Validation of GenAI Disclosure Measures)**;
+> the file names here are left unchanged so that the frozen artefacts and their
+> SHA-256 manifest stay verifiable.
+
 ## Core Files
 
 ### `data/table3c_frozen_predictions/Table_3C_validation_predictions.csv`
