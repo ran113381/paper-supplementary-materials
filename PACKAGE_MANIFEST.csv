@@ -100,6 +100,7 @@ docs/EXHIBIT_MAP.md,doc,public,"Map from manuscript exhibits to included files, 
 docs/LOCAL_ONLY_ITEMS.md,doc,public,Items intentionally kept out of the public package
 docs/README.md,doc,public,Documentation folder note
 output/README.md,doc,public,Output folder note
+output/figures/manuscript_render/FIGURE_INDEX.csv,output,public,Index of the frozen manuscript figures
 output/figures/manuscript_render/figure_01.png,output,public,"Frozen Figure 1, byte-identical to the manuscript image part"
 output/figures/manuscript_render/figure_02.png,output,public,"Frozen Figure 2, byte-identical to the manuscript image part"
 output/figures/manuscript_render/figure_03.png,output,public,"Frozen Figure 3, byte-identical to the manuscript image part"
