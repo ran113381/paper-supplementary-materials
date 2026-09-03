@@ -1,0 +1,172 @@
+{
+  "published_figure9": {
+    "rows": [
+      {
+        "event_time": -4,
+        "coef": -0.0077081228679048,
+        "std_err": 0.015452549095914288,
+        "p_value": 0.6179024429221984,
+        "n_firm_years": 4,
+        "n_firms": 4
+      },
+      {
+        "event_time": -3,
+        "coef": -0.008537022871531763,
+        "std_err": 0.02408521580178697,
+        "p_value": 0.7230011049114933,
+        "n_firm_years": 3,
+        "n_firms": 3
+      },
+      {
+        "event_time": -2,
+        "coef": -0.0032497023028335162,
+        "std_err": 0.01586003069253974,
+        "p_value": 0.8376511412631731,
+        "n_firm_years": 6,
+        "n_firms": 6
+      },
+      {
+        "event_time": 0,
+        "coef": -0.013030913071121223,
+        "std_err": 0.013170910219540984,
+        "p_value": 0.3224817893973171,
+        "n_firm_years": 47,
+        "n_firms": 47
+      },
+      {
+        "event_time": 1,
+        "coef": -0.02043797947080609,
+        "std_err": 0.02162730196103898,
+        "p_value": 0.34465464781696564,
+        "n_firm_years": 9,
+        "n_firms": 9
+      }
+    ],
+    "n_obs": 734,
+    "n_firms": 348,
+    "cohort_from": 2023,
+    "source": "2015-2024 package"
+  },
+  "extended_A_cohort2023": {
+    "rows": [
+      {
+        "event_time": -4,
+        "coef": -0.0008745719348319247,
+        "std_err": 0.013260272032972364,
+        "p_value": 0.9474142110004882,
+        "n_firm_years": 5,
+        "n_firms": 5
+      },
+      {
+        "event_time": -3,
+        "coef": -0.0028643977959494924,
+        "std_err": 0.018566515301818774,
+        "p_value": 0.8773908425453756,
+        "n_firm_years": 5,
+        "n_firms": 5
+      },
+      {
+        "event_time": -2,
+        "coef": -0.003607131409373382,
+        "std_err": 0.013412665979881491,
+        "p_value": 0.787979927402882,
+        "n_firm_years": 8,
+        "n_firms": 8
+      },
+      {
+        "event_time": 0,
+        "coef": -0.012234287904045946,
+        "std_err": 0.011723151188882643,
+        "p_value": 0.2966702037780862,
+        "n_firm_years": 61,
+        "n_firms": 61
+      },
+      {
+        "event_time": 1,
+        "coef": -0.007004448968246067,
+        "std_err": 0.016361030920450777,
+        "p_value": 0.6685653400576582,
+        "n_firm_years": 15,
+        "n_firms": 15
+      },
+      {
+        "event_time": 2,
+        "coef": 0.011225136472115548,
+        "std_err": 0.023639351683717242,
+        "p_value": 0.6348941835386479,
+        "n_firm_years": 5,
+        "n_firms": 5
+      }
+    ],
+    "n_obs": 820,
+    "n_firms": 391,
+    "cohort_from": 2023,
+    "source": "FY2025 package, clean-text filtered",
+    "n_truncated_dropped": 42
+  },
+  "variant_B_cohort2022": {
+    "rows": [
+      {
+        "event_time": -4,
+        "coef": -0.012968669780412967,
+        "std_err": 0.010813310288209544,
+        "p_value": 0.23040172651723412,
+        "n_firm_years": 8,
+        "n_firms": 8
+      },
+      {
+        "event_time": -3,
+        "coef": -0.024863796025084685,
+        "std_err": 0.024657625788179677,
+        "p_value": 0.31328103614868796,
+        "n_firm_years": 10,
+        "n_firms": 10
+      },
+      {
+        "event_time": -2,
+        "coef": -0.03137884962045313,
+        "std_err": 0.02110647130186485,
+        "p_value": 0.1370958312006472,
+        "n_firm_years": 12,
+        "n_firms": 12
+      },
+      {
+        "event_time": 0,
+        "coef": -0.022131139812087117,
+        "std_err": 0.014489895592397283,
+        "p_value": 0.12667404059523185,
+        "n_firm_years": 77,
+        "n_firms": 77
+      },
+      {
+        "event_time": 1,
+        "coef": -0.01322122276273524,
+        "std_err": 0.01821005799567662,
+        "p_value": 0.4678145101208977,
+        "n_firm_years": 22,
+        "n_firms": 22
+      },
+      {
+        "event_time": 2,
+        "coef": -0.04001771633270142,
+        "std_err": 0.03595413689680636,
+        "p_value": 0.26569932770108273,
+        "n_firm_years": 11,
+        "n_firms": 11
+      },
+      {
+        "event_time": 3,
+        "coef": -0.030764604541922473,
+        "std_err": 0.0248964252772371,
+        "p_value": 0.21656872605264255,
+        "n_firm_years": 3,
+        "n_firms": 3
+      }
+    ],
+    "n_obs": 878,
+    "n_firms": 407,
+    "cohort_from": 2022,
+    "source": "FY2025 package, clean-text filtered",
+    "note": "cohort definition differs from Figure 9; reported as a variant only"
+  }
+}

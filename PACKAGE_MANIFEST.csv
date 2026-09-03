@@ -142,3 +142,7 @@ paper/README.md,doc,public,Paper folder note
 paper/attachments/appendix_full_genai_dictionary.docx,paper,public,Public full dictionary attachment
 paper/attachments/table_x_genai_dictionary_keywords.docx,paper,public,Public dictionary classification attachment
 requirements.txt,code,public,Dependency list for the docx exhibit-extraction utility
+code/analysis/12_curvature_test.py,code,public,2026-07-24: round-2 curvature/U-shape test; self-checks against Table 9 column (1)
+code/analysis/13_event_study_extended.py,code,public,2026-07-24: round-2 extended event-study horizons with FY2025; self-checks against published Figure 9
+data/curvature_test_results.json,data,public,2026-07-24: output of 12_curvature_test.py (main + strict samples)
+data/event_study_extended.json,data,public,2026-07-24: output of 13_event_study_extended.py (published Figure 9 replication + two extended specifications)

@@ -1,0 +1,88 @@
+[
+  {
+    "sample": "main",
+    "n": 1017,
+    "share_positive_disclosure": 0.119960668633235,
+    "g_min": 0.0,
+    "g_p50": 0.0,
+    "g_p95": 1.09861228866811,
+    "g_max": 2.397895272798371,
+    "linear_baseline": {
+      "coef": -0.014625732144938881,
+      "se": 0.0048457235538385485,
+      "p": 0.002542170807643355,
+      "r2": 0.3840475135853879,
+      "aic": -3396.4857052310017
+    },
+    "quadratic": {
+      "b1_linear": 0.00943985416883953,
+      "b1_p": 0.6843205876840426,
+      "b2_squared": -0.012919479165603097,
+      "b2_se": 0.01187281972749905,
+      "b2_p": 0.27652627719732703,
+      "r2": 0.38829334294594164,
+      "aic": -3401.520272926371
+    },
+    "slope_at_min": {
+      "slope": 0.00943985416883953,
+      "se": 0.023218022816360786,
+      "t": 0.4065744203760388
+    },
+    "slope_at_max": {
+      "slope": -0.05251926186759389,
+      "se": 0.03434445077583695,
+      "t": -1.5291920726985053
+    },
+    "turning_point": 0.3653341612242488,
+    "u_test": {
+      "quadratic_significant": false,
+      "endpoint_slopes_opposite_sign": true,
+      "both_endpoint_slopes_significant": false,
+      "turning_point_interior": true,
+      "u_shape_supported": false
+    }
+  },
+  {
+    "sample": "strict",
+    "n": 897,
+    "share_positive_disclosure": 0.11482720178372352,
+    "g_min": 0.0,
+    "g_p50": 0.0,
+    "g_p95": 1.09861228866811,
+    "g_max": 2.397895272798371,
+    "linear_baseline": {
+      "coef": -0.012295059115551668,
+      "se": 0.005114025596685908,
+      "p": 0.016208607500068712,
+      "r2": 0.40004003912003006,
+      "aic": -2980.211063540418
+    },
+    "quadratic": {
+      "b1_linear": 0.0035450992771691586,
+      "b1_p": 0.8815892041108437,
+      "b2_squared": -0.008689520140964854,
+      "b2_se": 0.012172231067857149,
+      "b2_p": 0.47530098785880215,
+      "r2": 0.40179890479092506,
+      "aic": -2980.844605387001
+    },
+    "slope_at_min": {
+      "slope": 0.0035450992771691586,
+      "se": 0.02379981312910816,
+      "t": 0.1489549206936148
+    },
+    "slope_at_max": {
+      "slope": -0.038128019260642555,
+      "se": 0.03541922853991313,
+      "t": -1.0764779706502345
+    },
+    "turning_point": 0.20398705680285836,
+    "u_test": {
+      "quadratic_significant": false,
+      "endpoint_slopes_opposite_sign": true,
+      "both_endpoint_slopes_significant": false,
+      "turning_point_interior": true,
+      "u_shape_supported": false
+    }
+  }
+]

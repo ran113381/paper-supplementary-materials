@@ -101,3 +101,35 @@ those two constants along with the data paths when running locally.
   Output: `data/Table_boundary_robustness.csv`. Verified result: pre-2022
   firm-years with any hit fall 96 -> 29; H1 -0.0184 (p=0.0003),
   H2 contemporaneous -0.0353 (p=0.019), H3 -0.0089 (p<0.001).
+
+## Added 2026-07-24 (round-2 minor revision, Reviewer 1)
+
+- `12_curvature_test.py` -- curvature-in-intensity test answering the request for
+  a U-shaped specification. Adds a quadratic term in GenAI disclosure intensity
+  to the Table 9 column (1) baseline and applies the Lind & Mehlum (2010) U-test
+  conditions (significant quadratic term, opposite-signed and individually
+  significant end-point slopes, interior turning point). Self-check: the linear
+  baseline must reproduce the published Table 9 column (1) coefficient (-0.0146),
+  R-squared (0.384) and N (1,017), or the script aborts.
+  Usage: `python 12_curvature_test.py <08A.xlsx> [<08B.xlsx>]`
+  Output: `data/curvature_test_results.json`. Verified result: the squared term
+  is NOT significant in either sample (-0.0129, p = 0.28 main; -0.0087, p = 0.48
+  strict) and the U-test conditions are not met, because the slope at the lower
+  end of the intensity range is indistinguishable from zero. Scope note: this
+  tests curvature in the DOSE of disclosure, not curvature in time.
+- `13_event_study_extended.py` -- extends the event-study horizon with the
+  fiscal-2025 data, reusing the exact recipe of `code/09_run_did_and_placebo.py`
+  (focal firm-year collapse, first-disclosure cohorts vs never-disclosing
+  controls, firm and year fixed effects, SEs clustered by Focal_ID, reference
+  period t = -1) and applying the Section 4.7 clean-text filter before the
+  collapse. Self-check: the published recipe must reproduce Figure 9's
+  post-disclosure coefficients (t = 0: -0.0130, t = +1: -0.0204) or the script
+  aborts. Usage:
+  `python 13_event_study_extended.py <08A_2015_2024.xlsx> <08A_2025.xlsx>`
+  Output: `data/event_study_extended.json`. Verified result: under the published
+  cohort definition (>=2023) the coefficients are -0.0122 at t = 0 (61 treated
+  firms), -0.0070 at t = +1 (15 firms) and +0.0112 at t = +2 (5 firms, p = 0.63);
+  under a wider cohort variant (>=2022, NOT like-for-like with Figure 9) they are
+  -0.0400 at t = +2 (11 firms) and -0.0308 at t = +3 (3 firms). No post-disclosure
+  coefficient is statistically significant, and the sign beyond t = +1 depends on
+  the cohort definition, so the later time profile is not identified.
