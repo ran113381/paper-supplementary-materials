@@ -1,0 +1,84 @@
+{
+  "analysis_script_sha256": "969fe48ed0b6d3744fd37ba8e962faf1ddb3d1d8fa4504f03407e70c44530d20",
+  "canonical_content_hash_xlsx": {
+    "sealed/replacement/coding_sheet_replacement.xlsx": "fd3b3ab9fad2df5882be8036faa9dc82889a141c376222716deed916b11ea9ac",
+    "to_coder/codebook_for_coder.xlsx": "0d4ce4c79690eedf45c69cc29ead8ea56e4dff68e0d2288c4edc267ff489eeb1",
+    "to_coder/coding_sheet.xlsx": "8d36812a53254f9422507c5413784f391959d10cda4007abb4baad910cdbc48f",
+    "to_coder/practice_answers.xlsx": "95ce554c9acb0b3d1346a0bcf9d8e2e62032868c3739ad51ff713611494a7766",
+    "to_coder/practice_sheet.xlsx": "f36c65f386b63e798063ee2f90e7ec127390ea847d42eef69c4580472c312909"
+  },
+  "counts": {
+    "calibration_nonhigh_per_cell": {
+      "HIT-0": 20,
+      "HIT-1": 12,
+      "NM-0": 12,
+      "RND-0": 6
+    },
+    "calibration_per_cell": {
+      "HIT-0": 30,
+      "HIT-1": 40,
+      "NM-0": 20,
+      "RND-0": 10
+    },
+    "dup_ineligible": 2,
+    "e1_by_stratum_and_role": {
+      "NM": {
+        "calibration": 20,
+        "e1": 103
+      },
+      "RND": {
+        "calibration": 10,
+        "e1": 111
+      }
+    },
+    "e1_layer_by_stratum": {
+      "NM": 123,
+      "RND": 121
+    },
+    "practice_per_cell": {
+      "HIT-0": 12,
+      "HIT-1": 8,
+      "NM-0": 0,
+      "RND-0": 0
+    },
+    "role_counts": {
+      "calibration": 100,
+      "e1": 214,
+      "nonconcordant": 123,
+      "practice": 20,
+      "unused": 143
+    }
+  },
+  "output_files_sha256": {
+    "sealed/key_calibration.csv": "fc582c6817f30a06ca1dfe6c18e53607115bed4864f072b7c826df80ecb246cb",
+    "sealed/key_e1.csv": "6c4667892a79fb4ae06ad4b44dcb4ff5d6c246f468d6cf0ed46a65293f9884f0",
+    "sealed/key_nonconcordant.csv": "ea3fe59376bf9668faa1fff582d56b822fffb158e041db64f667e7973e47b001",
+    "sealed/key_practice.csv": "6178bbc105c402ca84df7e2be7baceccd5d0b0dfbfee0da58571cedab1c99252",
+    "sealed/replacement/coding_sheet_replacement.xlsx": "212fa9f62fc1236bf6bca3557bbdca00806ce46ef912f2cf9a882c50854701c7",
+    "sealed/replacement/key_calibration_replacement.csv": "b59fa7d120f679342dce929e8700e64152ae1ffaa1f31b05beb1652cdad86ace",
+    "sealed/replacement/key_e1_replacement.csv": "f1243d8fa18805d5cacebce4cec0aaf39c1d4b1cabd2b4b0d7481b7eecc83a3e",
+    "sealed/replacement/key_nonconcordant_replacement.csv": "3c06189f0d38d13d18b64c6ae329ee498cde1de38a3d7d93b4ecdbf166e89633",
+    "sealed/selection_register.csv": "7042561621bb03140e863ed0fdbedd56ff0526464c908b2c2108a07106db8c82",
+    "to_coder/codebook_for_coder.xlsx": "15223d8afc2d6c7f6b54ae7b9590b75c30f9dcc838ddc2fb99d217399153e800",
+    "to_coder/coding_sheet.xlsx": "8228c8a4f24a01df09ff88e0779a33bb9141205e2eec0b691444c601ca3dc1e1",
+    "to_coder/practice_answers.xlsx": "d7dfdd461ab9047431aaabab16f16ac2f316a7fe9413129db6c83fba86fa718f",
+    "to_coder/practice_sheet.xlsx": "65b7d912f294149c58205330c90b288e4cf8bbfda2cb5e9889d921736bf9184c"
+  },
+  "q7_script_sha256": "901247c0d306ec452160cdbf199d8f0a38495849726622009df1a1371511f90d",
+  "results_block": "=== RESULTS ===\nworkbook_sha256=aa072750c0a1ae9ac68dece24f060ef2c8e1d1bfb7a153244f9d69791620b0a0  seed_selection_sha256=14cd753a7745eb8e2c40f42a1d7d423c68d1a72f58faf3742eb070182c935ec0  seed_replacement_sha256=b337bc82cd4ef1da72c4e5202ae71fa14b71ef2546b5de651ca359cb960ba185  seed_analysis_sha256=d802d334fa64c6fee7ef317d0b16bc42c8af758253b05d36a09eee8a6bff0c19\nnonconcordant=123 concordant=477 GS_0438=nonconcordant\ncalibration per cell: HIT-1 40 (nonhigh 12) | HIT-0 30 (nonhigh 20) | NM-0 20 (nonhigh 12) | RND-0 10 (nonhigh 6)\npractice per cell: HIT-1 8 | HIT-0 12 | NM-0 0 | RND-0 0\ne1_layer=244 (NM 123, RND 121) = calibration 30 + e1 214 (practice 0)\ncoding sheet rows=437  replacement coding sheet rows=437  practice rows=20  answer sheet rows=20\nrole counts: nonconcordant 123 | calibration 100 | practice 20 | e1 214 | unused 143\nSHORTFALL lines: none\ndup_ineligible: 2 (in e1_layer: 0)\nassertions A1-A10, B1-B17: 27 PASS / 0 FAIL\ncontrols C1-C12, C14: 13 PASS / 0 FAIL\nsha256 per output file:\nsealed/key_calibration.csv=fc582c6817f30a06ca1dfe6c18e53607115bed4864f072b7c826df80ecb246cb\nsealed/key_e1.csv=6c4667892a79fb4ae06ad4b44dcb4ff5d6c246f468d6cf0ed46a65293f9884f0\nsealed/key_nonconcordant.csv=ea3fe59376bf9668faa1fff582d56b822fffb158e041db64f667e7973e47b001\nsealed/key_practice.csv=6178bbc105c402ca84df7e2be7baceccd5d0b0dfbfee0da58571cedab1c99252\nsealed/replacement/coding_sheet_replacement.xlsx=212fa9f62fc1236bf6bca3557bbdca00806ce46ef912f2cf9a882c50854701c7\nsealed/replacement/key_calibration_replacement.csv=b59fa7d120f679342dce929e8700e64152ae1ffaa1f31b05beb1652cdad86ace\nsealed/replacement/key_e1_replacement.csv=f1243d8fa18805d5cacebce4cec0aaf39c1d4b1cabd2b4b0d7481b7eecc83a3e\nsealed/replacement/key_nonconcordant_replacement.csv=3c06189f0d38d13d18b64c6ae329ee498cde1de38a3d7d93b4ecdbf166e89633\nsealed/selection_register.csv=7042561621bb03140e863ed0fdbedd56ff0526464c908b2c2108a07106db8c82\nto_coder/codebook_for_coder.xlsx=15223d8afc2d6c7f6b54ae7b9590b75c30f9dcc838ddc2fb99d217399153e800\nto_coder/coding_sheet.xlsx=8228c8a4f24a01df09ff88e0779a33bb9141205e2eec0b691444c601ca3dc1e1\nto_coder/practice_answers.xlsx=d7dfdd461ab9047431aaabab16f16ac2f316a7fe9413129db6c83fba86fa718f\nto_coder/practice_sheet.xlsx=65b7d912f294149c58205330c90b288e4cf8bbfda2cb5e9889d921736bf9184c\ncanonical content hash per xlsx:\nsealed/replacement/coding_sheet_replacement.xlsx=fd3b3ab9fad2df5882be8036faa9dc82889a141c376222716deed916b11ea9ac\nto_coder/codebook_for_coder.xlsx=0d4ce4c79690eedf45c69cc29ead8ea56e4dff68e0d2288c4edc267ff489eeb1\nto_coder/coding_sheet.xlsx=8d36812a53254f9422507c5413784f391959d10cda4007abb4baad910cdbc48f\nto_coder/practice_answers.xlsx=95ce554c9acb0b3d1346a0bcf9d8e2e62032868c3739ad51ff713611494a7766\nto_coder/practice_sheet.xlsx=f36c65f386b63e798063ee2f90e7ec127390ea847d42eef69c4580472c312909\npython=3.13.3 numpy=2.2.5 openpyxl=3.1.5\n=== END RESULTS ===",
+  "rules_file_sha256": "e5aa06323db5e75f4be3520eeeb7c4c03a0e766ff97297b8af69f9cc627e36be",
+  "run_start": "2026-10-15T10:14:11",
+  "seed_files_sha256": {
+    "analysis": "d802d334fa64c6fee7ef317d0b16bc42c8af758253b05d36a09eee8a6bff0c19",
+    "replacement": "b337bc82cd4ef1da72c4e5202ae71fa14b71ef2546b5de651ca359cb960ba185",
+    "selection": "14cd753a7745eb8e2c40f42a1d7d423c68d1a72f58faf3742eb070182c935ec0"
+  },
+  "selection_script_sha256": "fb923e25f211e9e825a3f19fe8cd058beb146046e3b2da715262650d192fd466",
+  "shortfall_lines": [],
+  "versions": {
+    "numpy": "2.2.5",
+    "openpyxl": "3.1.5",
+    "python": "3.13.3"
+  },
+  "workbook_sha256": "aa072750c0a1ae9ac68dece24f060ef2c8e1d1bfb7a153244f9d69791620b0a0"
+}
