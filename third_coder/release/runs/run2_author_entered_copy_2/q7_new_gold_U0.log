@@ -1,0 +1,65 @@
+=== RESULTS ===
+input=E:/paper2  daxiu/73ae4696cf54747044a03a936c4bb958_744934475e1139b8c27898b82ae5bbf0_8/paper2_github_replication/data/Table_3C_validation_predictions.csv
+n=600 gold_pos=213
+
+##### SCHEME S #####
+--- (a) all600 (abstain=0), n=600
+  Dictionary  TP=213 FP=87 TN=300 FN=0 | P=0.7100 [0.6563,0.7584] R=1.0000 [0.9823,1.0000] F1=0.8304 | cover=600/600
+  StrictLLM   TP=121 FP=0 TN=387 FN=92 | P=1.0000 [0.9692,1.0000] R=0.5681 [0.5009,0.6328] F1=0.7246 | cover=271/600
+  FinBERT     TP=150 FP=84 TN=303 FN=63 | P=0.6410 [0.5777,0.6998] R=0.7042 [0.6398,0.7615] F1=0.6711 | cover=600/600
+  Hybrid      TP=149 FP=1 TN=386 FN=64 | P=0.9933 [0.9632,0.9988] R=0.6995 [0.6349,0.7571] F1=0.8209 | cover=600/600
+--- (b) hit-layer300 (abstain=0), n=300
+  Dictionary  TP=213 FP=87 TN=0 FN=0 | P=0.7100 [0.6563,0.7584] R=1.0000 [0.9823,1.0000] F1=0.8304 | cover=300/300
+  StrictLLM   TP=121 FP=0 TN=87 FN=92 | P=1.0000 [0.9692,1.0000] R=0.5681 [0.5009,0.6328] F1=0.7246 | cover=271/300
+  FinBERT     TP=150 FP=23 TN=64 FN=63 | P=0.8671 [0.8084,0.9098] R=0.7042 [0.6398,0.7615] F1=0.7772 | cover=300/300
+  Hybrid      TP=149 FP=1 TN=86 FN=64 | P=0.9933 [0.9632,0.9988] R=0.6995 [0.6349,0.7571] F1=0.8209 | cover=300/300
+--- (c) strict-covered, n=271
+  Dictionary  TP=185 FP=86 TN=0 FN=0 | P=0.6827 [0.6250,0.7352] R=1.0000 [0.9797,1.0000] F1=0.8114 | cover=271/271
+  StrictLLM   TP=121 FP=0 TN=86 FN=64 | P=1.0000 [0.9692,1.0000] R=0.6541 [0.5830,0.7188] F1=0.7908 | cover=271/271
+  FinBERT     TP=124 FP=22 TN=64 FN=61 | P=0.8493 [0.7824,0.8983] R=0.6703 [0.5997,0.7339] F1=0.7492 | cover=271/271
+  Hybrid      TP=121 FP=0 TN=86 FN=64 | P=1.0000 [0.9692,1.0000] R=0.6541 [0.5830,0.7188] F1=0.7908 | cover=271/271
+--- (d) non-hit-layer300 (abstain=0), n=300
+  Dictionary  TP=0 FP=0 TN=300 FN=0 | P=nan [nan,nan] R=nan [nan,nan] F1=nan | cover=300/300
+  StrictLLM   TP=0 FP=0 TN=300 FN=0 | P=nan [nan,nan] R=nan [nan,nan] F1=nan | cover=0/300
+  FinBERT     TP=0 FP=61 TN=239 FN=0 | P=0.0000 [-0.0000,0.0592] R=nan [nan,nan] F1=nan | cover=300/300
+  Hybrid      TP=0 FP=0 TN=300 FN=0 | P=nan [nan,nan] R=nan [nan,nan] F1=nan | cover=300/300
+
+##### SCHEME G #####
+--- (a) all600 (abstain=0), n=600
+  Dictionary  TP=213 FP=87 TN=300 FN=0 | P=0.7100 [0.6563,0.7584] R=1.0000 [0.9823,1.0000] F1=0.8304 | cover=600/600
+  StrictLLM   TP=180 FP=1 TN=386 FN=33 | P=0.9945 [0.9694,0.9990] R=0.8451 [0.7904,0.8875] F1=0.9137 | cover=271/600
+  FinBERT     TP=150 FP=84 TN=303 FN=63 | P=0.6410 [0.5777,0.6998] R=0.7042 [0.6398,0.7615] F1=0.6711 | cover=600/600
+  Hybrid      TP=208 FP=2 TN=385 FN=5 | P=0.9905 [0.9659,0.9974] R=0.9765 [0.9462,0.9899] F1=0.9835 | cover=600/600
+--- (b) hit-layer300 (abstain=0), n=300
+  Dictionary  TP=213 FP=87 TN=0 FN=0 | P=0.7100 [0.6563,0.7584] R=1.0000 [0.9823,1.0000] F1=0.8304 | cover=300/300
+  StrictLLM   TP=180 FP=1 TN=86 FN=33 | P=0.9945 [0.9694,0.9990] R=0.8451 [0.7904,0.8875] F1=0.9137 | cover=271/300
+  FinBERT     TP=150 FP=23 TN=64 FN=63 | P=0.8671 [0.8084,0.9098] R=0.7042 [0.6398,0.7615] F1=0.7772 | cover=300/300
+  Hybrid      TP=208 FP=2 TN=85 FN=5 | P=0.9905 [0.9659,0.9974] R=0.9765 [0.9462,0.9899] F1=0.9835 | cover=300/300
+--- (c) strict-covered, n=271
+  Dictionary  TP=185 FP=86 TN=0 FN=0 | P=0.6827 [0.6250,0.7352] R=1.0000 [0.9797,1.0000] F1=0.8114 | cover=271/271
+  StrictLLM   TP=180 FP=1 TN=85 FN=5 | P=0.9945 [0.9694,0.9990] R=0.9730 [0.9383,0.9884] F1=0.9836 | cover=271/271
+  FinBERT     TP=124 FP=22 TN=64 FN=61 | P=0.8493 [0.7824,0.8983] R=0.6703 [0.5997,0.7339] F1=0.7492 | cover=271/271
+  Hybrid      TP=180 FP=1 TN=85 FN=5 | P=0.9945 [0.9694,0.9990] R=0.9730 [0.9383,0.9884] F1=0.9836 | cover=271/271
+--- (d) non-hit-layer300 (abstain=0), n=300
+  Dictionary  TP=0 FP=0 TN=300 FN=0 | P=nan [nan,nan] R=nan [nan,nan] F1=nan | cover=300/300
+  StrictLLM   TP=0 FP=0 TN=300 FN=0 | P=nan [nan,nan] R=nan [nan,nan] F1=nan | cover=0/300
+  FinBERT     TP=0 FP=61 TN=239 FN=0 | P=0.0000 [-0.0000,0.0592] R=nan [nan,nan] F1=nan | cover=300/300
+  Hybrid      TP=0 FP=0 TN=300 FN=0 | P=nan [nan,nan] R=nan [nan,nan] F1=nan | cover=300/300
+
+##### hit-layer crosstab: consensus_label x gold_binary (hit layer n=300)
+gold                    0    1
+consensus_label               
+disagreement            1   28
+generic_or_background   1   59
+substantive_adoption    0  121
+unclear                85    5
+
+##### all-600 crosstab (NaN shown as non_hit)
+gold                     0    1
+consensus_label                
+disagreement             1   28
+generic_or_background    1   59
+non_hit                300    0
+substantive_adoption     0  121
+unclear                 85    5
+=== END RESULTS ===

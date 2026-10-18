@@ -1,0 +1,6 @@
+STAGE 2: record hash verified (b22a4d32dedd); outcome=qualified
+Traceback (most recent call last):
+  File "E:\½×¤å§ë½Z  °e¼f\paper2\R3_work/third_coder_scripts/analysis_third_coder.py", line 270, in <module>
+    assert s['lean'] in ('1', '0'), f"U without lean {r['passage_id']}"
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: U without lean A268

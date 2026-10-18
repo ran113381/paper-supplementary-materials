@@ -1,0 +1,118 @@
+=== RESULTS ===
+J23 REPLAY (positive control): regenerated J23_q7_primary output = 238 lines, compared with J23_q7_primary.log: mismatching_lines=0 -> PASS
+J23 replay, pinned lines (regenerated text; Panel A = scheme G, Panel B = scheme S):
+  F1_boot gold_primary S a_all600 Dictionary F1=0.8304 CI[0.7925,0.8635] n=593 nan_draws=0
+  F1_boot gold_primary S a_all600 StrictLLM F1=0.7246 CI[0.6687,0.7794] n=593 nan_draws=0
+  F1_boot gold_primary S a_all600 Hybrid F1=0.8209 CI[0.7784,0.8610] n=593 nan_draws=0
+  F1_boot gold_primary S c_strict Dictionary F1=0.8114 CI[0.7710,0.8468] n=271 nan_draws=0
+  F1_boot gold_primary S c_strict StrictLLM F1=0.7908 CI[0.7387,0.8372] n=271 nan_draws=0
+  F1_boot gold_primary S c_strict Hybrid F1=0.7908 CI[0.7372,0.8379] n=271 nan_draws=0
+  F1_boot gold_primary G a_all600 Dictionary F1=0.8304 CI[0.7941,0.8644] n=593 nan_draws=0
+  F1_boot gold_primary G a_all600 StrictLLM F1=0.9137 CI[0.8828,0.9396] n=593 nan_draws=0
+  F1_boot gold_primary G a_all600 Hybrid F1=0.9835 CI[0.9709,0.9947] n=593 nan_draws=0
+  F1_boot gold_primary G c_strict Dictionary F1=0.8114 CI[0.7710,0.8493] n=271 nan_draws=0
+  F1_boot gold_primary G c_strict StrictLLM F1=0.9836 CI[0.9690,0.9947] n=271 nan_draws=0
+  F1_boot gold_primary G c_strict Hybrid F1=0.9836 CI[0.9697,0.9948] n=271 nan_draws=0
+  SCHEME S | --- (a) all600 (abstain=0), n=593 (dropped 7 of 600 unresolved)
+      Dictionary  TP=213 FP=87 TN=293 FN=0 | P=0.7100 [0.6563,0.7584] R=1.0000 [0.9823,1.0000] F1=0.8304 | cover=593/593
+      StrictLLM   TP=121 FP=0 TN=380 FN=92 | P=1.0000 [0.9692,1.0000] R=0.5681 [0.5009,0.6328] F1=0.7246 | cover=271/593
+      Hybrid      TP=149 FP=1 TN=379 FN=64 | P=0.9933 [0.9632,0.9988] R=0.6995 [0.6349,0.7571] F1=0.8209 | cover=593/593
+  SCHEME G | --- (a) all600 (abstain=0), n=593 (dropped 7 of 600 unresolved)
+      Dictionary  TP=213 FP=87 TN=293 FN=0 | P=0.7100 [0.6563,0.7584] R=1.0000 [0.9823,1.0000] F1=0.8304 | cover=593/593
+      StrictLLM   TP=180 FP=1 TN=379 FN=33 | P=0.9945 [0.9694,0.9990] R=0.8451 [0.7904,0.8875] F1=0.9137 | cover=271/593
+      Hybrid      TP=208 FP=2 TN=378 FN=5 | P=0.9905 [0.9659,0.9974] R=0.9765 [0.9462,0.9899] F1=0.9835 | cover=593/593
+R1 concordant n=477 gold_pos=169 hit=233 nonhit=244 strict_covered=210
+R1 Panel B [477 full benchmark (abstain=0), n=477] Dictionary TP=169 FP=64 TN=244 FN=0 | P=0.7253 (95% CI 0.6647-0.7786) R=1.0000 (95% CI 0.9778-1.0000) F1=0.8408 (95% CI 0.8020-0.8783; nan_draws=0) cover=477/477
+R1 Panel B [477 full benchmark (abstain=0), n=477] StrictLLM  TP=100 FP=0 TN=308 FN=69 | P=1.0000 (95% CI 0.9630-1.0000) R=0.5917 (95% CI 0.5164-0.6630) F1=0.7435 (95% CI 0.6831-0.7958; nan_draws=0) cover=210/477
+R1 Panel B [477 full benchmark (abstain=0), n=477] FinBERT    TP=119 FP=67 TN=241 FN=50 | P=0.6398 (95% CI 0.5686-0.7053) R=0.7041 (95% CI 0.6314-0.7678) F1=0.6704 (95% CI 0.6087-0.7225; nan_draws=0) cover=477/477
+R1 Panel B [477 full benchmark (abstain=0), n=477] Hybrid     TP=122 FP=1 TN=307 FN=47 | P=0.9919 (95% CI 0.9554-0.9986) R=0.7219 (95% CI 0.6500-0.7839) F1=0.8356 (95% CI 0.7879-0.8795; nan_draws=0) cover=477/477
+R1 Panel B [477 strict-covered, n=210] Dictionary TP=147 FP=63 TN=0 FN=0 | P=0.7000 (95% CI 0.6349-0.7579) R=1.0000 (95% CI 0.9745-1.0000) F1=0.8235 (95% CI 0.7791-0.8649; nan_draws=0) cover=210/210
+R1 Panel B [477 strict-covered, n=210] StrictLLM  TP=100 FP=0 TN=63 FN=47 | P=1.0000 (95% CI 0.9630-1.0000) R=0.6803 (95% CI 0.6011-0.7502) F1=0.8097 (95% CI 0.7541-0.8593; nan_draws=0) cover=210/210
+R1 Panel B [477 strict-covered, n=210] FinBERT    TP=99 FP=14 TN=49 FN=48 | P=0.8761 (95% CI 0.8027-0.9247) R=0.6735 (95% CI 0.5941-0.7440) F1=0.7615 (95% CI 0.6979-0.8163; nan_draws=0) cover=210/210
+R1 Panel B [477 strict-covered, n=210] Hybrid     TP=100 FP=0 TN=63 FN=47 | P=1.0000 (95% CI 0.9630-1.0000) R=0.6803 (95% CI 0.6011-0.7502) F1=0.8097 (95% CI 0.7520-0.8607; nan_draws=0) cover=210/210
+R1 Panel A [477 full benchmark (abstain=0), n=477] Dictionary TP=169 FP=64 TN=244 FN=0 | P=0.7253 (95% CI 0.6647-0.7786) R=1.0000 (95% CI 0.9778-1.0000) F1=0.8408 (95% CI 0.8010-0.8792; nan_draws=0) cover=477/477
+R1 Panel A [477 full benchmark (abstain=0), n=477] StrictLLM  TP=147 FP=0 TN=308 FN=22 | P=1.0000 (95% CI 0.9745-1.0000) R=0.8698 (95% CI 0.8108-0.9124) F1=0.9304 (95% CI 0.8997-0.9578; nan_draws=0) cover=210/477
+R1 Panel A [477 full benchmark (abstain=0), n=477] FinBERT    TP=119 FP=67 TN=241 FN=50 | P=0.6398 (95% CI 0.5686-0.7053) R=0.7041 (95% CI 0.6314-0.7678) F1=0.6704 (95% CI 0.6116-0.7241; nan_draws=0) cover=477/477
+R1 Panel A [477 full benchmark (abstain=0), n=477] Hybrid     TP=169 FP=1 TN=307 FN=0 | P=0.9941 (95% CI 0.9674-0.9990) R=1.0000 (95% CI 0.9778-1.0000) F1=0.9971 (95% CI 0.9905-1.0000; nan_draws=0) cover=477/477
+R1 Panel A [477 strict-covered, n=210] Dictionary TP=147 FP=63 TN=0 FN=0 | P=0.7000 (95% CI 0.6349-0.7579) R=1.0000 (95% CI 0.9745-1.0000) F1=0.8235 (95% CI 0.7791-0.8618; nan_draws=0) cover=210/210
+R1 Panel A [477 strict-covered, n=210] StrictLLM  TP=147 FP=0 TN=63 FN=0 | P=1.0000 (95% CI 0.9745-1.0000) R=1.0000 (95% CI 0.9745-1.0000) F1=1.0000 (95% CI 1.0000-1.0000; nan_draws=0) cover=210/210
+R1 Panel A [477 strict-covered, n=210] FinBERT    TP=99 FP=14 TN=49 FN=48 | P=0.8761 (95% CI 0.8027-0.9247) R=0.6735 (95% CI 0.5941-0.7440) F1=0.7615 (95% CI 0.6988-0.8179; nan_draws=0) cover=210/210
+R1 Panel A [477 strict-covered, n=210] Hybrid     TP=147 FP=0 TN=63 FN=0 | P=1.0000 (95% CI 0.9745-1.0000) R=1.0000 (95% CI 0.9745-1.0000) F1=1.0000 (95% CI 1.0000-1.0000; nan_draws=0) cover=210/210
+R2 stratum matched (dictionary_hit_random): n_total=300 n_resolved=300 dropped_unresolved=0 positives=213
+R2 Panel B [matched (dictionary_hit_random)] Dictionary TP=213 FP=87 TN=0 FN=0 | P=0.7100 (95% CI 0.6563-0.7584) R=1.0000 (95% CI 0.9823-1.0000) F1=0.8304 cover=300/300
+R2 Panel B [matched (dictionary_hit_random)] StrictLLM  TP=121 FP=0 TN=87 FN=92 | P=1.0000 (95% CI 0.9692-1.0000) R=0.5681 (95% CI 0.5009-0.6328) F1=0.7246 cover=271/300
+R2 Panel B [matched (dictionary_hit_random)] FinBERT    TP=150 FP=23 TN=64 FN=63 | P=0.8671 (95% CI 0.8084-0.9098) R=0.7042 (95% CI 0.6398-0.7615) F1=0.7772 cover=300/300
+R2 Panel B [matched (dictionary_hit_random)] Hybrid     TP=149 FP=1 TN=86 FN=64 | P=0.9933 (95% CI 0.9632-0.9988) R=0.6995 (95% CI 0.6349-0.7571) F1=0.8209 cover=300/300
+R2 Panel A [matched (dictionary_hit_random)] Dictionary TP=213 FP=87 TN=0 FN=0 | P=0.7100 (95% CI 0.6563-0.7584) R=1.0000 (95% CI 0.9823-1.0000) F1=0.8304 cover=300/300
+R2 Panel A [matched (dictionary_hit_random)] StrictLLM  TP=180 FP=1 TN=86 FN=33 | P=0.9945 (95% CI 0.9694-0.9990) R=0.8451 (95% CI 0.7904-0.8875) F1=0.9137 cover=271/300
+R2 Panel A [matched (dictionary_hit_random)] FinBERT    TP=150 FP=23 TN=64 FN=63 | P=0.8671 (95% CI 0.8084-0.9098) R=0.7042 (95% CI 0.6398-0.7615) F1=0.7772 cover=300/300
+R2 Panel A [matched (dictionary_hit_random)] Hybrid     TP=208 FP=2 TN=85 FN=5 | P=0.9905 (95% CI 0.9659-0.9974) R=0.9765 (95% CI 0.9462-0.9899) F1=0.9835 cover=300/300
+R2 stratum random non-matched: n_total=150 n_resolved=150 dropped_unresolved=0 positives=0
+R2 Panel B [random non-matched] Dictionary TP=0 FP=0 TN=150 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages) cover=150/150
+R2 Panel B [random non-matched] StrictLLM  TP=0 FP=0 TN=150 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages) cover=0/150
+R2 Panel B [random non-matched] FinBERT    TP=0 FP=3 TN=147 FN=0 | P=0.0000 (95% CI 0.0000-0.5615) R=undefined (no positive passages) F1=undefined (no positive passages) cover=150/150
+R2 Panel B [random non-matched] Hybrid     TP=0 FP=0 TN=150 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages) cover=150/150
+R2 Panel A [random non-matched] Dictionary TP=0 FP=0 TN=150 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages) cover=150/150
+R2 Panel A [random non-matched] StrictLLM  TP=0 FP=0 TN=150 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages) cover=0/150
+R2 Panel A [random non-matched] FinBERT    TP=0 FP=3 TN=147 FN=0 | P=0.0000 (95% CI 0.0000-0.5615) R=undefined (no positive passages) F1=undefined (no positive passages) cover=150/150
+R2 Panel A [random non-matched] Hybrid     TP=0 FP=0 TN=150 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages) cover=150/150
+R2 stratum near-miss non-matched: n_total=150 n_resolved=143 dropped_unresolved=7 positives=0
+R2 Panel B [near-miss non-matched] Dictionary TP=0 FP=0 TN=143 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages) cover=143/143
+R2 Panel B [near-miss non-matched] StrictLLM  TP=0 FP=0 TN=143 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages) cover=0/143
+R2 Panel B [near-miss non-matched] FinBERT    TP=0 FP=58 TN=85 FN=0 | P=0.0000 (95% CI 0.0000-0.0621) R=undefined (no positive passages) F1=undefined (no positive passages) cover=143/143
+R2 Panel B [near-miss non-matched] Hybrid     TP=0 FP=0 TN=143 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages) cover=143/143
+R2 Panel A [near-miss non-matched] Dictionary TP=0 FP=0 TN=143 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages) cover=143/143
+R2 Panel A [near-miss non-matched] StrictLLM  TP=0 FP=0 TN=143 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages) cover=0/143
+R2 Panel A [near-miss non-matched] FinBERT    TP=0 FP=58 TN=85 FN=0 | P=0.0000 (95% CI 0.0000-0.0621) R=undefined (no positive passages) F1=undefined (no positive passages) cover=143/143
+R2 Panel A [near-miss non-matched] Hybrid     TP=0 FP=0 TN=143 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages) cover=143/143
+R3 control CP 0/121 = 0.0000-0.0300 (3dp 0.000-0.030; manuscript 0.000-0.030) OK
+R3 control CP 4/123 = 0.0089-0.0812 (3dp 0.009-0.081; manuscript 0.009-0.081) OK
+R3 control CP 4/244 = 0.0045-0.0414 (3dp 0.004-0.041; manuscript 0.004-0.041) OK
+R3 random non-matched 0/150 (gold_primary) two-sided Clopper-Pearson 95% CI = 0.0000-0.0243 (3dp 0.000-0.024); closed form 1-0.025^(1/150)=0.024293
+R4 previous labels Panel B a_all600 n=600 Dictionary TP=216 FP=84 TN=300 FN=0 | P=0.7200 (95% CI 0.6667-0.7678) R=1.0000 (95% CI 0.9825-1.0000) F1=0.8372 (95% CI 0.8024-0.8710; nan_draws=0)
+R4 previous labels Panel B a_all600 n=600 StrictLLM  TP=121 FP=0 TN=384 FN=95 | P=1.0000 (95% CI 0.9692-1.0000) R=0.5602 (95% CI 0.4935-0.6248) F1=0.7181 (95% CI 0.6625-0.7680; nan_draws=0)
+R4 previous labels Panel B a_all600 n=600 FinBERT    TP=151 FP=83 TN=301 FN=65 | P=0.6453 (95% CI 0.5821-0.7038) R=0.6991 (95% CI 0.6349-0.7563) F1=0.6711 (95% CI 0.6204-0.7217; nan_draws=0)
+R4 previous labels Panel B a_all600 n=600 Hybrid     TP=148 FP=2 TN=382 FN=68 | P=0.9867 (95% CI 0.9527-0.9963) R=0.6852 (95% CI 0.6205-0.7434) F1=0.8087 (95% CI 0.7613-0.8497; nan_draws=0)
+R4 previous labels Panel B b_hit300 n=300 Dictionary TP=216 FP=84 TN=0 FN=0 | P=0.7200 (95% CI 0.6667-0.7678) R=1.0000 (95% CI 0.9825-1.0000) F1=0.8372 (95% CI 0.8000-0.8701; nan_draws=0)
+R4 previous labels Panel B b_hit300 n=300 StrictLLM  TP=121 FP=0 TN=84 FN=95 | P=1.0000 (95% CI 0.9692-1.0000) R=0.5602 (95% CI 0.4935-0.6248) F1=0.7181 (95% CI 0.6645-0.7697; nan_draws=0)
+R4 previous labels Panel B b_hit300 n=300 FinBERT    TP=151 FP=22 TN=62 FN=65 | P=0.8728 (95% CI 0.8150-0.9145) R=0.6991 (95% CI 0.6349-0.7563) F1=0.7763 (95% CI 0.7282-0.8173; nan_draws=0)
+R4 previous labels Panel B b_hit300 n=300 Hybrid     TP=148 FP=2 TN=82 FN=68 | P=0.9867 (95% CI 0.9527-0.9963) R=0.6852 (95% CI 0.6205-0.7434) F1=0.8087 (95% CI 0.7616-0.8499; nan_draws=0)
+R4 previous labels Panel B c_strict n=271 Dictionary TP=189 FP=82 TN=0 FN=0 | P=0.6974 (95% CI 0.6403-0.7490) R=1.0000 (95% CI 0.9801-1.0000) F1=0.8217 (95% CI 0.7820-0.8589; nan_draws=0)
+R4 previous labels Panel B c_strict n=271 StrictLLM  TP=121 FP=0 TN=82 FN=68 | P=1.0000 (95% CI 0.9692-1.0000) R=0.6402 (95% CI 0.5696-0.7052) F1=0.7806 (95% CI 0.7285-0.8297; nan_draws=0)
+R4 previous labels Panel B c_strict n=271 FinBERT    TP=126 FP=20 TN=62 FN=63 | P=0.8630 (95% CI 0.7979-0.9095) R=0.6667 (95% CI 0.5967-0.7300) F1=0.7522 (95% CI 0.6997-0.8012; nan_draws=0)
+R4 previous labels Panel B c_strict n=271 Hybrid     TP=121 FP=0 TN=82 FN=68 | P=1.0000 (95% CI 0.9692-1.0000) R=0.6402 (95% CI 0.5696-0.7052) F1=0.7806 (95% CI 0.7267-0.8293; nan_draws=0)
+R4 previous labels Panel B d_nonhit300 n=300 Dictionary TP=0 FP=0 TN=300 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages)
+R4 previous labels Panel B d_nonhit300 n=300 StrictLLM  TP=0 FP=0 TN=300 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages)
+R4 previous labels Panel B d_nonhit300 n=300 FinBERT    TP=0 FP=61 TN=239 FN=0 | P=0.0000 (95% CI 0.0000-0.0592) R=undefined (no positive passages) F1=undefined (no positive passages)
+R4 previous labels Panel B d_nonhit300 n=300 Hybrid     TP=0 FP=0 TN=300 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages)
+R4 previous labels Panel A a_all600 n=600 Dictionary TP=216 FP=84 TN=300 FN=0 | P=0.7200 (95% CI 0.6667-0.7678) R=1.0000 (95% CI 0.9825-1.0000) F1=0.8372 (95% CI 0.8008-0.8703; nan_draws=0)
+R4 previous labels Panel A a_all600 n=600 StrictLLM  TP=180 FP=1 TN=383 FN=36 | P=0.9945 (95% CI 0.9694-0.9990) R=0.8333 (95% CI 0.7779-0.8771) F1=0.9068 (95% CI 0.8743-0.9353; nan_draws=0)
+R4 previous labels Panel A a_all600 n=600 FinBERT    TP=151 FP=83 TN=301 FN=65 | P=0.6453 (95% CI 0.5821-0.7038) R=0.6991 (95% CI 0.6349-0.7563) F1=0.6711 (95% CI 0.6171-0.7196; nan_draws=0)
+R4 previous labels Panel A a_all600 n=600 Hybrid     TP=207 FP=3 TN=381 FN=9 | P=0.9857 (95% CI 0.9588-0.9951) R=0.9583 (95% CI 0.9227-0.9779) F1=0.9718 (95% CI 0.9545-0.9861; nan_draws=0)
+R4 previous labels Panel A b_hit300 n=300 Dictionary TP=216 FP=84 TN=0 FN=0 | P=0.7200 (95% CI 0.6667-0.7678) R=1.0000 (95% CI 0.9825-1.0000) F1=0.8372 (95% CI 0.8024-0.8701; nan_draws=0)
+R4 previous labels Panel A b_hit300 n=300 StrictLLM  TP=180 FP=1 TN=83 FN=36 | P=0.9945 (95% CI 0.9694-0.9990) R=0.8333 (95% CI 0.7779-0.8771) F1=0.9068 (95% CI 0.8750-0.9351; nan_draws=0)
+R4 previous labels Panel A b_hit300 n=300 FinBERT    TP=151 FP=22 TN=62 FN=65 | P=0.8728 (95% CI 0.8150-0.9145) R=0.6991 (95% CI 0.6349-0.7563) F1=0.7763 (95% CI 0.7243-0.8184; nan_draws=0)
+R4 previous labels Panel A b_hit300 n=300 Hybrid     TP=207 FP=3 TN=81 FN=9 | P=0.9857 (95% CI 0.9588-0.9951) R=0.9583 (95% CI 0.9227-0.9779) F1=0.9718 (95% CI 0.9542-0.9861; nan_draws=0)
+R4 previous labels Panel A c_strict n=271 Dictionary TP=189 FP=82 TN=0 FN=0 | P=0.6974 (95% CI 0.6403-0.7490) R=1.0000 (95% CI 0.9801-1.0000) F1=0.8217 (95% CI 0.7793-0.8589; nan_draws=0)
+R4 previous labels Panel A c_strict n=271 StrictLLM  TP=180 FP=1 TN=81 FN=9 | P=0.9945 (95% CI 0.9694-0.9990) R=0.9524 (95% CI 0.9120-0.9747) F1=0.9730 (95% CI 0.9544-0.9887; nan_draws=0)
+R4 previous labels Panel A c_strict n=271 FinBERT    TP=126 FP=20 TN=62 FN=63 | P=0.8630 (95% CI 0.7979-0.9095) R=0.6667 (95% CI 0.5967-0.7300) F1=0.7522 (95% CI 0.6974-0.8045; nan_draws=0)
+R4 previous labels Panel A c_strict n=271 Hybrid     TP=180 FP=1 TN=81 FN=9 | P=0.9945 (95% CI 0.9694-0.9990) R=0.9524 (95% CI 0.9120-0.9747) F1=0.9730 (95% CI 0.9554-0.9890; nan_draws=0)
+R4 previous labels Panel A d_nonhit300 n=300 Dictionary TP=0 FP=0 TN=300 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages)
+R4 previous labels Panel A d_nonhit300 n=300 StrictLLM  TP=0 FP=0 TN=300 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages)
+R4 previous labels Panel A d_nonhit300 n=300 FinBERT    TP=0 FP=61 TN=239 FN=0 | P=0.0000 (95% CI 0.0000-0.0592) R=undefined (no positive passages) F1=undefined (no positive passages)
+R4 previous labels Panel A d_nonhit300 n=300 Hybrid     TP=0 FP=0 TN=300 FN=0 | P=undefined (no predicted positives) R=undefined (no positive passages) F1=undefined (no positive passages)
+R4 control vs manuscript previous-labels column Panel A Dictionary: got ('0.720', '1.000', '0.837') manuscript ('0.720', '1.000', '0.837') OK
+R4 control vs manuscript previous-labels column Panel A StrictLLM: got ('0.994', '0.833', '0.907') manuscript ('0.994', '0.833', '0.907') OK
+R4 control vs manuscript previous-labels column Panel A FinBERT: got ('0.645', '0.699', '0.671') manuscript ('0.645', '0.699', '0.671') OK
+R4 control vs manuscript previous-labels column Panel A Hybrid: got ('0.986', '0.958', '0.972') manuscript ('0.986', '0.958', '0.972') OK
+R4 control vs manuscript previous-labels column Panel B StrictLLM: got ('1.000', '0.560', '0.718') manuscript ('1.000', '0.560', '0.718') OK
+R4 control vs manuscript previous-labels column Panel B Hybrid: got ('0.987', '0.685', '0.809') manuscript ('0.987', '0.685', '0.809') OK
+R4 control vs manuscript note (271 covered, strict consensus) Panel A: got ('0.994', '0.952', '0.973') manuscript ('0.994', '0.952', '0.973') OK
+R4 control vs manuscript note (271 covered, strict consensus) Panel B: got ('1.000', '0.640', '0.781') manuscript ('1.000', '0.640', '0.781') OK
+FILL F158 = two-sided Clopper–Pearson 95% CI for the proportion 0.000–0.024
+FILL F280 = (F1 bootstrap 95% CIs under the previous labels, full benchmark: Panel A: Dictionary rules 0.837 (95% CI 0.801–0.870), Strict consensus 0.907 (95% CI 0.874–0.935), FinBERT 0.671 (95% CI 0.617–0.720), Hybrid 0.972 (95% CI 0.955–0.986); Panel B: Strict consensus 0.718 (95% CI 0.662–0.768), Hybrid 0.809 (95% CI 0.761–0.850); strict consensus on the 271 covered passages: 0.973 (95% CI 0.954–0.989) in Panel A and 0.781 (95% CI 0.728–0.830) in Panel B)
+FILL F295 = In the random non-matched stratum (150 passages, none GenAI-related) no method has a true positive; FinBERT has 3 false positives and the other methods none, and recall and F1 are undefined (no positive passages); the two-sided Clopper–Pearson 95% CI for 0 of 150 is 0.000–0.024. In the near-miss non-matched stratum (143 resolved passages, none GenAI-related) no method has a true positive; FinBERT has 58 false positives (P=0.000, 95% CI 0.000–0.062) and the other methods none, and recall and F1 are undefined (no positive passages). On the 477 concordant passages (169 GenAI-related; full benchmark, abstentions counted as non-detections), the dictionary rules have 169 true positives, 64 false positives, 244 true negatives and 0 false negatives, and precision, recall and F1 are, in Panel A, Dictionary rules P=0.725 (95% CI 0.665–0.779), R=1.000 (95% CI 0.978–1.000), F1=0.841 (95% CI 0.801–0.879); Strict consensus P=1.000 (95% CI 0.975–1.000), R=0.870 (95% CI 0.811–0.912), F1=0.930 (95% CI 0.900–0.958); FinBERT P=0.640 (95% CI 0.569–0.705), R=0.704 (95% CI 0.631–0.768), F1=0.670 (95% CI 0.612–0.724); Hybrid P=0.994 (95% CI 0.967–0.999), R=1.000 (95% CI 0.978–1.000), F1=0.997 (95% CI 0.991–1.000). In Panel B, Dictionary rules P=0.725 (95% CI 0.665–0.779), R=1.000 (95% CI 0.978–1.000), F1=0.841 (95% CI 0.802–0.878); Strict consensus P=1.000 (95% CI 0.963–1.000), R=0.592 (95% CI 0.516–0.663), F1=0.743 (95% CI 0.683–0.796); FinBERT P=0.640 (95% CI 0.569–0.705), R=0.704 (95% CI 0.631–0.768), F1=0.670 (95% CI 0.609–0.723); Hybrid P=0.992 (95% CI 0.955–0.999), R=0.722 (95% CI 0.650–0.784), F1=0.836 (95% CI 0.788–0.879).
+FILL F154 = The metrics on the 477 concordant passages and by stratum (matched, random non-matched, near-miss non-matched)
+FILL F330 = (the metrics on the 477 concordant passages are in the note to Table S5.5)
+R4 control mismatches=0
+=== END RESULTS ===

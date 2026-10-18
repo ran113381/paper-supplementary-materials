@@ -1,0 +1,10 @@
+STAGE 1: opening key_calibration only
+sheet check: rows=437 missing_label=0 U_without_lean=0 bad_confidence=0
+=== RESULTS ===
+stage=1 replacement=False
+U=6/100 alpha_U_missing=0.9139 CI[0.8224,0.9789] alpha_lean=0.7981 CI[0.6616,0.9164]
+kappa_U_excluded=0.9135 agreement=90/94 Wilson[0.8956,0.9833]
+qualification_statistic=alpha_U_missing value=0.9139 threshold=0.667 outcome=qualified
+achieved_share_reference_positive=0.400 nonhigh_share=0.500
+qualification_record_sha256=b7186c5877caa2f8dc01ff89cd8f89740c2fb2235e966ca013b5aa766733a673
+=== END RESULTS ===

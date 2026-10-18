@@ -1,0 +1,15 @@
+=== RESULTS ===
+sheetnames old ['Coding'] new ['Coding']
+header same True
+rows old 437 new 437
+passage_id order same True
+passage_text all same True
+completeness old rows=437 missing_label=0 U_without_lean=4 bad_conf=0
+completeness new rows=437 missing_label=0 U_without_lean=0 bad_conf=0
+CHANGE A073 confidence: 'High' -> 'Medium'
+CHANGE A128 lean: None -> 1
+CHANGE A218 lean: None -> 1
+CHANGE A268 lean: None -> 1
+CHANGE A318 lean: None -> 1
+changed cells 5
+=== END RESULTS ===

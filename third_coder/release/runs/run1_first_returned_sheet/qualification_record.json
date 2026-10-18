@@ -1,0 +1,35 @@
+{
+  "U_rate": 0.06,
+  "achieved_share_reference_positive": 0.4,
+  "alpha_U_missing": 0.9139438564196962,
+  "alpha_U_missing_boot95": [
+    0.8224109665052461,
+    0.978908603950452
+  ],
+  "alpha_lean_boot95": [
+    0.6616458157093905,
+    0.9163514081546869
+  ],
+  "alpha_lean_substituted": 0.7980925324675325,
+  "boot_valid_resamples_lean": 2000,
+  "boot_valid_resamples_miss": 2000,
+  "bootstrap_seed_file_sha256": "d802d334fa64c6fee7ef317d0b16bc42c8af758253b05d36a09eee8a6bff0c19",
+  "cohen_kappa_U_excluded": 0.9135234590616377,
+  "key_sha256": "fc582c6817f30a06ca1dfe6c18e53607115bed4864f072b7c826df80ecb246cb",
+  "n_U": 6,
+  "n_calibration": 100,
+  "nonhigh_share": 0.5,
+  "outcome": "qualified",
+  "percent_agreement_U_excluded": 0.9574468085106383,
+  "percent_agreement_n": 94,
+  "percent_agreement_wilson95": [
+    0.8956435421811827,
+    0.9833294518499572
+  ],
+  "qualification_statistic": "alpha_U_missing",
+  "qualification_value": 0.9139438564196962,
+  "replacement": false,
+  "sheet_sha256": "3d0aff4b1e55ee4eedc4a3f41ef52ece0e16e98e9aace52938377c9819306169",
+  "threshold": 0.667,
+  "written_at": "2026-10-16T10:18:38"
+}

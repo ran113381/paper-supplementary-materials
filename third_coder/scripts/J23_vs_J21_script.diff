@@ -1,0 +1,12 @@
+44c44
+< FINAL = os.path.join(W, 'J20_unblinding', 'final_labels.csv')
+---
+> FINAL = os.path.join(W, 'J23_unblinding', 'final_labels.csv')
+61c61
+<                (os.path.join(W, 'J20_unblinding', 'q7_control.log'), 'e6fa8d0f0f9a')]:
+---
+>                (os.path.join(W, 'J23_unblinding', 'q7_control.log'), 'e6fa8d0f0f9a')]:
+187c187
+<     raw = open(os.path.join(W, 'J20_unblinding', name), 'rb').read()
+---
+>     raw = open(os.path.join(W, 'J23_unblinding', name), 'rb').read()

@@ -1,0 +1,10 @@
+STAGE 2: record hash verified (d9dd5acffe87); outcome=qualified
+=== RESULTS ===
+stage=2 replacement=False outcome=qualified record_sha256=d9dd5acffe871e10c3fcfd14bc9bf54179aaeadcda80436ca6a138e30b498843
+nonconcordant resolved(binary)=116 unresolved(U)=7 coder3_agrees_with_coder1=107/116 with_coder2=8/116
+calibration disagreements/U listed=10 flip variant label changes=4
+E1 NM: n=123 labeled_1=4 CP95=[0.0089,0.0812] U=27 (lean1 27, lean0 0)
+E1 RND: n=121 labeled_1=0 CP95=[0.0000,0.0300] U=0 (lean1 0, lean0 0)
+E1 ALL: n=244 labeled_1=4 CP95=[0.0045,0.0414] U=27 (lean1 27, lean0 0)
+final_labels.csv written=True (written only if qualified; gold_primary blank where Coder 3 entered U)
+=== END RESULTS ===

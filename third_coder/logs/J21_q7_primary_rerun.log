@@ -1,0 +1,238 @@
+=== RESULTS ===
+seed_file_sha256_ok=True seed=20261017 B=2000; pred_sha256_ok=True; final_labels sha12=4533fc1a863e ok
+CHECK C1 gold_binary vs q7_control.log: lines=72 mismatching_lines=0 -> PASS
+CHECK C2 gold_lean vs q7_new_gold_lean.log: lines=66 mismatching_lines=0 -> PASS
+CHECK C2 gold_U0 vs q7_new_gold_U0.log: lines=66 mismatching_lines=0 -> PASS
+CHECK C2 gold_U1 vs q7_new_gold_U1.log: lines=66 mismatching_lines=0 -> PASS
+CHECK C2 gold_flip_lean vs q7_new_gold_flip_lean.log: lines=66 mismatching_lines=0 -> PASS
+raw log CRLF present: q7_control=True gold_lean=True gold_U0=True gold_U1=True gold_flip_lean=True (compared after CRLF->LF)
+CONTROLS PASS=5 FAIL=0
+
+##### PRIMARY BASIS: gold_primary, unresolved (Coder-3 U) paragraphs dropped from every population
+input=E:/paper2  daxiu/73ae4696cf54747044a03a936c4bb958_744934475e1139b8c27898b82ae5bbf0_8/paper2_github_replication/data/Table_3C_validation_predictions.csv
+n=593 (of 600) dropped=7 gold_pos=213
+dropped sample_id: GS_0065 GS_0071 GS_0502 GS_0504 GS_0554 GS_0555 GS_0578
+
+##### SCHEME S #####
+--- (a) all600 (abstain=0), n=593 (dropped 7 of 600 unresolved)
+  Dictionary  TP=213 FP=87 TN=293 FN=0 | P=0.7100 [0.6563,0.7584] R=1.0000 [0.9823,1.0000] F1=0.8304 | cover=593/593
+  StrictLLM   TP=121 FP=0 TN=380 FN=92 | P=1.0000 [0.9692,1.0000] R=0.5681 [0.5009,0.6328] F1=0.7246 | cover=271/593
+  FinBERT     TP=150 FP=84 TN=296 FN=63 | P=0.6410 [0.5777,0.6998] R=0.7042 [0.6398,0.7615] F1=0.6711 | cover=593/593
+  Hybrid      TP=149 FP=1 TN=379 FN=64 | P=0.9933 [0.9632,0.9988] R=0.6995 [0.6349,0.7571] F1=0.8209 | cover=593/593
+--- (b) hit-layer300 (abstain=0), n=300 (dropped 0 of 300 unresolved)
+  Dictionary  TP=213 FP=87 TN=0 FN=0 | P=0.7100 [0.6563,0.7584] R=1.0000 [0.9823,1.0000] F1=0.8304 | cover=300/300
+  StrictLLM   TP=121 FP=0 TN=87 FN=92 | P=1.0000 [0.9692,1.0000] R=0.5681 [0.5009,0.6328] F1=0.7246 | cover=271/300
+  FinBERT     TP=150 FP=23 TN=64 FN=63 | P=0.8671 [0.8084,0.9098] R=0.7042 [0.6398,0.7615] F1=0.7772 | cover=300/300
+  Hybrid      TP=149 FP=1 TN=86 FN=64 | P=0.9933 [0.9632,0.9988] R=0.6995 [0.6349,0.7571] F1=0.8209 | cover=300/300
+--- (c) strict-covered, n=271 (dropped 0 of 271 unresolved)
+  Dictionary  TP=185 FP=86 TN=0 FN=0 | P=0.6827 [0.6250,0.7352] R=1.0000 [0.9797,1.0000] F1=0.8114 | cover=271/271
+  StrictLLM   TP=121 FP=0 TN=86 FN=64 | P=1.0000 [0.9692,1.0000] R=0.6541 [0.5830,0.7188] F1=0.7908 | cover=271/271
+  FinBERT     TP=124 FP=22 TN=64 FN=61 | P=0.8493 [0.7824,0.8983] R=0.6703 [0.5997,0.7339] F1=0.7492 | cover=271/271
+  Hybrid      TP=121 FP=0 TN=86 FN=64 | P=1.0000 [0.9692,1.0000] R=0.6541 [0.5830,0.7188] F1=0.7908 | cover=271/271
+--- (d) non-hit-layer300 (abstain=0), n=293 (dropped 7 of 300 unresolved)
+  Dictionary  TP=0 FP=0 TN=293 FN=0 | P=nan [nan,nan] R=nan [nan,nan] F1=nan | cover=293/293
+  StrictLLM   TP=0 FP=0 TN=293 FN=0 | P=nan [nan,nan] R=nan [nan,nan] F1=nan | cover=0/293
+  FinBERT     TP=0 FP=61 TN=232 FN=0 | P=0.0000 [-0.0000,0.0592] R=nan [nan,nan] F1=nan | cover=293/293
+  Hybrid      TP=0 FP=0 TN=293 FN=0 | P=nan [nan,nan] R=nan [nan,nan] F1=nan | cover=293/293
+
+##### SCHEME G #####
+--- (a) all600 (abstain=0), n=593 (dropped 7 of 600 unresolved)
+  Dictionary  TP=213 FP=87 TN=293 FN=0 | P=0.7100 [0.6563,0.7584] R=1.0000 [0.9823,1.0000] F1=0.8304 | cover=593/593
+  StrictLLM   TP=180 FP=1 TN=379 FN=33 | P=0.9945 [0.9694,0.9990] R=0.8451 [0.7904,0.8875] F1=0.9137 | cover=271/593
+  FinBERT     TP=150 FP=84 TN=296 FN=63 | P=0.6410 [0.5777,0.6998] R=0.7042 [0.6398,0.7615] F1=0.6711 | cover=593/593
+  Hybrid      TP=208 FP=2 TN=378 FN=5 | P=0.9905 [0.9659,0.9974] R=0.9765 [0.9462,0.9899] F1=0.9835 | cover=593/593
+--- (b) hit-layer300 (abstain=0), n=300 (dropped 0 of 300 unresolved)
+  Dictionary  TP=213 FP=87 TN=0 FN=0 | P=0.7100 [0.6563,0.7584] R=1.0000 [0.9823,1.0000] F1=0.8304 | cover=300/300
+  StrictLLM   TP=180 FP=1 TN=86 FN=33 | P=0.9945 [0.9694,0.9990] R=0.8451 [0.7904,0.8875] F1=0.9137 | cover=271/300
+  FinBERT     TP=150 FP=23 TN=64 FN=63 | P=0.8671 [0.8084,0.9098] R=0.7042 [0.6398,0.7615] F1=0.7772 | cover=300/300
+  Hybrid      TP=208 FP=2 TN=85 FN=5 | P=0.9905 [0.9659,0.9974] R=0.9765 [0.9462,0.9899] F1=0.9835 | cover=300/300
+--- (c) strict-covered, n=271 (dropped 0 of 271 unresolved)
+  Dictionary  TP=185 FP=86 TN=0 FN=0 | P=0.6827 [0.6250,0.7352] R=1.0000 [0.9797,1.0000] F1=0.8114 | cover=271/271
+  StrictLLM   TP=180 FP=1 TN=85 FN=5 | P=0.9945 [0.9694,0.9990] R=0.9730 [0.9383,0.9884] F1=0.9836 | cover=271/271
+  FinBERT     TP=124 FP=22 TN=64 FN=61 | P=0.8493 [0.7824,0.8983] R=0.6703 [0.5997,0.7339] F1=0.7492 | cover=271/271
+  Hybrid      TP=180 FP=1 TN=85 FN=5 | P=0.9945 [0.9694,0.9990] R=0.9730 [0.9383,0.9884] F1=0.9836 | cover=271/271
+--- (d) non-hit-layer300 (abstain=0), n=293 (dropped 7 of 300 unresolved)
+  Dictionary  TP=0 FP=0 TN=293 FN=0 | P=nan [nan,nan] R=nan [nan,nan] F1=nan | cover=293/293
+  StrictLLM   TP=0 FP=0 TN=293 FN=0 | P=nan [nan,nan] R=nan [nan,nan] F1=nan | cover=0/293
+  FinBERT     TP=0 FP=61 TN=232 FN=0 | P=0.0000 [-0.0000,0.0592] R=nan [nan,nan] F1=nan | cover=293/293
+  Hybrid      TP=0 FP=0 TN=293 FN=0 | P=nan [nan,nan] R=nan [nan,nan] F1=nan | cover=293/293
+
+##### hit-layer crosstab: consensus_label x gold_binary (hit layer n=300)
+gold                    0    1
+consensus_label               
+disagreement            1   28
+generic_or_background   1   59
+substantive_adoption    0  121
+unclear                85    5
+
+##### all-593 crosstab (NaN shown as non_hit)
+gold                     0    1
+consensus_label                
+disagreement             1   28
+generic_or_background    1   59
+non_hit                293    0
+substantive_adoption     0  121
+unclear                 85    5
+
+##### F1 bootstrap (B=2000, paragraph resampling within population, seed=20261017)
+F1_boot gold_primary S a_all600 Dictionary F1=0.8304 CI[0.7925,0.8635] n=593 nan_draws=0
+F1_boot gold_primary S a_all600 StrictLLM F1=0.7246 CI[0.6687,0.7794] n=593 nan_draws=0
+F1_boot gold_primary S a_all600 FinBERT F1=0.6711 CI[0.6213,0.7215] n=593 nan_draws=0
+F1_boot gold_primary S a_all600 Hybrid F1=0.8209 CI[0.7784,0.8610] n=593 nan_draws=0
+F1_boot gold_primary S b_hit300 Dictionary F1=0.8304 CI[0.7951,0.8615] n=300 nan_draws=0
+F1_boot gold_primary S b_hit300 StrictLLM F1=0.7246 CI[0.6667,0.7754] n=300 nan_draws=0
+F1_boot gold_primary S b_hit300 FinBERT F1=0.7772 CI[0.7273,0.8203] n=300 nan_draws=0
+F1_boot gold_primary S b_hit300 Hybrid F1=0.8209 CI[0.7761,0.8601] n=300 nan_draws=0
+F1_boot gold_primary S c_strict Dictionary F1=0.8114 CI[0.7710,0.8468] n=271 nan_draws=0
+F1_boot gold_primary S c_strict StrictLLM F1=0.7908 CI[0.7387,0.8372] n=271 nan_draws=0
+F1_boot gold_primary S c_strict FinBERT F1=0.7492 CI[0.6975,0.7988] n=271 nan_draws=0
+F1_boot gold_primary S c_strict Hybrid F1=0.7908 CI[0.7372,0.8379] n=271 nan_draws=0
+F1_boot gold_primary S d_nonhit300 Dictionary F1=nan CI[nan,nan] n=293 nan_draws=2000
+F1_boot gold_primary S d_nonhit300 StrictLLM F1=nan CI[nan,nan] n=293 nan_draws=2000
+F1_boot gold_primary S d_nonhit300 FinBERT F1=nan CI[0.0000,0.0000] n=293 nan_draws=0
+F1_boot gold_primary S d_nonhit300 Hybrid F1=nan CI[nan,nan] n=293 nan_draws=2000
+F1_boot gold_primary G a_all600 Dictionary F1=0.8304 CI[0.7941,0.8644] n=593 nan_draws=0
+F1_boot gold_primary G a_all600 StrictLLM F1=0.9137 CI[0.8828,0.9396] n=593 nan_draws=0
+F1_boot gold_primary G a_all600 FinBERT F1=0.6711 CI[0.6193,0.7237] n=593 nan_draws=0
+F1_boot gold_primary G a_all600 Hybrid F1=0.9835 CI[0.9709,0.9947] n=593 nan_draws=0
+F1_boot gold_primary G b_hit300 Dictionary F1=0.8304 CI[0.7928,0.8636] n=300 nan_draws=0
+F1_boot gold_primary G b_hit300 StrictLLM F1=0.9137 CI[0.8825,0.9412] n=300 nan_draws=0
+F1_boot gold_primary G b_hit300 FinBERT F1=0.7772 CI[0.7268,0.8191] n=300 nan_draws=0
+F1_boot gold_primary G b_hit300 Hybrid F1=0.9835 CI[0.9703,0.9950] n=300 nan_draws=0
+F1_boot gold_primary G c_strict Dictionary F1=0.8114 CI[0.7710,0.8493] n=271 nan_draws=0
+F1_boot gold_primary G c_strict StrictLLM F1=0.9836 CI[0.9690,0.9947] n=271 nan_draws=0
+F1_boot gold_primary G c_strict FinBERT F1=0.7492 CI[0.6951,0.8022] n=271 nan_draws=0
+F1_boot gold_primary G c_strict Hybrid F1=0.9836 CI[0.9697,0.9948] n=271 nan_draws=0
+F1_boot gold_primary G d_nonhit300 Dictionary F1=nan CI[nan,nan] n=293 nan_draws=2000
+F1_boot gold_primary G d_nonhit300 StrictLLM F1=nan CI[nan,nan] n=293 nan_draws=2000
+F1_boot gold_primary G d_nonhit300 FinBERT F1=nan CI[0.0000,0.0000] n=293 nan_draws=0
+F1_boot gold_primary G d_nonhit300 Hybrid F1=nan CI[nan,nan] n=293 nan_draws=2000
+F1_boot gold_lean S a_all600 Dictionary F1=0.8192 CI[0.7823,0.8545] n=600 nan_draws=0
+F1_boot gold_lean S a_all600 StrictLLM F1=0.7097 CI[0.6556,0.7622] n=600 nan_draws=0
+F1_boot gold_lean S a_all600 FinBERT F1=0.6608 CI[0.6105,0.7096] n=600 nan_draws=0
+F1_boot gold_lean S a_all600 Hybrid F1=0.8054 CI[0.7581,0.8462] n=600 nan_draws=0
+F1_boot gold_lean S b_hit300 Dictionary F1=0.8304 CI[0.7952,0.8636] n=300 nan_draws=0
+F1_boot gold_lean S b_hit300 StrictLLM F1=0.7246 CI[0.6689,0.7778] n=300 nan_draws=0
+F1_boot gold_lean S b_hit300 FinBERT F1=0.7772 CI[0.7293,0.8205] n=300 nan_draws=0
+F1_boot gold_lean S b_hit300 Hybrid F1=0.8209 CI[0.7781,0.8610] n=300 nan_draws=0
+F1_boot gold_lean S c_strict Dictionary F1=0.8114 CI[0.7710,0.8517] n=271 nan_draws=0
+F1_boot gold_lean S c_strict StrictLLM F1=0.7908 CI[0.7390,0.8377] n=271 nan_draws=0
+F1_boot gold_lean S c_strict FinBERT F1=0.7492 CI[0.6923,0.7955] n=271 nan_draws=0
+F1_boot gold_lean S c_strict Hybrid F1=0.7908 CI[0.7383,0.8377] n=271 nan_draws=0
+F1_boot gold_lean S d_nonhit300 Dictionary F1=nan CI[0.0000,0.0000] n=300 nan_draws=4
+F1_boot gold_lean S d_nonhit300 StrictLLM F1=nan CI[0.0000,0.0000] n=300 nan_draws=1
+F1_boot gold_lean S d_nonhit300 FinBERT F1=nan CI[0.0000,0.0000] n=300 nan_draws=0
+F1_boot gold_lean S d_nonhit300 Hybrid F1=nan CI[0.0000,0.0000] n=300 nan_draws=4
+F1_boot gold_lean G a_all600 Dictionary F1=0.8192 CI[0.7810,0.8529] n=600 nan_draws=0
+F1_boot gold_lean G a_all600 StrictLLM F1=0.8978 CI[0.8643,0.9264] n=600 nan_draws=0
+F1_boot gold_lean G a_all600 FinBERT F1=0.6608 CI[0.6081,0.7109] n=600 nan_draws=0
+F1_boot gold_lean G a_all600 Hybrid F1=0.9674 CI[0.9489,0.9836] n=600 nan_draws=0
+F1_boot gold_lean G b_hit300 Dictionary F1=0.8304 CI[0.7952,0.8636] n=300 nan_draws=0
+F1_boot gold_lean G b_hit300 StrictLLM F1=0.9137 CI[0.8832,0.9406] n=300 nan_draws=0
+F1_boot gold_lean G b_hit300 FinBERT F1=0.7772 CI[0.7287,0.8204] n=300 nan_draws=0
+F1_boot gold_lean G b_hit300 Hybrid F1=0.9835 CI[0.9704,0.9951] n=300 nan_draws=0
+F1_boot gold_lean G c_strict Dictionary F1=0.8114 CI[0.7710,0.8493] n=271 nan_draws=0
+F1_boot gold_lean G c_strict StrictLLM F1=0.9836 CI[0.9691,0.9948] n=271 nan_draws=0
+F1_boot gold_lean G c_strict FinBERT F1=0.7492 CI[0.6905,0.7988] n=271 nan_draws=0
+F1_boot gold_lean G c_strict Hybrid F1=0.9836 CI[0.9694,0.9948] n=271 nan_draws=0
+F1_boot gold_lean G d_nonhit300 Dictionary F1=nan CI[0.0000,0.0000] n=300 nan_draws=2
+F1_boot gold_lean G d_nonhit300 StrictLLM F1=nan CI[0.0000,0.0000] n=300 nan_draws=0
+F1_boot gold_lean G d_nonhit300 FinBERT F1=nan CI[0.0000,0.0000] n=300 nan_draws=0
+F1_boot gold_lean G d_nonhit300 Hybrid F1=nan CI[0.0000,0.0000] n=300 nan_draws=1
+F1_boot gold_U0 S a_all600 Dictionary F1=0.8304 CI[0.7924,0.8636] n=600 nan_draws=0
+F1_boot gold_U0 S a_all600 StrictLLM F1=0.7246 CI[0.6706,0.7791] n=600 nan_draws=0
+F1_boot gold_U0 S a_all600 FinBERT F1=0.6711 CI[0.6175,0.7180] n=600 nan_draws=0
+F1_boot gold_U0 S a_all600 Hybrid F1=0.8209 CI[0.7781,0.8623] n=600 nan_draws=0
+F1_boot gold_U0 S b_hit300 Dictionary F1=0.8304 CI[0.7928,0.8636] n=300 nan_draws=0
+F1_boot gold_U0 S b_hit300 StrictLLM F1=0.7246 CI[0.6667,0.7740] n=300 nan_draws=0
+F1_boot gold_U0 S b_hit300 FinBERT F1=0.7772 CI[0.7308,0.8193] n=300 nan_draws=0
+F1_boot gold_U0 S b_hit300 Hybrid F1=0.8209 CI[0.7784,0.8628] n=300 nan_draws=0
+F1_boot gold_U0 S c_strict Dictionary F1=0.8114 CI[0.7682,0.8493] n=271 nan_draws=0
+F1_boot gold_U0 S c_strict StrictLLM F1=0.7908 CI[0.7372,0.8396] n=271 nan_draws=0
+F1_boot gold_U0 S c_strict FinBERT F1=0.7492 CI[0.6925,0.8012] n=271 nan_draws=0
+F1_boot gold_U0 S c_strict Hybrid F1=0.7908 CI[0.7375,0.8395] n=271 nan_draws=0
+F1_boot gold_U0 S d_nonhit300 Dictionary F1=nan CI[nan,nan] n=300 nan_draws=2000
+F1_boot gold_U0 S d_nonhit300 StrictLLM F1=nan CI[nan,nan] n=300 nan_draws=2000
+F1_boot gold_U0 S d_nonhit300 FinBERT F1=nan CI[0.0000,0.0000] n=300 nan_draws=0
+F1_boot gold_U0 S d_nonhit300 Hybrid F1=nan CI[nan,nan] n=300 nan_draws=2000
+F1_boot gold_U0 G a_all600 Dictionary F1=0.8304 CI[0.7946,0.8638] n=600 nan_draws=0
+F1_boot gold_U0 G a_all600 StrictLLM F1=0.9137 CI[0.8825,0.9406] n=600 nan_draws=0
+F1_boot gold_U0 G a_all600 FinBERT F1=0.6711 CI[0.6192,0.7210] n=600 nan_draws=0
+F1_boot gold_U0 G a_all600 Hybrid F1=0.9835 CI[0.9702,0.9950] n=600 nan_draws=0
+F1_boot gold_U0 G b_hit300 Dictionary F1=0.8304 CI[0.7952,0.8636] n=300 nan_draws=0
+F1_boot gold_U0 G b_hit300 StrictLLM F1=0.9137 CI[0.8813,0.9409] n=300 nan_draws=0
+F1_boot gold_U0 G b_hit300 FinBERT F1=0.7772 CI[0.7272,0.8201] n=300 nan_draws=0
+F1_boot gold_U0 G b_hit300 Hybrid F1=0.9835 CI[0.9704,0.9951] n=300 nan_draws=0
+F1_boot gold_U0 G c_strict Dictionary F1=0.8114 CI[0.7710,0.8469] n=271 nan_draws=0
+F1_boot gold_U0 G c_strict StrictLLM F1=0.9836 CI[0.9702,0.9948] n=271 nan_draws=0
+F1_boot gold_U0 G c_strict FinBERT F1=0.7492 CI[0.6972,0.7988] n=271 nan_draws=0
+F1_boot gold_U0 G c_strict Hybrid F1=0.9836 CI[0.9694,0.9947] n=271 nan_draws=0
+F1_boot gold_U0 G d_nonhit300 Dictionary F1=nan CI[nan,nan] n=300 nan_draws=2000
+F1_boot gold_U0 G d_nonhit300 StrictLLM F1=nan CI[nan,nan] n=300 nan_draws=2000
+F1_boot gold_U0 G d_nonhit300 FinBERT F1=nan CI[0.0000,0.0000] n=300 nan_draws=0
+F1_boot gold_U0 G d_nonhit300 Hybrid F1=nan CI[nan,nan] n=300 nan_draws=2000
+F1_boot gold_U1 S a_all600 Dictionary F1=0.8192 CI[0.7843,0.8525] n=600 nan_draws=0
+F1_boot gold_U1 S a_all600 StrictLLM F1=0.7097 CI[0.6550,0.7590] n=600 nan_draws=0
+F1_boot gold_U1 S a_all600 FinBERT F1=0.6608 CI[0.6083,0.7098] n=600 nan_draws=0
+F1_boot gold_U1 S a_all600 Hybrid F1=0.8054 CI[0.7558,0.8495] n=600 nan_draws=0
+F1_boot gold_U1 S b_hit300 Dictionary F1=0.8304 CI[0.7952,0.8615] n=300 nan_draws=0
+F1_boot gold_U1 S b_hit300 StrictLLM F1=0.7246 CI[0.6687,0.7727] n=300 nan_draws=0
+F1_boot gold_U1 S b_hit300 FinBERT F1=0.7772 CI[0.7297,0.8235] n=300 nan_draws=0
+F1_boot gold_U1 S b_hit300 Hybrid F1=0.8209 CI[0.7765,0.8623] n=300 nan_draws=0
+F1_boot gold_U1 S c_strict Dictionary F1=0.8114 CI[0.7682,0.8468] n=271 nan_draws=0
+F1_boot gold_U1 S c_strict StrictLLM F1=0.7908 CI[0.7380,0.8400] n=271 nan_draws=0
+F1_boot gold_U1 S c_strict FinBERT F1=0.7492 CI[0.6965,0.7988] n=271 nan_draws=0
+F1_boot gold_U1 S c_strict Hybrid F1=0.7908 CI[0.7380,0.8364] n=271 nan_draws=0
+F1_boot gold_U1 S d_nonhit300 Dictionary F1=nan CI[0.0000,0.0000] n=300 nan_draws=1
+F1_boot gold_U1 S d_nonhit300 StrictLLM F1=nan CI[0.0000,0.0000] n=300 nan_draws=3
+F1_boot gold_U1 S d_nonhit300 FinBERT F1=nan CI[0.0000,0.0000] n=300 nan_draws=0
+F1_boot gold_U1 S d_nonhit300 Hybrid F1=nan CI[0.0000,0.0000] n=300 nan_draws=2
+F1_boot gold_U1 G a_all600 Dictionary F1=0.8192 CI[0.7836,0.8534] n=600 nan_draws=0
+F1_boot gold_U1 G a_all600 StrictLLM F1=0.8978 CI[0.8668,0.9267] n=600 nan_draws=0
+F1_boot gold_U1 G a_all600 FinBERT F1=0.6608 CI[0.6083,0.7091] n=600 nan_draws=0
+F1_boot gold_U1 G a_all600 Hybrid F1=0.9674 CI[0.9487,0.9828] n=600 nan_draws=0
+F1_boot gold_U1 G b_hit300 Dictionary F1=0.8304 CI[0.7952,0.8637] n=300 nan_draws=0
+F1_boot gold_U1 G b_hit300 StrictLLM F1=0.9137 CI[0.8819,0.9401] n=300 nan_draws=0
+F1_boot gold_U1 G b_hit300 FinBERT F1=0.7772 CI[0.7325,0.8238] n=300 nan_draws=0
+F1_boot gold_U1 G b_hit300 Hybrid F1=0.9835 CI[0.9697,0.9952] n=300 nan_draws=0
+F1_boot gold_U1 G c_strict Dictionary F1=0.8114 CI[0.7710,0.8469] n=271 nan_draws=0
+F1_boot gold_U1 G c_strict StrictLLM F1=0.9836 CI[0.9695,0.9948] n=271 nan_draws=0
+F1_boot gold_U1 G c_strict FinBERT F1=0.7492 CI[0.6941,0.8000] n=271 nan_draws=0
+F1_boot gold_U1 G c_strict Hybrid F1=0.9836 CI[0.9694,0.9947] n=271 nan_draws=0
+F1_boot gold_U1 G d_nonhit300 Dictionary F1=nan CI[0.0000,0.0000] n=300 nan_draws=4
+F1_boot gold_U1 G d_nonhit300 StrictLLM F1=nan CI[0.0000,0.0000] n=300 nan_draws=4
+F1_boot gold_U1 G d_nonhit300 FinBERT F1=nan CI[0.0000,0.0000] n=300 nan_draws=0
+F1_boot gold_U1 G d_nonhit300 Hybrid F1=nan CI[0.0000,0.0000] n=300 nan_draws=1
+F1_boot gold_flip_lean S a_all600 Dictionary F1=0.8199 CI[0.7829,0.8539] n=600 nan_draws=0
+F1_boot gold_flip_lean S a_all600 StrictLLM F1=0.6997 CI[0.6386,0.7548] n=600 nan_draws=0
+F1_boot gold_flip_lean S a_all600 FinBERT F1=0.6623 CI[0.6164,0.7114] n=600 nan_draws=0
+F1_boot gold_flip_lean S a_all600 Hybrid F1=0.7957 CI[0.7500,0.8413] n=600 nan_draws=0
+F1_boot gold_flip_lean S b_hit300 Dictionary F1=0.8327 CI[0.7976,0.8636] n=300 nan_draws=0
+F1_boot gold_flip_lean S b_hit300 StrictLLM F1=0.7164 CI[0.6602,0.7657] n=300 nan_draws=0
+F1_boot gold_flip_lean S b_hit300 FinBERT F1=0.7752 CI[0.7253,0.8187] n=300 nan_draws=0
+F1_boot gold_flip_lean S b_hit300 Hybrid F1=0.8132 CI[0.7671,0.8564] n=300 nan_draws=0
+F1_boot gold_flip_lean S c_strict Dictionary F1=0.8140 CI[0.7765,0.8517] n=271 nan_draws=0
+F1_boot gold_flip_lean S c_strict StrictLLM F1=0.7818 CI[0.7279,0.8297] n=271 nan_draws=0
+F1_boot gold_flip_lean S c_strict FinBERT F1=0.7470 CI[0.6908,0.8000] n=271 nan_draws=0
+F1_boot gold_flip_lean S c_strict Hybrid F1=0.7818 CI[0.7267,0.8274] n=271 nan_draws=0
+F1_boot gold_flip_lean S d_nonhit300 Dictionary F1=nan CI[0.0000,0.0000] n=300 nan_draws=0
+F1_boot gold_flip_lean S d_nonhit300 StrictLLM F1=nan CI[0.0000,0.0000] n=300 nan_draws=0
+F1_boot gold_flip_lean S d_nonhit300 FinBERT F1=0.0290 CI[0.0000,0.0909] n=300 nan_draws=0
+F1_boot gold_flip_lean S d_nonhit300 Hybrid F1=nan CI[0.0000,0.0000] n=300 nan_draws=3
+F1_boot gold_flip_lean G a_all600 Dictionary F1=0.8199 CI[0.7823,0.8531] n=600 nan_draws=0
+F1_boot gold_flip_lean G a_all600 StrictLLM F1=0.8883 CI[0.8531,0.9204] n=600 nan_draws=0
+F1_boot gold_flip_lean G a_all600 FinBERT F1=0.6623 CI[0.6123,0.7132] n=600 nan_draws=0
+F1_boot gold_flip_lean G a_all600 Hybrid F1=0.9583 CI[0.9385,0.9764] n=600 nan_draws=0
+F1_boot gold_flip_lean G b_hit300 Dictionary F1=0.8327 CI[0.7952,0.8679] n=300 nan_draws=0
+F1_boot gold_flip_lean G b_hit300 StrictLLM F1=0.9063 CI[0.8756,0.9337] n=300 nan_draws=0
+F1_boot gold_flip_lean G b_hit300 FinBERT F1=0.7752 CI[0.7268,0.8187] n=300 nan_draws=0
+F1_boot gold_flip_lean G b_hit300 Hybrid F1=0.9764 CI[0.9614,0.9898] n=300 nan_draws=0
+F1_boot gold_flip_lean G c_strict Dictionary F1=0.8140 CI[0.7737,0.8517] n=271 nan_draws=0
+F1_boot gold_flip_lean G c_strict StrictLLM F1=0.9755 CI[0.9577,0.9896] n=271 nan_draws=0
+F1_boot gold_flip_lean G c_strict FinBERT F1=0.7470 CI[0.6926,0.8000] n=271 nan_draws=0
+F1_boot gold_flip_lean G c_strict Hybrid F1=0.9755 CI[0.9580,0.9897] n=271 nan_draws=0
+F1_boot gold_flip_lean G d_nonhit300 Dictionary F1=nan CI[0.0000,0.0000] n=300 nan_draws=0
+F1_boot gold_flip_lean G d_nonhit300 StrictLLM F1=nan CI[0.0000,0.0000] n=300 nan_draws=0
+F1_boot gold_flip_lean G d_nonhit300 FinBERT F1=0.0290 CI[0.0000,0.0909] n=300 nan_draws=0
+F1_boot gold_flip_lean G d_nonhit300 Hybrid F1=nan CI[0.0000,0.0000] n=300 nan_draws=0
+=== END RESULTS ===

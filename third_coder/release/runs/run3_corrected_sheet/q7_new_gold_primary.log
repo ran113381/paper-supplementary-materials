@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "E:\½×¤å§ë½Z  °e¼f\paper2\R3_work\third_coder_scripts\q7_construct_rescore.py", line 37, in <module>
+    assert d['gold'].isin([0, 1]).all() and len(d) == 600, 'gold problem'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: gold problem

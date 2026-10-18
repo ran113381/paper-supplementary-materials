@@ -1,0 +1,35 @@
+DIFF  stage1.log  J20/ref sha12=a209e8be1e78 J23 sha12=c7c6a8100909
+   line 9:
+     ref: 'qualification_record_sha256=b7186c5877caa2f8dc01ff89cd8f89740c2fb2235e966ca013b5aa766733a673\r'
+     J23: 'qualification_record_sha256=d9dd5acffe871e10c3fcfd14bc9bf54179aaeadcda80436ca6a138e30b498843\r'
+DIFF  stage2.log  J20/ref sha12=c6a6d3defb7c J23 sha12=23ec41ea2108
+   line 1:
+     ref: 'STAGE 2: record hash verified (b7186c5877ca); outcome=qualified\r'
+     J23: 'STAGE 2: record hash verified (d9dd5acffe87); outcome=qualified\r'
+   line 3:
+     ref: 'stage=2 replacement=False outcome=qualified record_sha256=b7186c5877caa2f8dc01ff89cd8f89740c2fb2235e966ca013b5aa766733a673\r'
+     J23: 'stage=2 replacement=False outcome=qualified record_sha256=d9dd5acffe871e10c3fcfd14bc9bf54179aaeadcda80436ca6a138e30b498843\r'
+SAME  final_labels.csv  sha12=4533fc1a863e
+SAME  stage2_calibration_disagreements.csv  sha12=30a70b21b3c2
+SAME  stage2_e1_labeled_1.csv  sha12=ce14a6e02447
+SAME  stage2_e1_labeled_U.csv  sha12=304e0776e639
+SAME  stage2_nonconcordant_labels.csv  sha12=8e00fdf01fc1
+SAME  stage2_e1_summary.json  sha12=fdcb44690da1
+SAME  q7_control.log  sha12=e6fa8d0f0f9a
+SAME  q7_new_gold_primary.log  sha12=6db75e47cbd9
+SAME  q7_new_gold_lean.log  sha12=12ba95cd681a
+SAME  q7_new_gold_U0.log  sha12=ec8106399e12
+SAME  q7_new_gold_U1.log  sha12=12ba95cd681a
+SAME  q7_new_gold_flip_lean.log  sha12=8bbcc062fb26
+DIFF  qualification_record.json  J20/ref sha12=b7186c5877ca J23 sha12=d9dd5acffe87
+   line 32:
+     ref: '  "sheet_sha256": "e2602bd7d0f7737082c06c3fb1282eeddf43227153290aab7d2f8048ef9560bb",\r'
+     J23: '  "sheet_sha256": "bfd18c9233c520098197f359fd194ea4a909e06bd3199d9669c672e6a8e4189f",\r'
+   line 34:
+     ref: '  "written_at": "2026-10-16T10:45:03"\r'
+     J23: '  "written_at": "2026-10-16T11:51:11"\r'
+DIFF  qualification_record_hash_log.txt  J20/ref sha12=d2dc85494994 J23 sha12=737d6b16671f
+   line 1:
+     ref: '2026-10-16T10:45:03\tqualification_record.json\tb7186c5877caa2f8dc01ff89cd8f89740c2fb2235e966ca013b5aa766733a673\r'
+     J23: '2026-10-16T11:51:11\tqualification_record.json\td9dd5acffe871e10c3fcfd14bc9bf54179aaeadcda80436ca6a138e30b498843\r'
+SAME  J23_q7_primary.log vs J21_q7_primary.log  sha12=0dd173dce7fd

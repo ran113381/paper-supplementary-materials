@@ -1,0 +1,36 @@
+Cell-by-cell comparison of the four returned coding sheets (sheet 'Coding'), computed
+without opening any key. Roles: first = first returned sheet; copy1 / copy2 = author-entered
+copies 1 and 2; corrected = third coder's corrected sheet. Passage text is not printed.
+
+header identical in all four: True
+rows (incl. header): first=438, copy1=438, copy2=438, corrected=438
+identifier order identical: True
+passage text identical: True
+label column identical: True
+
+first -> copy1: 4 changed cells
+  A128 lean: None -> 1
+  A218 lean: None -> 1
+  A268 lean: None -> 1
+  A318 lean: None -> 1
+
+first -> copy2: 5 changed cells
+  A073 confidence: 'High' -> 'Medium'
+  A128 lean: None -> 1
+  A218 lean: None -> 1
+  A268 lean: None -> 1
+  A318 lean: None -> 1
+
+first -> corrected: 5 changed cells
+  A074 confidence: 'High' -> 'Medium'
+  A128 lean: None -> 1
+  A218 lean: None -> 1
+  A268 lean: None -> 1
+  A318 lean: None -> 1
+
+copy2 -> corrected: 2 changed cells
+  A073 confidence: 'Medium' -> 'High'
+  A074 confidence: 'High' -> 'Medium'
+
+copy1 -> copy2: 1 changed cells
+  A073 confidence: 'High' -> 'Medium'
