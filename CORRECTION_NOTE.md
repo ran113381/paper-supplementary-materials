@@ -20,7 +20,7 @@ record names the tool, and none is supplied here.
 The original workbook is kept unchanged, byte for byte
 (SHA-256 `aa072750c0a1ae9ac68dece24f060ef2c8e1d1bfb7a153244f9d69791620b0a0`), because this hash is
 fixed in the deposited third-coder protocol (`third_coder/protocol_third_coder_v2.7.md`, Section 4.1)
-and in `third_coder/selection_manifest.json`, and the deposited scripts check it.
+and in `third_coder/selection_manifest.json`, and the deposited selection script checks it.
 
 The corrected copy is `data/genai_gold_standard_adjudication_workbook_corrected.xlsx`
 (SHA-256 `d9da03a4b63dc9865489ba48bcd995ab384e1def28006af6ec4ba780c26739dd`). It differs from the

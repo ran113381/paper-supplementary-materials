@@ -240,6 +240,7 @@ third_coder/release/sheets/author_entered_copy_2.xlsx,third_coder,public,2026-10
 third_coder/release/sheets/coder3_corrected_sheet.xlsx,third_coder,public,2026-10-18: post-coding release: sheets
 third_coder/release/sheets/coder3_first_returned_sheet.xlsx,third_coder,public,2026-10-18: post-coding release: sheets
 third_coder/release/sheets/sheet_comparison.txt,third_coder,public,2026-10-18: cell-by-cell comparison of the four sheets
+third_coder/release/qa_log.md,third_coder,public,2026-10-18: question-and-answer log (entry entered retrospectively from message records)
 third_coder/scripts/J21_q7_primary.py,third_coder,public,"2026-10-18: wrapper / second script (post-coding), as run"
 third_coder/scripts/J23_q7_primary.py,third_coder,public,"2026-10-18: wrapper / second script (post-coding), as run"
 third_coder/scripts/J23_vs_J21_script.diff,third_coder,public,"2026-10-18: wrapper / second script (post-coding), as run"

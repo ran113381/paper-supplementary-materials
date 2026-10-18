@@ -4,7 +4,7 @@ This folder holds the materials released after coding under Section 9.3 of the d
 (`../protocol_third_coder_v2.7.md`; GitHub Release third-coder-protocol-v2.7, commit fd6616d). The
 SHA-256 of every key, seed and coding sheet was deposited before coding in
 `../selection_manifest.json`; the released keys, seeds, selection rules and register are
-byte-identical to the deposited hashes. `HASHES.md` lists the SHA-256 of every file here.
+byte-identical to the deposited hashes. `HASHES.md` lists the SHA-256 of every file here other than this README and `HASHES.md` itself.
 
 | Path | Content |
 |---|---|
@@ -17,12 +17,18 @@ byte-identical to the deposited hashes. `HASHES.md` lists the SHA-256 of every f
 | `runs/run2_author_entered_copy_2/` | The run on author-entered copy 2, kept as a process record: qualification record, stage logs, label outputs and model-comparison logs. |
 | `runs/run3_corrected_sheet/` | The rerun on the corrected sheet, whose results are reported: qualification record, stage logs and model-comparison logs; `J23_compare.log` (from `J23_compare.py`) compares its outputs with those of run 2. The label outputs of this run are in `labels/`. |
 
+In runs 2 and 3, `q7_new_gold_primary.log` ends with the assertion error "gold problem": the
+deposited script requires a binary label for every passage and stops at the seven unresolved
+passages. The primary metrics are computed by the wrapper instead (departure (e) in
+`../DEPARTURE_RECORD.md`).
+
 The wrapper that computes the primary metrics and the F1 intervals, the second script for the
 477 concordant passages, and their logs are in `../scripts/` and `../logs/`. The departures from
 the protocol, with the time of each step and the file hashes, are recorded in
 `../DEPARTURE_RECORD.md`.
 
-The question-and-answer log is not yet in this folder. [QA-LOG: to be added]
+`qa_log.md` is the question-and-answer log; its single entry was entered retrospectively from the
+message records.
 
 The scripts and logs are released as run; they contain absolute paths of the authors' local
 folders, which must be adjusted to rerun them.
