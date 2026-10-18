@@ -1,0 +1,11 @@
+=== RESULTS ===
+collision GS_0084 tokens=['Wellman'] final=1 ctx='PRET 高性能复合材料 + Wellman Ecolon 绿色环保材料”'
+collision GS_0187 tokens=['ANGPTL3'] final=1 ctx='12非肿瘤 SHR-1918 ANGPTL3 高胆固醇血症 13非肿瘤 H'
+collision GS_0260 tokens=['Wellman', 'Wellman'] final=1 ctx='月，本公司完成出售控股子公司 Wellman PET LLC 100%股权'
+collision GS_0298 tokens=['ANGPTL3'] final=1 ctx='国 心血管 SHR-1918 ANGPTL3 单药 纯合子家族性高胆固醇血'
+collision GS_0359 tokens=['LLMOps'] final=1 ctx='的储备和创新应用探索，完成了 LLMOps 的调研工作,并进行了包括 l'
+collision GS_0377 tokens=['LongwallMind6'] final=1 ctx='液过滤站、千兆网络型控制系统、LongwallMind6.0系统软件等产品成功推广应用'
+collision GS_0591 tokens=['ANGPTL3'] final=1 ctx='RAT1）、SHR-1918（ANGPTL3）、SHR-1905（TSLP'
+collision GS_0599 tokens=['Wellman'] final=1 ctx='“PRET高性能复合材料 + Wellman Ecolon绿色环保材料”的'
+positive control: draft=1 passages with a standalone LLM/GPT token: 1 of 46
+=== END RESULTS ===

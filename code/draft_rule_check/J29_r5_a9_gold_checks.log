@@ -1,0 +1,35 @@
+=== RESULTS ===
+AB_may cols: ['sample_id', 'firm_id', 'year', 'mdna_passage', 'coder1_label', 'coder1_confidence', 'coder1_notes', 'coder2_label', 'coder2_confidence', 'coder2_notes', 'adjudication_label', 'adjudication_notes', 'final_label']
+merge check: rows 600 missing stratum 0
+[counts] n=600 disagreements=122 both-U=1 concordant-binary=477 agree-any=478
+[1] drafts: dist={'0': 75, '1': 46, 'U': 1} | five-term rule == draft on binary drafts: 121/121
+    non-binary drafts: [['GS_0479', 'U', '0']]
+    control A: rule 'dictionary_hit==1' == draft: 102/121
+    control B: rule without '大模型' == draft: 88/121
+    control B: rule without '大语言模型' == draft: 120/121
+    control B: rule without '预训练模型' == draft: 119/121
+    control B: rule without 'LLM' == draft: 116/121
+    control B: rule without 'GPT' == draft: 117/121
+    control C: draft==coder1 108/121, draft==coder2 11/121
+[2] published final_label == May draft on 122: 121/122; differing: [['GS_0479', 'U', '1']]
+    published final_label (workbook) == predictions gold_binary on 600: 600/600
+[3] coder1: label cell types={'str': 600} | distinct notes=574 | top notes={'公司经营情况，无AI': 4, '公司经营业绩，无AI': 3}
+[3] coder2: label cell types={'int': 567, 'str': 33} | distinct notes=1 | top notes={'19': 600}
+    non-matched passages n=300: coder1 dist={'0': 300} coder2 dist={'0': 244, '1': 34, 'U': 22}
+    coder2 'U' by stratum: {'dictionary_non_hit_near_miss': 11, 'dictionary_hit_random': 11, 'dictionary_non_hit_random': 11} | coder1 'U' by stratum: {'dictionary_hit_random': 2}
+    non-matched disagreements: 56; coder pairs=Counter({('0', '1'): 34, ('0', 'U'): 22})
+    concordant-binary by stratum: {'dictionary_hit_random': 233, 'dictionary_non_hit_near_miss': 123, 'dictionary_non_hit_random': 121}; non-concordant by stratum: {'dictionary_hit_random': 67, 'dictionary_non_hit_random': 29, 'dictionary_non_hit_near_miss': 27}
+[4] concordant-binary subset (gold = shared coder label):
+    Dictionary: n=477 TP/FP/TN/FN=169/64/244/0 P=0.7253 [0.6647,0.7786] R=1.0000 [0.9778,1.0000] F1=0.8408
+    Strict consensus (covered only): n=210 TP/FP/TN/FN=100/0/63/47 P=1.0000 [0.9630,1.0000] R=0.6803 [0.6011,0.7502] F1=0.8097
+      strict-consensus coverage on subset: 210/477 = 0.4403
+    FinBERT: n=477 TP/FP/TN/FN=119/67/241/50 P=0.6398 [0.5686,0.7053] R=0.7041 [0.6314,0.7678] F1=0.6704
+    Hybrid: n=477 TP/FP/TN/FN=122/1/307/47 P=0.9919 [0.9554,0.9986] R=0.7219 [0.6500,0.7839] F1=0.8356
+    positive control (published gold, all 600):
+    Dictionary/published: n=600 TP/FP/TN/FN=216/84/300/0 P=0.7200 [0.6667,0.7678] R=1.0000 [0.9825,1.0000] F1=0.8372
+[5] non-concordant n=123 (matched 67, non-matched 56); dictionary worst P/R/F1=(0.5633, 0.7511, 0.6438) best=(0.7867, 1.0, 0.8806)
+[6] 0/121: one-sided 95% CP upper = 0.0245 (beta.ppf check 0.0245)
+[6] 0/150: one-sided 95% CP upper = 0.0198 (beta.ppf check 0.0198)
+[6] 0/244: one-sided 95% CP upper = 0.0122 (beta.ppf check 0.0122)
+[6] 0/300: one-sided 95% CP upper = 0.0099 (beta.ppf check 0.0099)
+=== END RESULTS ===

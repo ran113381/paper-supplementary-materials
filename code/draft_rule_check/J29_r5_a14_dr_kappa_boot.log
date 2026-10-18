@@ -1,0 +1,13 @@
+=== RESULTS ===
+[1] DR rows 122 | cell types {'adjudication_label': {'int': 13, 'str': 109}, 'final_label': {'int': 13, 'str': 109}}
+    int-typed cells: [('GS_0020', 'adjudication_label', 1), ('GS_0020', 'final_label', 1), ('GS_0060', 'adjudication_label', 1), ('GS_0060', 'final_label', 1), ('GS_0084', 'adjudication_label', 0), ('GS_0084', 'final_label', 0), ('GS_0173', 'adjudication_label', 0), ('GS_0173', 'final_label', 0), ('GS_0260', 'adjudication_label', 0), ('GS_0260', 'final_label', 0), ('GS_0298', 'adjudication_label', 0), ('GS_0298', 'final_label', 0), ('GS_0345', 'adjudication_label', 0), ('GS_0345', 'final_label', 0), ('GS_0377', 'adjudication_label', 0), ('GS_0377', 'final_label', 0), ('GS_0409', 'adjudication_label', 0), ('GS_0409', 'final_label', 0), ('GS_0479', 'adjudication_label', 1), ('GS_0479', 'final_label', 1), ('GS_0562', 'adjudication_label', 1), ('GS_0562', 'final_label', 1), ('GS_0591', 'adjudication_label', 0), ('GS_0591', 'final_label', 0), ('GS_0599', 'adjudication_label', 0), ('GS_0599', 'final_label', 0)]
+    DR.final_label != AB.final_label: 12 [('GS_0020', '1', '0'), ('GS_0060', '1', '0'), ('GS_0084', '0', '1'), ('GS_0173', '0', '1'), ('GS_0260', '0', '1'), ('GS_0298', '0', '1'), ('GS_0345', '0', '1'), ('GS_0377', '0', '1'), ('GS_0409', '0', '1'), ('GS_0562', '1', '0'), ('GS_0591', '0', '1'), ('GS_0599', '0', '1')]
+    DR.adjudication_label != AB.adjudication_label: 13 [('GS_0020', '1', '0'), ('GS_0060', '1', '0'), ('GS_0084', '0', '1'), ('GS_0173', '0', '1'), ('GS_0260', '0', '1'), ('GS_0298', '0', '1'), ('GS_0345', '0', '1'), ('GS_0377', '0', '1'), ('GS_0409', '0', '1'), ('GS_0479', '1', 'U'), ('GS_0562', '1', '0'), ('GS_0591', '0', '1'), ('GS_0599', '0', '1')]
+    positive control AB.final vs AB.final differences: 0
+[2] kappa three-class=0.5903 | binary (both non-U, n=566)=0.6654
+[3] n=477 positives=169 | strict consensus full-subset recall (abstention = non-detection) = 100/169 = 0.5917
+    F1 dictionary_pred: 0.8408 bootstrap95 [0.8009, 0.8788]
+    F1 finbert_pred: 0.6704 bootstrap95 [0.6081, 0.7282]
+    F1 hybrid_pred: 0.8356 bootstrap95 [0.7864, 0.8807]
+    F1 strict consensus (covered n=210): 0.8097 bootstrap95 [0.7530, 0.8561]
+=== END RESULTS ===
