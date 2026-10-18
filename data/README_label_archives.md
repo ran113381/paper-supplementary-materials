@@ -26,7 +26,9 @@ files). On 2026-07-15 every file was re-identified and renamed, using two method
    identified by their headings and code contents.
 
 No file contents were modified at any point — renames only, verified by SHA-256
-before/after.
+before/after. (Corrected 2026-10-18: this does not hold for
+`genai_gold_standard_adjudication_workbook.xlsx`, which was modified when the
+`author_confirmation` column was added; see `../CORRECTION_NOTE.md`.)
 
 ## Series 1: Full-sample audit, segments `P2FULL_0001`-`P2FULL_1256`
 
@@ -124,7 +126,13 @@ the original dictionary labels) used to design the full-sample audit:
   384 non-GenAI; sheets: Annotation_Blind, Sampling_Metadata, Codebook,
   Sampling_Log, Adjudication_Summary, Disagreement_Review). Original name in
   `MANIFEST.sha256`: `GenAI_gold_standard_adjudication_draft人工双核验.xlsx`
-  (renamed to English; bytes unchanged — hash still verifies).
+  (renamed to English). Corrected 2026-10-18: the bytes are not unchanged and the
+  hash does not verify. The current file (SHA-256 `aa072750…`) was modified when
+  the `author_confirmation` column was added; the bytes matching the manifest
+  record (`b0d365b8…`) are preserved in commit `e41356a`. A corrected copy with
+  that column marked as withdrawn is
+  `genai_gold_standard_adjudication_workbook_corrected.xlsx`. See
+  `../CORRECTION_NOTE.md`.
 - `Table_3C_validation_predictions.csv` — 600 frozen row-level predictions used
   to reproduce Table 3C exactly.
 - `Table_3C_SOTA_validation_metrics.csv` / `.md` / `.xlsx` — published Table 3C
@@ -176,6 +184,6 @@ path runs through the frozen predictions and the consensus CSV, both of which
 are present and hash-verified.
 
 
-## Adjudication confirmation note (2026-07-15)
+## Adjudication confirmation note (2026-07-15) — withdrawn 2026-10-18
 
-The 122 inter-coder disagreement rows in `genai_gold_standard_adjudication_workbook.xlsx` (sheet `Disagreement_Review`) were adjudicated via AI-assisted drafts (Claude Opus 4.7) and subsequently reviewed and confirmed by the authors. The original `review_status` values ("Draft adjudicated") are preserved unchanged for audit purposes; a dated `author_confirmation` column has been added recording the completed author review. This note documents the confirmation without altering the historical record.
+The note that stood here stated that the 122 inter-coder disagreement rows in `genai_gold_standard_adjudication_workbook.xlsx` (sheet `Disagreement_Review`) had been adjudicated via AI-assisted drafts attributed to a named model and subsequently reviewed and confirmed by the authors, and that a dated `author_confirmation` column had been added to record that review. No contemporaneous record supports that attribution or that confirmation, and the note and the column were withdrawn on 2026-10-18. The workbook records the draft decisions only as "AI-assisted"; no contemporaneous record names the tool. The original workbook is kept unchanged because its SHA-256 is fixed in the deposited third-coder protocol; in the corrected copy `genai_gold_standard_adjudication_workbook_corrected.xlsx`, every cell of the column is marked as withdrawn with its date. The adjudicated labels have been superseded by the blind third-coder re-adjudication (`../third_coder/`). See `../CORRECTION_NOTE.md`.

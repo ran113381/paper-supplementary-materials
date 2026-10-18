@@ -36,8 +36,12 @@ Date: `2026-07-17` (supersedes the 2026-07-15 and 2026-04-20 statements)
 - exact reproduction of Table 3C from frozen row-level predictions
   (`data/Table_3C_validation_predictions.csv` plus the evidence-package
   scripts in `data/`), verified against the published metrics
-- integrity of the validation evidence: 20 file records in
-  `data/MANIFEST.sha256` still verify byte-identically
+- integrity of the validation evidence: the file records in
+  `data/MANIFEST.sha256` can be checked against the files. (Corrected
+  2026-10-18: the earlier statement that 20 file records still verify is
+  withdrawn. The record for the gold-standard workbook matches the May 2026
+  original preserved in commit `e41356a`, not the current workbook file; see
+  `CORRECTION_NOTE.md`.)
 
 ## What Still Requires Private Local Work
 
