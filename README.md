@@ -76,6 +76,25 @@ path adjustment.
 - `docs/`
   - package notes and exhibit map
 
+Added 2026-10-18 (third-round revision):
+
+- `CORRECTION_NOTE.md`: correction of the gold-standard adjudication record,
+  including the withdrawn attribution column of the adjudication workbook
+- `data/genai_gold_standard_adjudication_workbook_corrected.xlsx`: corrected copy
+  of the adjudication workbook (the original is kept unchanged)
+- `code/draft_rule_check/`: check scripts and logs for the earlier adjudication
+  drafts
+- `code/analysis/14_callaway_santanna.py`, `14b_csdid_crosscheck.py`,
+  `15_event_study_fy2025_raw_vs_clean.py`, `16_static_did_cohort_post.py`
+  (with `j33_common.py`): Callaway–Sant'Anna estimates, fiscal-2025 event study
+  on raw and clean texts, and the static DiD with cohort-specific Post
+- `output/logs/`: the logs of these scripts
+- `third_coder/`: blind third-coder re-adjudication — deposited protocol,
+  codebook, scripts and selection manifest; `release/` (keys, seeds, selection
+  rules, labels, the returned sheets and run records, `HASHES.md`); the wrapper
+  and second script with their logs (`scripts/`, `logs/`); and
+  `DEPARTURE_RECORD.md`, the complete record of departures from the protocol
+
 Note (2026-07-15): file names inside `data/` were repaired in this working
 tree — the initial upload had names and contents shuffled across files. See
 `CHANGES_PROPOSED.md` for the complete old-to-new mapping and

@@ -146,3 +146,101 @@ code/analysis/12_curvature_test.py,code,public,2026-07-24: round-2 curvature/U-s
 code/analysis/13_event_study_extended.py,code,public,2026-07-24: round-2 extended event-study horizons with FY2025; self-checks against published Figure 9
 data/curvature_test_results.json,data,public,2026-07-24: output of 12_curvature_test.py (main + strict samples)
 data/event_study_extended.json,data,public,2026-07-24: output of 13_event_study_extended.py (published Figure 9 replication + two extended specifications)
+third_coder/.gitattributes,repo,public,2026-10-15: disables line-ending conversion in third_coder/
+third_coder/codebook_for_coder.xlsx,third_coder,public,2026-10-15: codebook file given to the third coder (deposited before coding)
+third_coder/protocol_third_coder_v2.7.md,third_coder,public,2026-10-15: deposited protocol v2.7 (Release third-coder-protocol-v2.7)
+third_coder/scripts/analysis_third_coder.py,third_coder,public,2026-10-15: deposited analysis script
+third_coder/scripts/q7_construct_rescore.py,third_coder,public,2026-10-15: deposited model-comparison script
+third_coder/scripts/selection_third_coder.py,third_coder,public,2026-10-15: deposited selection script
+third_coder/selection_manifest.json,third_coder,public,"2026-10-15: selection manifest with SHA-256 of keys, seeds and sheets"
+CORRECTION_NOTE.md,doc,public,2026-10-18: correction of the gold-standard adjudication record (withdrawn attribution column)
+code/analysis/14_callaway_santanna.py,code,public,"2026-10-18: Callaway-Sant'Anna group-time ATTs (Section 4.3), as run"
+code/analysis/14b_csdid_crosscheck.py,code,public,"2026-10-18: csdid 0.2.9 cross-check of the CS estimates, as run"
+code/analysis/15_event_study_fy2025_raw_vs_clean.py,code,public,"2026-10-18: FY2025 event study, raw and clean-text samples, as run"
+code/analysis/16_static_did_cohort_post.py,code,public,"2026-10-18: static TWFE-DID with cohort-specific Post (identification summary), as run"
+code/analysis/j33_common.py,code,public,2026-10-18: helper module for 16_static_did_cohort_post.py
+code/draft_rule_check/.gitattributes,repo,public,2026-10-18: disables line-ending conversion so logs stay byte-identical
+code/draft_rule_check/J29_r5_a14_dr_kappa_boot.log,code,public,2026-10-18: draft-rule check of the earlier adjudication drafts (script/log/readme)
+code/draft_rule_check/J29_r5_a17_collisions.log,code,public,2026-10-18: draft-rule check of the earlier adjudication drafts (script/log/readme)
+code/draft_rule_check/J29_r5_a9_gold_checks.log,code,public,2026-10-18: draft-rule check of the earlier adjudication drafts (script/log/readme)
+code/draft_rule_check/README.md,code,public,2026-10-18: draft-rule check of the earlier adjudication drafts (script/log/readme)
+code/draft_rule_check/a14_dr_kappa_boot.py,code,public,2026-10-18: draft-rule check of the earlier adjudication drafts (script/log/readme)
+code/draft_rule_check/a17_collisions.py,code,public,2026-10-18: draft-rule check of the earlier adjudication drafts (script/log/readme)
+code/draft_rule_check/a9_gold_checks.py,code,public,2026-10-18: draft-rule check of the earlier adjudication drafts (script/log/readme)
+data/genai_gold_standard_adjudication_workbook_corrected.xlsx,data,public,2026-10-18: corrected copy of the adjudication workbook; author_confirmation marked withdrawn; original kept unchanged
+output/logs/.gitattributes,repo,public,2026-10-18: disables line-ending conversion so logs stay byte-identical
+output/logs/14_callaway_santanna.log,output,public,2026-10-18: log or summary of the scripts of the same number in code/analysis/
+output/logs/14b_csdid_crosscheck.log,output,public,2026-10-18: log or summary of the scripts of the same number in code/analysis/
+output/logs/15_event_study_fy2025_raw_vs_clean.log,output,public,2026-10-18: log or summary of the scripts of the same number in code/analysis/
+output/logs/16_static_did_cohort_post.csv,output,public,2026-10-18: log or summary of the scripts of the same number in code/analysis/
+output/logs/16_static_did_cohort_post.log,output,public,2026-10-18: log or summary of the scripts of the same number in code/analysis/
+third_coder/DEPARTURE_RECORD.md,third_coder,public,2026-10-18: complete record of departures (a)-(e) from the deposited protocol
+third_coder/logs/J21_q7_primary.log,third_coder,public,2026-10-18: log of the wrapper / second script
+third_coder/logs/J21_q7_primary_rerun.log,third_coder,public,2026-10-18: log of the wrapper / second script
+third_coder/logs/J23_q7_primary.log,third_coder,public,2026-10-18: log of the wrapper / second script
+third_coder/logs/J23_q7_primary_rerun.log,third_coder,public,2026-10-18: log of the wrapper / second script
+third_coder/logs/J29_run_r1_r4.log,third_coder,public,2026-10-18: log of the wrapper / second script
+third_coder/release/HASHES.md,third_coder,public,2026-10-18: SHA-256 of released files; original (receipt) and released hashes of the four sheets
+third_coder/release/README.md,third_coder,public,2026-10-18: guide to the post-coding release
+third_coder/release/keys/key_calibration.csv,third_coder,public,2026-10-18: post-coding release: keys
+third_coder/release/keys/key_e1.csv,third_coder,public,2026-10-18: post-coding release: keys
+third_coder/release/keys/key_nonconcordant.csv,third_coder,public,2026-10-18: post-coding release: keys
+third_coder/release/keys/key_practice.csv,third_coder,public,2026-10-18: post-coding release: keys
+third_coder/release/keys/replacement/key_calibration_replacement.csv,third_coder,public,2026-10-18: post-coding release: keys
+third_coder/release/keys/replacement/key_e1_replacement.csv,third_coder,public,2026-10-18: post-coding release: keys
+third_coder/release/keys/replacement/key_nonconcordant_replacement.csv,third_coder,public,2026-10-18: post-coding release: keys
+third_coder/release/labels/final_labels.csv,third_coder,public,2026-10-18: post-coding release: labels
+third_coder/release/labels/stage2_calibration_disagreements.csv,third_coder,public,2026-10-18: post-coding release: labels
+third_coder/release/labels/stage2_e1_labeled_1.csv,third_coder,public,2026-10-18: post-coding release: labels
+third_coder/release/labels/stage2_e1_labeled_U.csv,third_coder,public,2026-10-18: post-coding release: labels
+third_coder/release/labels/stage2_e1_summary.json,third_coder,public,2026-10-18: post-coding release: labels
+third_coder/release/labels/stage2_nonconcordant_labels.csv,third_coder,public,2026-10-18: post-coding release: labels
+third_coder/release/runs/run1_first_returned_sheet/q7_control.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run1_first_returned_sheet/qualification_record.json,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run1_first_returned_sheet/qualification_record_hash_log.txt,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run1_first_returned_sheet/resubmit_diff.txt,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run1_first_returned_sheet/resubmit_diff_sheets.py,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run1_first_returned_sheet/stage1.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run1_first_returned_sheet/stage2.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/final_labels.csv,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/q7_control.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/q7_new_gold_U0.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/q7_new_gold_U1.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/q7_new_gold_flip_lean.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/q7_new_gold_lean.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/q7_new_gold_primary.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/qualification_record.json,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/qualification_record_hash_log.txt,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/stage1.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/stage2.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/stage2_calibration_disagreements.csv,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/stage2_e1_labeled_1.csv,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/stage2_e1_labeled_U.csv,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/stage2_e1_summary.json,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run2_author_entered_copy_2/stage2_nonconcordant_labels.csv,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run3_corrected_sheet/J23_compare.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run3_corrected_sheet/J23_compare.py,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run3_corrected_sheet/q7_control.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run3_corrected_sheet/q7_new_gold_U0.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run3_corrected_sheet/q7_new_gold_U1.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run3_corrected_sheet/q7_new_gold_flip_lean.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run3_corrected_sheet/q7_new_gold_lean.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run3_corrected_sheet/q7_new_gold_primary.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run3_corrected_sheet/qualification_record.json,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run3_corrected_sheet/qualification_record_hash_log.txt,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run3_corrected_sheet/stage1.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/runs/run3_corrected_sheet/stage2.log,third_coder,public,2026-10-18: post-coding release: runs
+third_coder/release/seeds/seed_analysis.txt,third_coder,public,2026-10-18: post-coding release: seeds
+third_coder/release/seeds/seed_replacement.txt,third_coder,public,2026-10-18: post-coding release: seeds
+third_coder/release/seeds/seed_selection.txt,third_coder,public,2026-10-18: post-coding release: seeds
+third_coder/release/selection/J16_selection_rules.md,third_coder,public,2026-10-18: post-coding release: selection
+third_coder/release/selection/selection_register.csv,third_coder,public,2026-10-18: post-coding release: selection
+third_coder/release/sheets/author_entered_copy_1.xlsx,third_coder,public,2026-10-18: post-coding release: sheets
+third_coder/release/sheets/author_entered_copy_2.xlsx,third_coder,public,2026-10-18: post-coding release: sheets
+third_coder/release/sheets/coder3_corrected_sheet.xlsx,third_coder,public,2026-10-18: post-coding release: sheets
+third_coder/release/sheets/coder3_first_returned_sheet.xlsx,third_coder,public,2026-10-18: post-coding release: sheets
+third_coder/release/sheets/sheet_comparison.txt,third_coder,public,2026-10-18: cell-by-cell comparison of the four sheets
+third_coder/scripts/J21_q7_primary.py,third_coder,public,"2026-10-18: wrapper / second script (post-coding), as run"
+third_coder/scripts/J23_q7_primary.py,third_coder,public,"2026-10-18: wrapper / second script (post-coding), as run"
+third_coder/scripts/J23_vs_J21_script.diff,third_coder,public,"2026-10-18: wrapper / second script (post-coding), as run"
+third_coder/scripts/J29_run_r1_r4.py,third_coder,public,"2026-10-18: wrapper / second script (post-coding), as run"
