@@ -1,0 +1,90 @@
+=== RESULTS ===
+GATE Figure 9 rerun (R/code/09):
+ event_time    coef  std_err  p_value  ci_low  ci_high
+         -4 -0.0077   0.0155   0.6179 -0.0380   0.0226
+         -3 -0.0085   0.0241   0.7230 -0.0557   0.0387
+         -2 -0.0032   0.0159   0.8377 -0.0343   0.0278
+          0 -0.0130   0.0132   0.3225 -0.0388   0.0128
+          1 -0.0204   0.0216   0.3447 -0.0628   0.0220
+sample N=734 firms=348 (expect 734/348)
+GATE_PASS True
+cohort sizes (firms):  {nan: 301, 2024.0: 25, 2023.0: 22}
+firm-years by Year x cohort:
+ FirstTreatYear  0.0     2023.0  2024.0
+Year                                  
+2015                69       1       2
+2016                74       3       1
+2017                68       1       1
+2018                61       2       0
+2019                43       2       0
+2020                40       1       2
+2021                70       3       2
+2022                78       3       3
+2023                75      22       7
+2024                66       9      25
+firms excluded from event-study sample (first disclosure <=2022): 33
+years per firm in sample: mean=2.1092, min=1, max=10; balanced(10 yrs) firms=2
+late-treated firm-years by event time: {-9.0: 2, -8.0: 2, -7.0: 4, -6.0: 1, -5.0: 2, -4.0: 4, -3.0: 3, -2.0: 6, -1.0: 10, 0.0: 47, 1.0: 9}
+late-treated obs with et<-4 (not dummied -> absorbed into baseline with t=-1): 11
+CS sample after dropping NaN controls: 734 firms 348
+No units in group 2024 in time period 4, e1
+No units in group 2024 in time period 5, e1
+No units in group 2024 in time period 4, e2
+No units in group 2024 in time period 5, e2
+
+### never_nocov | control=nevertreated | covariates=none | N rows=734 firms=348
+   g    t     att     se      p
+2023 2016  0.0142 0.0336 0.6723
+2023 2017 -0.0127 0.0282 0.6518
+2023 2018  0.0446 0.0193 0.0208
+2023 2019 -0.0150 0.0230 0.5155
+2023 2020  0.0006 0.0210 0.9781
+2023 2021  0.0086 0.0087 0.3245
+2023 2022 -0.0179 0.0157 0.2542
+2023 2023 -0.0282 0.0171 0.0990
+2023 2024 -0.0147 0.0187 0.4306
+2024 2016  0.0029 0.0083 0.7315
+2024 2017  0.0152 0.0055 0.0054
+2024 2018     NaN    NaN    NaN
+2024 2019     NaN    NaN    NaN
+2024 2020     NaN    NaN    NaN
+2024 2021 -0.0253 0.0233 0.2783
+2024 2022  0.0316 0.0240 0.1883
+2024 2023 -0.0103 0.0182 0.5713
+2024 2024 -0.0147 0.0166 0.3741
+pre-trend joint Wald (varying base, 12 pre cells): W=178.9812 df=12 p=0.0000
+aggte simple failed: ValueError: Missing values at att_gt found. If you want to remove these, set `na_rm = True`.
+aggte dynamic failed: ValueError: Missing values at att_gt found. If you want to remove these, set `na_rm = True`.
+aggte group failed: ValueError: Missing values at att_gt found. If you want to remove these, set `na_rm = True`.
+No units in group 2024 in time period 4, e1
+No units in group 2024 in time period 5, e1
+No units in group 2024 in time period 4, e2
+No units in group 2024 in time period 5, e2
+
+### notyet_nocov | control=notyettreated | covariates=none | N rows=734 firms=348
+   g    t     att     se      p
+2023 2016  0.0142 0.0336 0.6723
+2023 2017 -0.0127 0.0282 0.6518
+2023 2018  0.0446 0.0193 0.0208
+2023 2019 -0.0150 0.0230 0.5155
+2023 2020  0.0006 0.0210 0.9781
+2023 2021  0.0086 0.0087 0.3245
+2023 2022 -0.0179 0.0157 0.2542
+2023 2023 -0.0282 0.0171 0.0990
+2023 2024 -0.0147 0.0187 0.4306
+2024 2016  0.0029 0.0083 0.7315
+2024 2017  0.0152 0.0055 0.0054
+2024 2018     NaN    NaN    NaN
+2024 2019     NaN    NaN    NaN
+2024 2020     NaN    NaN    NaN
+2024 2021 -0.0253 0.0233 0.2783
+2024 2022  0.0316 0.0240 0.1883
+2024 2023 -0.0103 0.0182 0.5713
+2024 2024 -0.0147 0.0166 0.3741
+pre-trend joint Wald (varying base, 12 pre cells): W=178.9812 df=12 p=0.0000
+aggte simple failed: ValueError: Missing values at att_gt found. If you want to remove these, set `na_rm = True`.
+aggte dynamic failed: ValueError: Missing values at att_gt found. If you want to remove these, set `na_rm = True`.
+aggte group failed: ValueError: Missing values at att_gt found. If you want to remove these, set `na_rm = True`.
+### never_cov2 FAILED: LinAlgError: Singular matrix
+### notyet_cov2 FAILED: LinAlgError: Singular matrix
+=== END RESULTS ===

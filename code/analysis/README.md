@@ -133,3 +133,51 @@ those two constants along with the data paths when running locally.
   -0.0400 at t = +2 (11 firms) and -0.0308 at t = +3 (3 firms). No post-disclosure
   coefficient is statistically significant, and the sign beyond t = +1 depends on
   the cohort definition, so the later time profile is not identified.
+
+## Added 2026-10-18 (third-round revision)
+
+These scripts are released byte for byte as run, under new numbered names; their
+logs are in `output/logs/` under the same names. Unlike the scripts above, they
+still carry the absolute paths of the authors' local folders (the licensed
+processed panels and a local clone of this repository), which must be edited to
+rerun them. The original working names are given in brackets.
+
+- `14_callaway_santanna.py` [c7b_cs.py] -- Callaway and Sant'Anna (2021)
+  group-time ATTs for the two-cohort event-study design of Section 4.3 (734 focal
+  firm-years; cohorts 2023 and 2024; never-treated and not-yet-treated controls;
+  without covariates and with an outcome-regression adjustment), implemented for an
+  unbalanced panel treated as repeated cross-sections, with a firm-clustered
+  bootstrap (2,000 draws, seed 42), event-time aggregation and pre-trend Wald tests.
+  It reuses functions of `code/09_run_did_and_placebo.py`.
+  Log `output/logs/14_callaway_santanna.log`: overall post-disclosure ATT with
+  never-treated controls -0.0202 (bootstrap SE 0.0118; 95% CI -0.0443 to 0.0019)
+  (line 36); pre-trend tests p = 0.3084 for t = -4 to -2 (line 37) and p = 0.0039
+  for t = -9 to -2 (line 39); cross-check against csdid 0.2.9 (lines 154-160).
+- `14b_csdid_crosscheck.py` [c7_event.py] -- reruns the Figure 9 event study as a
+  gate and runs the csdid package (version 0.2.9) on the same design; its output is
+  the comparison used in lines 154-160 of the log above. Log
+  `output/logs/14b_csdid_crosscheck.log`.
+- `15_event_study_fy2025_raw_vs_clean.py` [s8_event_raw.py] -- the fiscal-2025
+  event study of Section 4.3, run on the clean-text sample (truncated texts
+  excluded; gate against the clean-text values of `13_event_study_extended.py`) and
+  on the raw sample (truncated texts retained), for the published cohort definition
+  (>= 2023) and the wider variant (>= 2022). It imports the functions of
+  `13_event_study_extended.py` unchanged. Log
+  `output/logs/15_event_study_fy2025_raw_vs_clean.log`: raw sample, cohort >= 2023,
+  t = 0 -0.0097 (78 firms; p = 0.3878), t = +1 -0.0050 (16 firms), t = +2 +0.0023
+  (7 firms; p = 0.9074) (lines 25-27); cohort >= 2022, t = +2 -0.0374 (13 firms) and
+  t = +3 -0.0445 (5 firms) (lines 35-36).
+- `16_static_did_cohort_post.py` [g2_static_did.py] -- the companion two-way
+  fixed-effects difference-in-differences of the identification summary, with
+  `Post = 1` from each cohort's own first-disclosure year (`Year >= FirstTreatYear`),
+  so that the 2024 cohort is not coded as treated in 2023. It executes the functions
+  of `code/09_run_did_and_placebo.py` verbatim and first reproduces that script's
+  archived result under its original coding as a gate. Helper module:
+  `j33_common.py`. Log `output/logs/16_static_did_cohort_post.log` and summary
+  table `output/logs/16_static_did_cohort_post.csv`: cohort-specific Post -0.0121
+  (SE 0.0128; p = 0.3463; N = 734) in the main sample; original coding -0.0118
+  (SE 0.0146; p = 0.4189).
+
+`code/09_run_did_and_placebo.py` is kept unchanged as run; its static DiD uses the
+earlier calendar definition `Post = (Year >= 2023)`. The current definition is the
+cohort-specific Post of `16_static_did_cohort_post.py`.

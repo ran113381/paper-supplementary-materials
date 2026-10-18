@@ -50,6 +50,24 @@ This folder contains two layers:
   licensed CSMAR/CNRDS-derived panels it reads are not redistributed (see
   DATA_AVAILABILITY.md).
 
+## Added 2026-10-18
+
+- `09_run_did_and_placebo.py` is kept unchanged as run. Its companion static
+  TWFE-DID uses the earlier calendar definition `Post = (Year >= 2023)`, which
+  codes the 2024 cohort as treated in 2023. The identification summary now uses a
+  cohort-specific Post (`Post = 1` from each cohort's own first-disclosure year),
+  estimated by `analysis/16_static_did_cohort_post.py`; that script executes the
+  functions of `09_run_did_and_placebo.py` verbatim and reproduces the archived
+  result of the old definition as a gate. Log and summary table:
+  `output/logs/16_static_did_cohort_post.log` and `.csv`.
+- `analysis/14_callaway_santanna.py`, `analysis/14b_csdid_crosscheck.py` and
+  `analysis/15_event_study_fy2025_raw_vs_clean.py`: see `analysis/README.md`.
+- `draft_rule_check/`: checks of the earlier adjudication drafts of the gold
+  standard (see `draft_rule_check/README.md` and `../CORRECTION_NOTE.md`).
+
+These scripts are released as run and still carry absolute local paths; the
+environment variables below do not apply to them.
+
 ## Configuring data locations
 
 The scripts previously carried absolute paths from the authors' machine. They

@@ -1,0 +1,60 @@
+Fig9 self-check: {-4: -0.0077, -3: -0.0085, -2: -0.0032, 0: -0.013, 1: -0.0204}
+FY2025 pack rows=1160; truncated dropped in clean=42; clean rows=1118
+
+--- clean | A>=2023 | N=820 firm-years, 391 focal firms ---
+  t=-4 coef -0.0009 se 0.0133 p=0.9474 (treated firm-years=5, firms=5)
+  t=-3 coef -0.0029 se 0.0186 p=0.8774 (treated firm-years=5, firms=5)
+  t=-2 coef -0.0036 se 0.0134 p=0.7880 (treated firm-years=8, firms=8)
+  t=+0 coef -0.0122 se 0.0117 p=0.2967 (treated firm-years=61, firms=61)
+  t=+1 coef -0.0070 se 0.0164 p=0.6686 (treated firm-years=15, firms=15)
+  t=+2 coef +0.0112 se 0.0236 p=0.6349 (treated firm-years=5, firms=5)
+
+--- clean | B>=2022 | N=878 firm-years, 407 focal firms ---
+  t=-4 coef -0.0130 se 0.0108 p=0.2304 (treated firm-years=8, firms=8)
+  t=-3 coef -0.0249 se 0.0247 p=0.3133 (treated firm-years=10, firms=10)
+  t=-2 coef -0.0314 se 0.0211 p=0.1371 (treated firm-years=12, firms=12)
+  t=+0 coef -0.0221 se 0.0145 p=0.1267 (treated firm-years=77, firms=77)
+  t=+1 coef -0.0132 se 0.0182 p=0.4678 (treated firm-years=22, firms=22)
+  t=+2 coef -0.0400 se 0.0360 p=0.2657 (treated firm-years=11, firms=11)
+  t=+3 coef -0.0308 se 0.0249 p=0.2166 (treated firm-years=3, firms=3)
+
+--- raw | A>=2023 | N=853 firm-years, 410 focal firms ---
+  t=-4 coef -0.0025 se 0.0129 p=0.8436 (treated firm-years=6, firms=6)
+  t=-3 coef -0.0031 se 0.0183 p=0.8651 (treated firm-years=5, firms=5)
+  t=-2 coef -0.0051 se 0.0117 p=0.6635 (treated firm-years=10, firms=10)
+  t=+0 coef -0.0097 se 0.0112 p=0.3878 (treated firm-years=78, firms=78)
+  t=+1 coef -0.0050 se 0.0151 p=0.7410 (treated firm-years=16, firms=16)
+  t=+2 coef +0.0023 se 0.0198 p=0.9074 (treated firm-years=7, firms=7)
+
+--- raw | B>=2022 | N=913 firm-years, 426 focal firms ---
+  t=-4 coef -0.0145 se 0.0112 p=0.1932 (treated firm-years=9, firms=9)
+  t=-3 coef -0.0249 se 0.0246 p=0.3105 (treated firm-years=10, firms=10)
+  t=-2 coef -0.0303 se 0.0194 p=0.1187 (treated firm-years=14, firms=14)
+  t=+0 coef -0.0209 se 0.0144 p=0.1453 (treated firm-years=94, firms=94)
+  t=+1 coef -0.0118 se 0.0175 p=0.4985 (treated firm-years=23, firms=23)
+  t=+2 coef -0.0374 se 0.0324 p=0.2477 (treated firm-years=13, firms=13)
+  t=+3 coef -0.0445 se 0.0265 p=0.0926 (treated firm-years=5, firms=5)
+
+GATE PASS clean A: t0/t1/t2 = -0.0122 / -0.0070 / +0.0112
+=== RESULTS ===
+GATE PASS: Fig9 -0.0130/-0.0204; clean A t0/t1/t2 = -0.0122/-0.0070/+0.0112
+truncated dropped in clean = 42; rows raw 1160 vs clean 1118
+[clean A>=2023] N=820 firms=391
+   t=+0 coef=-0.0122 se=0.0117 p=0.2967 firm-years=61 firms=61
+   t=+1 coef=-0.0070 se=0.0164 p=0.6686 firm-years=15 firms=15
+   t=+2 coef=+0.0112 se=0.0236 p=0.6349 firm-years=5 firms=5
+[clean B>=2022] N=878 firms=407
+   t=+0 coef=-0.0221 se=0.0145 p=0.1267 firm-years=77 firms=77
+   t=+1 coef=-0.0132 se=0.0182 p=0.4678 firm-years=22 firms=22
+   t=+2 coef=-0.0400 se=0.0360 p=0.2657 firm-years=11 firms=11
+   t=+3 coef=-0.0308 se=0.0249 p=0.2166 firm-years=3 firms=3
+[raw A>=2023] N=853 firms=410
+   t=+0 coef=-0.0097 se=0.0112 p=0.3878 firm-years=78 firms=78
+   t=+1 coef=-0.0050 se=0.0151 p=0.7410 firm-years=16 firms=16
+   t=+2 coef=+0.0023 se=0.0198 p=0.9074 firm-years=7 firms=7
+[raw B>=2022] N=913 firms=426
+   t=+0 coef=-0.0209 se=0.0144 p=0.1453 firm-years=94 firms=94
+   t=+1 coef=-0.0118 se=0.0175 p=0.4985 firm-years=23 firms=23
+   t=+2 coef=-0.0374 se=0.0324 p=0.2477 firm-years=13 firms=13
+   t=+3 coef=-0.0445 se=0.0265 p=0.0926 firm-years=5 firms=5
+=== END RESULTS ===

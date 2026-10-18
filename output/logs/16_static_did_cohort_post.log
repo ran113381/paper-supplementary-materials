@@ -1,0 +1,13 @@
+[main] archived: coef=-0.0118 se=0.0146 p=0.4189 N=734 | rerun original coding: coef=-0.0118 se=0.0146 p=0.4189 N=734 | GATE True
+[main] sample N=734; late-treated firm-years=90; 2024-cohort firm-years in 2023 miscoded as Post by original rule: 7; treated cells original=63 recoded=56
+[main] recoded (cohort-based Post): coef=-0.0121 se=0.0128 p=0.3463 N=734
+[strict] archived: coef=-0.0071 se=0.0176 p=0.6844 N=655 | rerun original coding: coef=-0.0071 se=0.0176 p=0.6844 N=655 | GATE True
+[strict] sample N=655; late-treated firm-years=75; 2024-cohort firm-years in 2023 miscoded as Post by original rule: 7; treated cells original=53 recoded=46
+[strict] recoded (cohort-based Post): coef=-0.0101 se=0.0152 p=0.5069 N=655
+=== RESULTS ===
+main | original Post=Year>=2023 | coef=-0.0118 se=0.0146 p=0.4189 N=734 | treated cells=63 miscoded 2024-cohort rows=7
+main | cohort-based Post=Year>=FirstTreatYear | coef=-0.0121 se=0.0128 p=0.3463 N=734 | treated cells=56 miscoded 2024-cohort rows=0
+strict | original Post=Year>=2023 | coef=-0.0071 se=0.0176 p=0.6844 N=655 | treated cells=53 miscoded 2024-cohort rows=7
+strict | cohort-based Post=Year>=FirstTreatYear | coef=-0.0101 se=0.0152 p=0.5069 N=655 | treated cells=46 miscoded 2024-cohort rows=0
+GATE (original coding equals archived output, both samples): True
+=== END RESULTS ===

@@ -1,0 +1,5 @@
+﻿sample,coding,coef,se,p,N,treated_cells,miscoded
+main,original Post=Year>=2023,-0.011763,0.014553,0.418933,734,63,7
+main,cohort-based Post=Year>=FirstTreatYear,-0.012100,0.012849,0.346316,734,56,0
+strict,original Post=Year>=2023,-0.007146,0.017578,0.684380,655,53,7
+strict,cohort-based Post=Year>=FirstTreatYear,-0.010062,0.015161,0.506896,655,46,0
