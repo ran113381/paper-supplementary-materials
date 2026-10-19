@@ -1,18 +1,14 @@
-﻿Validation metric,Result,Definition/Explanation
-Total validation paragraphs,600,Human double-coded validation sample (disagreements author-adjudicated)
-Dictionary-matched paragraphs,300,Used to evaluate false positives in matched text
+﻿Validation item,Result,Definition/Explanation
+Total validation paragraphs,600,Double-coded by two research assistants; 123 non-concordant passages re-adjudicated by a blind third coder (Section 3.3)
+Dictionary-matched paragraphs,300,"Simple random sample of the 1,256 matched passages; used to evaluate false positives"
 Random unmatched paragraphs,150,Used to evaluate false negatives in ordinary unmatched text
 Near-miss unmatched paragraphs,150,"Unmatched text containing broader terminology related to AI, digitalization, automation, intelligent systems or smart platforms"
-Initial annotator agreement,478/600 (79.7%),Agreement before author adjudication
+Same label from both coders,478/600 (79.7%),477 identical binary labels; 1 passage marked unclear by both
 Three-class Cohen’s kappa,0.590,"Labels include GenAI-related, non-GenAI-related and unclear"
 Binary Cohen’s kappa,0.665,Calculated after excluding unclear cases
-Adjudicated GenAI-related labels,216,Gold standard = GenAI-related disclosure
-Adjudicated non-GenAI labels,384,Gold standard = non-GenAI disclosure
-Unclear final labels,0,All final labels are binary after adjudication
-True positives,216,Dictionary match and GenAI-related
-False positives,84,Dictionary match but not GenAI-related
-False negatives,0,No dictionary match but GenAI-related
-True negatives,300,No dictionary match and not GenAI-related
-Precision,0.720,True positives / (true positives + false positives)
-Recall,1.000,True positives / (true positives + false negatives)
-F1 score,0.837,2 × precision × recall / (precision + recall)
+Re-adjudicated by the third coder,123,122 disagreements; 1 passage marked unclear by both coders
+"Third coder’s qualification: Krippendorff’s α, unclear treated as missing","0.914 [0.822, 0.979]",100 concordant calibration passages; threshold 0.667; 6 of 100 marked unclear
+Resolved by the third coder,116,"Agrees with Coder 1 on 107, with Coder 2 on 8; 1 passage marked unclear by both"
+Unresolved (third coder: unclear),7,All non-matched near-miss passages; third coder’s lean: GenAI-related for all 7
+Final GenAI-related labels,213,Among the 593 resolved passages
+Final non-GenAI labels,380,Among the 593 resolved passages

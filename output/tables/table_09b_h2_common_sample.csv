@@ -1,0 +1,11 @@
+﻿Panel B. H2: contemporaneous and lagged R&D interactions on a common sample,Panel B. H2: contemporaneous and lagged R&D interactions on a common sample,Panel B. H2: contemporaneous and lagged R&D interactions on a common sample,Panel B. H2: contemporaneous and lagged R&D interactions on a common sample
+Dependent variable: Focal_ROA,"(5) Contemporaneous R&D, full sample","(6) Contemporaneous R&D, common sample","(7) Lagged R&D, common sample (primary H2 test)"
+GenAI × R&D,−0.0446**,−0.0890*,−0.0855***
+,(0.0197),(0.0497),(0.0318)
+"p, industry clustering",0.0234,0.0733,0.0072
+"p, focal-firm clustering",0.2441,0.0743,0.0236
+"p, year-dimension wild-cluster bootstrap",0.0664,0.0586,0.0469
+Control variables,Yes,Yes,Yes
+Industry fixed effects,Yes,Yes,Yes
+Year fixed effects,Yes,Yes,Yes
+Observed values,"1,017",585,585

@@ -1,0 +1,8 @@
+﻿Dictionary metric,Primary: resolved passages (n = 593),"Unresolved = 0, most favorable bound (n = 600)","Unresolved = 1, least favorable bound (n = 600)",Unresolved = third coder’s lean (n = 600)
+True positives,213,213,213,213
+False positives,87,87,87,87
+False negatives,0,0,7,7
+True negatives,293,300,293,293
+Precision [95% CI],"0.710 [0.656, 0.758]","0.710 [0.656, 0.758]","0.710 [0.656, 0.758]","0.710 [0.656, 0.758]"
+Recall [95% CI],"1.000 [0.982, 1.000]","1.000 [0.982, 1.000]","0.968 [0.936, 0.985]","0.968 [0.936, 0.985]"
+F1 [95% CI],"0.830 [0.794, 0.864]","0.830 [0.795, 0.864]","0.819 [0.784, 0.853]","0.819 [0.781, 0.853]"

@@ -5,8 +5,8 @@ Date: `2026-07-17` (supersedes the 2026-07-15 and 2026-04-20 statements)
 ## Current Status
 
 - public package type: manuscript-supporting archive with code and validation evidence
-- frozen table layer: included — **synchronized 2026-07-17 to the revised
-  manuscript's full set of 14 tables** (`output/tables/`, see
+- frozen table layer: included — **synchronized 2026-10-19 to the R3
+  manuscript's full set of 15 tables** (`output/tables/`, see
   `docs/EXHIBIT_MAP.md`)
 - frozen figure layer: included — **all 14 figures as embedded in the revised
   manuscript** (`output/figures/manuscript_render/`, each verified

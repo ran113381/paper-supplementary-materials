@@ -129,15 +129,18 @@ output/tables/table_02_variable_definition_and_calculation.csv,output,public,Fro
 output/tables/table_03_genai_dictionary_keyword_classification.csv,output,public,Frozen Table 3
 output/tables/table_04_full_sample_llm_semantic_audit.csv,output,public,Frozen Table 4
 output/tables/table_05_gold_standard_validation.csv,output,public,Frozen Table 5
+output/tables/table_05b_gold_standard_unresolved_bounds.csv,output,public,Frozen Table 5 (second table under the same caption)
 output/tables/table_06_sota_hybrid_benchmark.csv,output,public,Frozen Table 6
 output/tables/table_07_descriptive_statistics.csv,output,public,Frozen Table 7
 output/tables/table_08_correlation_matrix.csv,output,public,Frozen Table 8
-output/tables/table_09_baseline_regression_results.csv,output,public,Frozen Table 9
+output/tables/table_09_baseline_regression_results.csv,output,public,Frozen Table 9 (Panel A)
+output/tables/table_09b_h2_common_sample.csv,output,public,Frozen Table 9 (Panel B)
 output/tables/table_10_robustness_summary.csv,output,public,Frozen Table 10
 output/tables/table_11_dyadic_dependence_corrections.csv,output,public,Frozen Table 11
-output/tables/table_12_inventory_turnover_channel.csv,output,public,Frozen Table 12
-output/tables/table_13_fy2025_extension.csv,output,public,Frozen Table 13
-output/tables/table_14_heterogeneity_analysis.csv,output,public,Frozen Table 14
+output/tables/table_12_functional_form_binary_dominance.csv,output,public,Frozen Table 12
+output/tables/table_13_inventory_turnover_channel.csv,output,public,Frozen Table 13
+output/tables/table_14_fy2025_extension.csv,output,public,Frozen Table 14
+output/tables/table_15_heterogeneity_analysis.csv,output,public,Frozen Table 15
 paper/README.md,doc,public,Paper folder note
 paper/attachments/appendix_full_genai_dictionary.docx,paper,public,Public full dictionary attachment
 paper/attachments/table_x_genai_dictionary_keywords.docx,paper,public,Public dictionary classification attachment

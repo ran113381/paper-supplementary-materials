@@ -3,14 +3,17 @@ table_01_sample_construction_procedure.csv,Table 1. Sample Construction Procedur
 table_02_variable_definition_and_calculation.csv,Table 2. Variable Definition and Calculation
 table_03_genai_dictionary_keyword_classification.csv,Table 3. Classification of GenAI Dictionary Keywords Used for Text Mining
 table_04_full_sample_llm_semantic_audit.csv,Table 4. Full-Sample LLM-Assisted Semantic Audit
-table_05_gold_standard_validation.csv,Table 5. Human-Annotated Gold-Standard Validation of the Dictionary-Based Measure
+table_05_gold_standard_validation.csv,Table 5. Human-Annotated Gold-Standard Validation of the Dictionary-Based Measure (main table)
+table_05b_gold_standard_unresolved_bounds.csv,Table 5. Human-Annotated Gold-Standard Validation of the Dictionary-Based Measure (second table under this caption: dictionary metrics with unresolved passages bounded)
 table_06_sota_hybrid_benchmark.csv,Table 6. SOTA and Hybrid Benchmark Validation of GenAI Disclosure Measures
 table_07_descriptive_statistics.csv,Table 7. Descriptive Statistics of Key Variables
 table_08_correlation_matrix.csv,Table 8. The Correlation Matrix
-table_09_baseline_regression_results.csv,Table 9. Baseline Regression Results
+table_09_baseline_regression_results.csv,Table 9. Baseline Regression Results and H2 Specifications on a Common Sample (Panel A)
+table_09b_h2_common_sample.csv,Table 9. Baseline Regression Results and H2 Specifications on a Common Sample (Panel B)
 table_10_robustness_summary.csv,Table 10. Summary of Robustness Tests
 table_11_dyadic_dependence_corrections.csv,Table 11. Robustness of Baseline Estimates to Dyadic-Dependence Corrections
-table_12_inventory_turnover_channel.csv,Table 12. Candidate Operational Channel Test: Inventory Turnover
-table_13_fy2025_extension.csv,Table 13. Extension of Baseline Estimates to Fiscal Year 2025
-table_14_heterogeneity_analysis.csv,Table 14. Heterogeneity Analysis
+table_12_functional_form_binary_dominance.csv,Table 12. Functional-Form and Binary-Dominance Checks of the Power-Pressure Moderation (H3)
+table_13_inventory_turnover_channel.csv,Table 13. Candidate Operational Channel Test: Inventory Turnover
+table_14_fy2025_extension.csv,Table 14. Extension of Baseline Estimates to Fiscal Year 2025
+table_15_heterogeneity_analysis.csv,Table 15. Heterogeneity Analysis
 appendix_full_dictionary.csv,Full bilingual GenAI dictionary (103 terms)

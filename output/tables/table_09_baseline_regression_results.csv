@@ -1,4 +1,5 @@
-﻿Dependent variable: Focal_ROA,(1) Baseline,(2) H2 moderation,(3) H3 moderation,(4) H3 + Growth Control
+﻿Panel A. Baseline specifications,Panel A. Baseline specifications,Panel A. Baseline specifications,Panel A. Baseline specifications,Panel A. Baseline specifications
+Dependent variable: Focal_ROA,(1) Baseline,(2) H2 moderation,(3) H3 moderation,(4) H3 + Growth Control
 Focal_GenAI_Index,−0.0146***,−0.0021,−0.0117**,−0.0103**
 ,(0.0048),(0.0049),(0.0047),(0.0048)
 Focal_RnD_Ratio,,−0.1294***,,

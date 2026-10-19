@@ -1,13 +1,13 @@
 # Exhibit Map
 
-Synchronized 2026-07-17 with the major-revision manuscript
-("GenAI Disclosure and Short-Term Firm Performance in Buyer–Supplier Dyads:
-Evidence from Text-Mined MD&A Signals") — 14 tables and 14 figures.
+Synchronized 2026-10-19 with the third-round (R3) revision of the manuscript
+("Generative Artificial Intelligence Disclosure in Supply-Chain Dyads:
+Evidence from Text-Mined MD&A Signals") — 15 tables and 14 figures.
 Every manuscript table is frozen to CSV under `output/tables/`; every
 manuscript figure is frozen, exactly as embedded in the revised manuscript,
 under `output/figures/manuscript_render/`.
 
-## Tables (manuscript numbering after the 2026-07 revision)
+## Tables (manuscript numbering of the R3 revision)
 
 | Manuscript exhibit | Included file |
 | --- | --- |
@@ -16,18 +16,21 @@ under `output/figures/manuscript_render/`.
 | Table 3 Classification of GenAI Dictionary Keywords | `output/tables/table_03_genai_dictionary_keyword_classification.csv` |
 | Table 4 Full-Sample LLM-Assisted Semantic Audit | `output/tables/table_04_full_sample_llm_semantic_audit.csv` |
 | Table 5 Human-Annotated Gold-Standard Validation | `output/tables/table_05_gold_standard_validation.csv` |
+| Table 5 (second table under the same caption: unresolved-passage bounds) | `output/tables/table_05b_gold_standard_unresolved_bounds.csv` |
 | Table 6 SOTA and Hybrid Benchmark Validation | `output/tables/table_06_sota_hybrid_benchmark.csv` |
 | Table 7 Descriptive Statistics of Key Variables | `output/tables/table_07_descriptive_statistics.csv` |
 | Table 8 The Correlation Matrix | `output/tables/table_08_correlation_matrix.csv` |
-| Table 9 Baseline Regression Results | `output/tables/table_09_baseline_regression_results.csv` |
+| Table 9 Baseline Regression Results and H2 Specifications on a Common Sample (Panel A) | `output/tables/table_09_baseline_regression_results.csv` |
+| Table 9 (Panel B) | `output/tables/table_09b_h2_common_sample.csv` |
 | Table 10 Summary of Robustness Tests (incl. the pre-2022 exclusion rows) | `output/tables/table_10_robustness_summary.csv` |
 | Table 11 Robustness to Dyadic-Dependence Corrections | `output/tables/table_11_dyadic_dependence_corrections.csv` |
-| Table 12 Candidate Operational Channel: Inventory Turnover | `output/tables/table_12_inventory_turnover_channel.csv` |
-| Table 13 Extension of Baseline Estimates to Fiscal Year 2025 | `output/tables/table_13_fy2025_extension.csv` |
-| Table 14 Heterogeneity Analysis | `output/tables/table_14_heterogeneity_analysis.csv` |
+| Table 12 Functional-Form and Binary-Dominance Checks of the Power-Pressure Moderation (H3) | `output/tables/table_12_functional_form_binary_dominance.csv` |
+| Table 13 Candidate Operational Channel: Inventory Turnover | `output/tables/table_13_inventory_turnover_channel.csv` |
+| Table 14 Extension of Baseline Estimates to Fiscal Year 2025 | `output/tables/table_14_fy2025_extension.csv` |
+| Table 15 Heterogeneity Analysis | `output/tables/table_15_heterogeneity_analysis.csv` |
 | Full bilingual dictionary (103 terms) | `output/tables/appendix_full_dictionary.csv` + `data/public/04_genai_dictionary.xlsx` |
 
-## Figures (manuscript numbering after the 2026-07 revision)
+## Figures (manuscript numbering of the R3 revision)
 
 Authoritative copies extracted from the revised manuscript itself:
 `output/figures/manuscript_render/figure_01.png` … `figure_14.png`,
@@ -71,7 +74,7 @@ repository (paths require local adjustment); see `code/analysis/README.md`.
 | `code/analysis/04_score_2025_genai.py` | FY2025 GenAI disclosure scoring with the paper's own dictionary |
 | `code/analysis/05_concat_and_rebuild.py` | 2015-2025 concatenation and winsorized regression packages (frozen bounds) |
 | `code/analysis/06_verify_2024_reproduction.py` | Exact-reproduction gate against the published 2015-2024 results |
-| `code/analysis/07_fy2025_cleantext_extension.py` | FY2025 clean-text filter + the four Table 13 estimates (verified end-to-end) |
+| `code/analysis/07_fy2025_cleantext_extension.py` | FY2025 clean-text filter + the four Table 14 estimates (verified end-to-end) |
 | `code/analysis/common.py`, `battery_ext.py` | Shared loaders, construct definitions, FE/cluster estimation helpers |
 | `code/analysis/01_main_grid.py` | Baseline diagnostic grid (clustering, collapsing, weighting, lags, firm FE, MDE) |
 | `code/analysis/03_cellB_handroll_crosscheck.py`, `05_cellB_final.py` | Two-way (firm x year) cluster-robust variance, hand-rolled CGM cross-check and final run |

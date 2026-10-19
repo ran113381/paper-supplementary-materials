@@ -41,7 +41,7 @@ This folder contains two layers:
   the empirical p-value is 0.002 one- and two-sided.
 
   Note that this 852-firm-year figure is NOT the 1,017 dyad-year estimation
-  sample used in Tables 9-14, and the companion TWFE-DID in the same script runs
+  sample used in Tables 9-15, and the companion TWFE-DID in the same script runs
   on a further-restricted late-treated/never-treated subsample -- the three N's
   are different by design.
 

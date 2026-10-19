@@ -11,7 +11,7 @@ of Generative AI Adoption: Moderating Effects of R&D Intensity and
 Supply-Chain Power Pressure" / 生成式人工智能采用的短期绩效后果：研发强度与供应链权力压力的调节作用.
 The retitling reflects the revision's disclosure-based, association-level
 framing; exhibit numbering follows the revised manuscript — see
-`docs/EXHIBIT_MAP.md`, synchronized 2026-07-17 to 14 tables + 14 figures.)
+`docs/EXHIBIT_MAP.md`, synchronized 2026-10-19 to the third-round (R3) manuscript: 15 tables + 14 figures.)
 
 ## Package Type
 

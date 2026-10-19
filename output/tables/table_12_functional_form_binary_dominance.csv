@@ -1,0 +1,8 @@
+﻿Specification,Moderator or added terms,Coefficient,SE (industry),p (industry),p (focal firm),p (year bootstrap),N
+"M0 Baseline (Table 9, Panel A, column 3)",GenAI × Power_Pressure,−0.0088,0.0017,<0.0001,0.0002,0.4141,"1,007"
+M1,M0 + Dominance × GenAI²,−0.0073,0.0026,0.0046,0.0256,0.1426,"1,007"
+M2,M0 + Dominance × GenAI × Partner_GenAI_Index,−0.0043,0.0097,0.6542,0.5191,0.7676,"1,007"
+M3,M0 + both components,−0.0049,0.0127,0.7010,0.5477,0.7090,"1,007"
+B1 Binary dominance,GenAI × 1[Partner_Size > Focal_Size] × Partner lead,−0.0189,0.0046,<0.0001,0.0749,0.1855,"1,007"
+B2,B1 + 1[·] × GenAI² + 1[·] × GenAI × Partner_GenAI_Index,−0.0063,0.0107,0.5567,0.6379,0.4668,"1,007"
+B3 Uncoupled,GenAI × 1[Partner_Size > Focal_Size] × Partner_GenAI_Index,−0.0073,0.0039,0.0632,0.1575,0.4004,"1,007"

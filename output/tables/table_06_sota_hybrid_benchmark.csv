@@ -1,5 +1,14 @@
-﻿Method,N_eval,Coverage,TP,FP,TN,FN,Precision,Recall,F1
-Dictionary rules,600,1.000,216,84,300,0,0.720,1.000,0.837
-GPT-5.5/Claude strict consensus,271,0.452,121,0,82,68,1.000,0.640,0.781
-FinBERT fine-tuned on strict consensus,600,1.000,151,83,301,65,0.645,0.699,0.671
-Hybrid consensus with dictionary fallback,600,1.000,148,2,382,68,0.987,0.685,0.809
+﻿Panel,Method,Population,N_eval,Coverage,TP,FP,TN,FN,Precision [95% CI],Recall [95% CI],F1 [95% CI]
+A (primary): GenAI-related,Dictionary rules,Full benchmark,593,1.000,213,87,293,0,"0.710 [0.656, 0.758]","1.000 [0.982, 1.000]","0.830 [0.794, 0.864]"
+A,GPT-5.5/Claude strict consensus,Full benchmark,593,0.457,180,1,379,33,"0.994 [0.969, 0.999]","0.845 [0.790, 0.888]","0.914 [0.883, 0.940]"
+A,FinBERT fine-tuned on strict consensus,Full benchmark,593,1.000,150,84,296,63,"0.641 [0.578, 0.700]","0.704 [0.640, 0.761]","0.671 [0.619, 0.724]"
+A,Hybrid consensus with dictionary fallback,Full benchmark,593,1.000,208,2,378,5,"0.990 [0.966, 0.997]","0.977 [0.946, 0.990]","0.983 [0.971, 0.995]"
+A,Dictionary rules,Covered,271,1.000,185,86,0,0,"0.683 [0.625, 0.735]","1.000 [0.980, 1.000]","0.811 [0.771, 0.849]"
+A,GPT-5.5/Claude strict consensus,Covered,271,1.000,180,1,85,5,"0.994 [0.969, 0.999]","0.973 [0.938, 0.988]","0.984 [0.969, 0.995]"
+A,FinBERT fine-tuned on strict consensus,Covered,271,1.000,124,22,64,61,"0.849 [0.782, 0.898]","0.670 [0.600, 0.734]","0.749 [0.695, 0.802]"
+A,Hybrid consensus with dictionary fallback,Covered,271,1.000,180,1,85,5,"0.994 [0.969, 0.999]","0.973 [0.938, 0.988]","0.984 [0.970, 0.995]"
+B: substantive adoption only,GPT-5.5/Claude strict consensus,Full benchmark,593,0.457,121,0,380,92,"1.000 [0.969, 1.000]","0.568 [0.501, 0.633]","0.725 [0.669, 0.779]"
+B,Hybrid consensus with dictionary fallback,Full benchmark,593,1.000,149,1,379,64,"0.993 [0.963, 0.999]","0.700 [0.635, 0.757]","0.821 [0.778, 0.861]"
+B,GPT-5.5/Claude strict consensus,Covered,271,1.000,121,0,86,64,"1.000 [0.969, 1.000]","0.654 [0.583, 0.719]","0.791 [0.739, 0.837]"
+B,Hybrid consensus with dictionary fallback,Covered,271,1.000,121,0,86,64,"1.000 [0.969, 1.000]","0.654 [0.583, 0.719]","0.791 [0.737, 0.838]"
+B,Dictionary rules; FinBERT,Both populations,—,—,—,—,—,—,Identical to Panel A,Identical to Panel A,Identical to Panel A

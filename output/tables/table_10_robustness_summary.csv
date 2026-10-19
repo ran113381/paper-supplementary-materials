@@ -5,7 +5,10 @@ Strict sample: H3 (GenAI × Power_Pressure),−0.0087***,N = 895
 Alternative metric: Overlap count index,−0.0143***,Significantly negative
 Alternative measure: lexical breadth,−0.0080***,Significantly negative
 Alternative measure: binary dummy variables,−0.0108,"Same direction, n.s."
-H3 + Growth control,−0.0085***,Conclusions remain unchanged
+H3 + Growth control,−0.0085***,Direction unchanged
 Pre-2022 exclusion: H1 (Focal_GenAI_Index),−0.0186***,"2022–2024 subsample, N = 405"
 Pre-2022 exclusion: H3 (GenAI × Power_Pressure),−0.0077***,"2022–2024 subsample, N = 402"
 Pre-2022 exclusion: H2 (GenAI × R&D),−0.0320*,"2022–2024 subsample, N = 405"
+H1 + contemporaneous R&D control (Focal_GenAI_Index),−0.0068*,"N = 1,017; p = 0.0992 (industry), 0.2260 (focal firm), 0.2070 (year bootstrap); not significant at the 5% level under any procedure"
+H1 on truncated texts repaired from CNRDS (variant A),−0.0160***,"N = 1,017; p = 0.0122 (focal firm), 0.1074 (year bootstrap)"
+"H1 excluding focal texts truncated at 32,767 characters (comparison only)",−0.0056,N = 837; n.s. (p = 0.4059); exclusion is selective (Section 4.4.1)
